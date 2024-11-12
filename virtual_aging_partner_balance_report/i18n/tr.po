@@ -1,0 +1,130 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* virtual_aging_partner_balance_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e-20200101\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-07 08:39+0000\n"
+"PO-Revision-Date: 2020-01-07 12:19+0300\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: tr\n"
+"X-Generator: Poedit 2.2\n"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model.fields,field_description:virtual_aging_partner_balance_report.field_virtual_aging_partner_balance_report_account_id
+msgid "Account"
+msgstr "Hesap"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model.fields,field_description:virtual_aging_partner_balance_report.field_virtual_aging_partner_balance_report_move_id
+msgid "Account Move"
+msgstr "Yevmiye Kaydı"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model.fields,field_description:virtual_aging_partner_balance_report.field_virtual_aging_partner_balance_report_balance
+msgid "Balance"
+msgstr "Bakiye"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model.fields,field_description:virtual_aging_partner_balance_report.field_virtual_aging_partner_balance_report_company_id
+msgid "Company"
+msgstr "Şirket"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model.fields,field_description:virtual_aging_partner_balance_report.field_virtual_aging_partner_balance_report_create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model.fields,field_description:virtual_aging_partner_balance_report.field_virtual_aging_partner_balance_report_create_date
+msgid "Created on"
+msgstr "Oluşturma Tarihi"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.ui.view,arch_db:virtual_aging_partner_balance_report.hr_payslip_input_report_search
+msgid "Current Year"
+msgstr "Bu Yıl"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model.fields,field_description:virtual_aging_partner_balance_report.field_virtual_aging_partner_balance_report_display_name
+msgid "Display Name"
+msgstr "Görünüm Adı"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model.fields,field_description:virtual_aging_partner_balance_report.field_virtual_aging_partner_balance_report_due_date
+msgid "Due Date"
+msgstr "Vade Tarihi"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model.fields,field_description:virtual_aging_partner_balance_report.field_virtual_aging_partner_balance_report_id
+msgid "ID"
+msgstr "ID"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model.fields,field_description:virtual_aging_partner_balance_report.field_virtual_aging_partner_balance_report___last_update
+msgid "Last Modified on"
+msgstr "Son Güncelleme Tarihi"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model.fields,field_description:virtual_aging_partner_balance_report.field_virtual_aging_partner_balance_report_write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model.fields,field_description:virtual_aging_partner_balance_report.field_virtual_aging_partner_balance_report_write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme Tarihi"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model.fields,field_description:virtual_aging_partner_balance_report.field_virtual_aging_partner_balance_report_partner_id
+msgid "Partner"
+msgstr "İş Ortağı"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model.fields,field_description:virtual_aging_partner_balance_report.field_virtual_aging_partner_balance_report_user_id
+msgid "Salesman"
+msgstr "Satış Temsilcisi"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.ui.menu,name:virtual_aging_partner_balance_report.vapbr_menu
+msgid "Virtual Aging Partner Balance Report"
+msgstr "Sanal Yaşlandırma Raporu"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.actions.server,name:virtual_aging_partner_balance_report.cron_virtual_aging_partner_balance_report_ir_actions_server
+#: model:ir.cron,cron_name:virtual_aging_partner_balance_report.cron_virtual_aging_partner_balance_report
+#: model:ir.cron,name:virtual_aging_partner_balance_report.cron_virtual_aging_partner_balance_report
+msgid "Virtual Aging Partner Balance Report Cron"
+msgstr "Sanal Yaşlandırma Raporu"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.ui.view,arch_db:virtual_aging_partner_balance_report.hr_payslip_input_report_pivot
+msgid "Virtual Aging Partner Balance Report Pivot"
+msgstr "Sanal Yaşlandırma Raporu"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.ui.view,arch_db:virtual_aging_partner_balance_report.hr_payslip_input_report_search
+msgid "Virtual Aging Partner Balance Report Search"
+msgstr "Sanal Yaşlandırma Raporu"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.ui.view,arch_db:virtual_aging_partner_balance_report.hr_payslip_input_report_tree
+msgid "Virtual Aging Partner Balance Report Tree"
+msgstr "Sanal Yaşlandırma Raporu"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.model,name:virtual_aging_partner_balance_report.model_virtual_aging_partner_balance_report
+msgid "virtual.aging.partner.balance.report"
+msgstr "virtual.aging.partner.balance.report"
+
+#. module: virtual_aging_partner_balance_report
+#: model:ir.actions.act_window,name:virtual_aging_partner_balance_report.virtual_aging_partner_balance_report_view
+msgid "virtual_aging_partner_balance_report"
+msgstr "Sanal Yaşlandırma Raporu"

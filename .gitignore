@@ -1,0 +1,58 @@
+# Sphinx build directories
+_build/
+
+# Dotfiles - ignore all hidden files except those explicitly allowed
+.*
+!.gitignore
+!.mailmap
+
+# Compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Python egg-info directories
+*.egg-info
+
+# Editor backup files
+*~
+# Vim swap files
+*.swp
+
+# Mercurial artifacts
+*.orig
+
+# Odoo specific directories
+odoo/filestore/
+odoo/addons/base/maintenance/
+
+# Windows installer generated files
+*.bat
+install/win32/*.bat
+install/win32/meta.py
+
+# Files needed only when building for win32
+setup/win32/static/less/
+setup/win32/static/wkhtmltopdf/
+setup/win32/static/postgresql*.exe
+
+# Virtual environment directories
+/bin/
+/build/
+/dist/
+/include/
+/lib/
+/man/
+/share/
+/src/
+
+# IDE-specific directories
+.idea/
+.vscode/
+
+# Emacs backup files
+*~
+
+# Additional patterns from original file (if any)
+status  # Assuming this is a file and not a directory
+

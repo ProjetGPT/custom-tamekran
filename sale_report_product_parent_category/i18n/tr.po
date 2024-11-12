@@ -1,0 +1,27 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* sale_report_product_parent_category
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-22 08:10+0000\n"
+"PO-Revision-Date: 2016-12-22 08:10+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_report_product_parent_category
+#: view:sale.report:sale_report_product_parent_category.sale_order_report_partner_category_group
+msgid "Parent Category of Product"
+msgstr "Üst Ürün Kategorisi"
+
+#. module: sale_report_product_parent_category
+#: model:ir.model,name:sale_report_product_parent_category.model_sale_report
+msgid "Sales Orders Statistics"
+msgstr "Satış Siparişi İstatistikleri"
+

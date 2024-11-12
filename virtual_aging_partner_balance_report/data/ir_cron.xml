@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record model="ir.cron" id="cron_virtual_aging_partner_balance_report">
+        <field name='name'>Virtual Aging Partner Balance Report Cron</field>
+        <field name='interval_number'>2</field>
+        <field name='interval_type'>hours</field>
+        <field name="numbercall">-1</field>
+        <field name="active">True</field>
+        <field name="doall" eval="False"/>
+        <field name="model_id" ref="model_virtual_aging_partner_balance_report"/>
+        <field name="state">code</field>
+        <field name="code">model._auto_init()</field>
+    </record>
+</odoo>
