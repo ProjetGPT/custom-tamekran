@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="account.group_account_invoice" model="res.groups" context="{'studio': True}">
+    <field name="color" eval="False"/>
+    <field name="comment" eval="False"/>
+    <field name="implied_ids" eval="[(6, 0, [ref('base.group_user')])]"/>
+    <field name="is_portal" eval="False"/>
+    <field name="name">Faturalama</field>
+    <field name="share" eval="False"/>
+  </record>
+  <record id="stock.group_stock_manager" model="res.groups" context="{'studio': True}">
+    <field name="color" eval="False"/>
+    <field name="comment" eval="False"/>
+    <field name="implied_ids" eval="[(6, 0, [ref('account.group_account_invoice'), ref('stock.group_stock_user')])]"/>
+    <field name="is_portal" eval="False"/>
+    <field name="name">Yönetici</field>
+    <field name="share" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.alacak_sigortas_limi_49301c20-c025-4a5d-a3bb-2585d2deff03" model="res.groups" context="{'studio': True}">
+    <field name="color" eval="False"/>
+    <field name="comment" eval="False"/>
+    <field name="implied_ids" eval="[(6, 0, [])]"/>
+    <field name="is_portal" eval="False"/>
+    <field name="name">Alacak Sigortası Limiti Alanı Yetkisi</field>
+    <field name="share" eval="False"/>
+  </record>
+  <record id="__export__.res_groups_158_9fb7eb1d" model="res.groups" context="{'studio': True}">
+    <field name="color" eval="False"/>
+    <field name="comment" eval="False"/>
+    <field name="implied_ids" eval="[(6, 0, [])]"/>
+    <field name="is_portal" eval="False"/>
+    <field name="name">Dönem Numaralandırması Yapabilir</field>
+    <field name="share" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.birim_fiyat_gorebili_c4a0bac4-0fd8-4f81-a799-96fce079b2be" model="res.groups" context="{'studio': True}">
+    <field name="color" eval="False"/>
+    <field name="comment" eval="False"/>
+    <field name="implied_ids" eval="[(6, 0, [])]"/>
+    <field name="is_portal" eval="False"/>
+    <field name="name">Sipariş Birim Fiyatını Görebilir</field>
+    <field name="share" eval="False"/>
+  </record>
+</odoo>

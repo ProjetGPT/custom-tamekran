@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="tamekran_studio_customization.bakiye_alann_guncell_e3986c9e-732f-48d2-816b-724452b04163" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.bakiye_alann_guncell_6095fb0d-6eae-4a08-998c-9f9b3948f5f6"/>
+    <field name="active" eval="False"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">debit,credit</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type">day</field>
+    <field name="trigger">on_change</field>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_km_bilgisi_he_ffaea01e-b71e-4119-beb0-3d99b4f72fee" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.gunluk_km_bilgisi_he_03cd9a53-9df4-42b5-932d-c84f57b7f1f3"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain">["&amp;",["x_studio_field_k5hiw","&gt;",0],["x_studio_field_ZOzw3","&gt;",0]]</field>
+    <field name="filter_pre_domain">[]</field>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields" eval="False"/>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_write</field>
+  </record>
+  <record id="tamekran_studio_customization.irsaliye_tipine_gore_48b4ab84-4e95-4019-a284-1a71425951a1" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.irsaliye_tipine_gore_48b4ab84-4e95-4019-a284-1a71425951a1_ir_actions_server"/>
+    <field name="active" eval="False"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields" eval="False"/>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_create_or_write</field>
+  </record>
+  <record id="tamekran_studio_customization.alternatif_urunlerde_16e36174-26e5-4dc2-b2c0-b27e73e47e0c" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.alternatif_urunlerde_07ec0071-c162-40ab-9e93-0ccf173f8702"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">alternative_product_ids</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type">day</field>
+    <field name="trigger">on_change</field>
+  </record>
+  <record id="tamekran_studio_customization.bakiye_hesapla_e68290ef-7fbd-4e1b-acc0-bfe2477f596d" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.bakiye_hesapla_d1935741-47bf-438c-bd32-8db161a6e0ac"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">partner_id</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_change</field>
+  </record>
+  <record id="tamekran_studio_customization.isim_alann_olusturma_54e9e7e3-fd92-461c-b3ea-cba34e102a76" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.isim_alann_olusturma_e3ea2d03-a9e5-44a1-8312-c110172c9e4e"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain">[["x_studio_field_8VSrL","!=",False]]</field>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">x</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_create</field>
+  </record>
+  <record id="tamekran_studio_customization.bakiye_alannn_hesapl_90345969-09dc-43bc-b095-bed4c7e7730b" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.bakiye_alannn_hesapl_90345969-09dc-43bc-b095-bed4c7e7730b_ir_actions_server"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">x_studio_field_INxEu,amount_total</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type">day</field>
+    <field name="trigger">on_change</field>
+  </record>
+  <record id="tamekran_studio_customization.transfer_emrinde_olm_2d552e46-ad42-473b-b9c5-8067c7b7b955" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.transfer_emrinde_olm_01f6d871-73bb-4f23-8cbf-899454c5d333"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">_barcode_scanned</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type">day</field>
+    <field name="trigger">on_change</field>
+  </record>
+  <record id="tamekran_studio_customization.transfer_miktarndan__06130015-4562-4e9c-9b8e-f3a207b1f9ee" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.transfer_miktarndan__b03faebd-d93c-4de0-a49a-d7aa4f14cd5a"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">qty_done</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type">day</field>
+    <field name="trigger">on_change</field>
+  </record>
+  <record id="tamekran_studio_customization.ozellik_degeri_domai_6e9d30f5-6281-4c39-86bc-0fc0ca17d856" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.ozellik_degeri_domai_7b5fbaf6-4448-482d-aab7-ff782811a4fb"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">x_studio_field_dGLv4,x_studio_field_esjUA</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type">day</field>
+    <field name="trigger">on_change</field>
+  </record>
+  <record id="tamekran_studio_customization.temsilci_bilgisini_g_26a0aaa6-284d-4f73-b161-77e3e1647208" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.temsilci_bilgisini_g_ac1356a0-d939-45ed-ac1c-f0a061054948"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">create_uid</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_create</field>
+  </record>
+  <record id="tamekran_studio_customization.root_planndaki_bolge_95c83b92-7f84-48c5-b9b9-8ed1214de664" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.root_planndaki_bolge_6c8e14b0-6bab-4fb9-bf82-710a2a39f1c4"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">x_studio_field_8VSrL</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type">day</field>
+    <field name="trigger">on_change</field>
+  </record>
+  <record id="tamekran_studio_customization.tarih_alann_doldurma_f53a05db-fa27-4e89-b7e7-1fd9dd1bbc5f" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.tarih_alann_doldurma_05f16559-4664-48de-bf8c-55f6bd3fba9a"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields" eval="False"/>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_create</field>
+  </record>
+  <record id="tamekran_studio_customization.toplam_alanlarn_hesa_b38e38c9-bf02-459c-b9e9-8c83eca9a533" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.toplam_alanlarn_hesa_9cc28bb7-19ac-4de1-b350-a19e42e8bc9a"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields" eval="False"/>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_write</field>
+  </record>
+  <record id="tamekran_studio_customization.rota_planndaki_durum_bbc13a42-ecdb-4924-a706-9e8be126f5cc" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.rota_planndaki_durum_c66564ec-f9cd-40e0-896a-5a4d9c66a174"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields" eval="False"/>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_create</field>
+  </record>
+  <record id="tamekran_studio_customization.odeme_tipine_gore_va_001625aa-41f3-4e11-bdf4-af35056dcd1a" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.odeme_tipine_gore_va_ea3e0d5e-5a13-4801-b72a-37490088f478"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">x_studio_field_r1b7f</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type">day</field>
+    <field name="trigger">on_change</field>
+  </record>
+  <record id="tamekran_studio_customization.urun_ailesine_eklene_98b7f9ab-edd6-41e3-8a91-4449bd92e06e" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.urun_ailesine_eklene_ea5b310a-34fd-49ea-b198-13935e4c59d6"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">x_studio_field_zkXly,write_date</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_write</field>
+  </record>
+  <record id="tamekran_studio_customization.rota_turleri_bilgisi_fa7c6054-312a-49df-bc3d-2b4ff6976af3" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.rota_turleri_bilgisi_2493b1e5-1d7d-4e01-bd14-a5db18be575d"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain">[["x_studio_field_Yx0X5","!=",False]]</field>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields" eval="False"/>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_write</field>
+  </record>
+  <record id="tamekran_studio_customization.odeme_tiplerine_gore_2fd4fed4-7cde-4560-a495-30bfda3b700d" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.odeme_tiplerine_gore_8feb5853-3a5c-402f-8108-36b2a4e4a1a1"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">x_studio_field_r1b7f,x_studio_field_Lazge</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type">day</field>
+    <field name="trigger">on_change</field>
+  </record>
+  <record id="tamekran_studio_customization.odeme_turlerine_gore_1f14df46-52aa-4ef5-b30d-5375ece9e526" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.odeme_turlerine_gore_bf7b3a40-a716-47d7-b55c-30253e607fcc"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">x_studio_field_p4br6,x_studio_field_r1b7f</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type">day</field>
+    <field name="trigger">on_change</field>
+  </record>
+  <record id="tamekran_studio_customization.urun_ailesi_secimine_5b5fa47c-f682-4568-8d00-6b20f822e1c5" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.urun_ailesi_secimine_c0c9ce95-4632-4637-8401-848b3c14bf55"/>
+    <field name="active" eval="False"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">x_studio_field_YIOKR,id</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type">day</field>
+    <field name="trigger">on_change</field>
+  </record>
+  <record id="tamekran_studio_customization.mukerrer_ozellik_gru_c7d5dbc9-1c72-4fd8-a7da-1123981418d1" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.mukerrer_ozellik_gru_bb816367-4e2c-4f1f-af31-84e7dfd90875"/>
+    <field name="active" eval="False"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">x_studio_field_3irPZ,x_studio_field_dGLv4</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type">day</field>
+    <field name="trigger">on_change</field>
+  </record>
+  <record id="tamekran_studio_customization.mukerrer_ozellik_gru_38aebf07-c9c8-4dd7-9494-5719ca9f1dd2" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="tamekran_studio_customization.mukerrer_ozellik_gru_5d5825a5-d780-48ac-8253-c74656d4bf22"/>
+    <field name="active" eval="False"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_fields">x_studio_field_dGLv4</field>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type">day</field>
+    <field name="trigger">on_change</field>
+  </record>
+</odoo>

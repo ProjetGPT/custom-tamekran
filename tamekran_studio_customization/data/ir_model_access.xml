@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="base.access_res_company_group_user" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" eval="False"/>
+    <field name="model_id" ref="account.model_res_company"/>
+    <field name="name">res_company group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="base.access_res_partner_group_partner_manager" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_partner_manager"/>
+    <field name="model_id" ref="account.model_res_partner"/>
+    <field name="name">res_partner group_partner_manager</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="base.access_res_users_all" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" eval="False"/>
+    <field name="model_id" ref="account_invoice_numbering_on_journal.model_res_users"/>
+    <field name="name">res_users all</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="stock.access_product_uom_stock_manager" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="stock.group_stock_manager"/>
+    <field name="model_id" ref="product.model_product_uom"/>
+    <field name="name">product.uom stock_manager</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="purchase.access_product_uom_purchase_manager" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="purchase.group_purchase_manager"/>
+    <field name="model_id" ref="product.model_product_uom"/>
+    <field name="name">product.uom purchase_manager</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="sale.access_product_uom_sale_manager" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="sales_team.group_sale_manager"/>
+    <field name="model_id" ref="product.model_product_uom"/>
+    <field name="name">product.uom salemanager</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="sale_stock.access_sale_order_line_stock_worker" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="stock.group_stock_user"/>
+    <field name="model_id" ref="delivery.model_sale_order_line"/>
+    <field name="name">sale.order.line stock worker</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="False"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="__export__.ir_model_access_1278" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="__export__.res_groups_82_dcc15e1d"/>
+    <field name="model_id" ref="account.model_res_partner"/>
+    <field name="name">res.partner.sale.user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="__export__.ir_model_access_1434" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="sales_team.group_sale_manager"/>
+    <field name="model_id" ref="account_invoice_numbering_on_journal.model_res_users"/>
+    <field name="name">res.users</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="__export__.ir_model_access_1435" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="sales_team.group_sale_salesman"/>
+    <field name="model_id" ref="account_invoice_numbering_on_journal.model_res_users"/>
+    <field name="name">res.users</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.product_uom_5f98fa25-67e9-49fc-b573-ac1c9e122103" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="product.model_product_uom"/>
+    <field name="name">product.uom</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="sale.access_sale_order_line_portal" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_portal"/>
+    <field name="model_id" ref="delivery.model_sale_order_line"/>
+    <field name="name">sale.order.line.portal</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="False"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.crm_sector_group_sys_fbe7c5ed-a589-4b7a-90b9-720387ae62ce" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.crm_sector_0acaa24b-f306-4354-83c5-6087e4cd8d44"/>
+    <field name="name">crm.sector group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.crm_sector_group_use_c966f75b-b244-4126-9d01-0c9665155cd5" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.crm_sector_0acaa24b-f306-4354-83c5-6087e4cd8d44"/>
+    <field name="name">crm.sector group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gorusmeler_group_sys_f4a7635a-3d9c-4493-8c97-2ece30412daa" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.gorusmeler_2dc896ca-7467-4d62-9136-2b00f638f705"/>
+    <field name="name">Görüşmeler group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.gorusmeler_group_use_04cfbd00-eb95-4b1c-a5eb-8e98e71b6f2f" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.gorusmeler_2dc896ca-7467-4d62-9136-2b00f638f705"/>
+    <field name="name">Görüşmeler group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gorusme_turleri_grou_31adaada-a365-408d-8f11-2c89e01b3cf3" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dcd"/>
+    <field name="name">Görüşme Türleri group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.gorusme_turleri_grou_d3d74346-f7d3-453b-85d0-208156e20919" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dcd"/>
+    <field name="name">Görüşme Türleri group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sales_group_ddfee86b-1e74-42aa-a106-31bcc8253547" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="sales_team.group_sale_salesman"/>
+    <field name="model_id" ref="tamekran_studio_customization.gorusmeler_2dc896ca-7467-4d62-9136-2b00f638f705"/>
+    <field name="name">sales_group</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.ozellik_grubu_group__b277f146-3af3-4160-bf4c-c83219a1eec5" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.ozellik_grubu_9d4a0b1e-edb2-4738-bf2d-9a0f0c75282b"/>
+    <field name="name">Özellik Grubu group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.ozellik_grubu_group__824b411f-9fe0-4f18-ab1e-6ff2657fc845" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.ozellik_grubu_9d4a0b1e-edb2-4738-bf2d-9a0f0c75282b"/>
+    <field name="name">Özellik Grubu group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.ozellik_degerleri_gr_f9c39e3a-2539-4cb6-a002-bbe74a486d6a" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.ozellik_degerleri_ad182637-dccb-4793-9fd1-9d8a618b39c7"/>
+    <field name="name">Özellik Değerleri group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.ozellik_degerleri_gr_95de9bcd-a72c-4e5d-bc5a-ddad5cfd7d10" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.ozellik_degerleri_ad182637-dccb-4793-9fd1-9d8a618b39c7"/>
+    <field name="name">Özellik Değerleri group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.urune_bagl_ozellikle_e3f34180-2bf7-490d-adbe-9baeeadd63ec" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.urune_bagl_ozellikle_2fe24f88-0606-419f-b230-d489b5fed9ce"/>
+    <field name="name">Ürüne Bağlı Özellikler group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.urune_bagl_ozellikle_f0a29b61-09d8-46e5-92db-d3898ec0a006" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.urune_bagl_ozellikle_2fe24f88-0606-419f-b230-d489b5fed9ce"/>
+    <field name="name">Ürüne Bağlı Özellikler group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.rota_iptal_detaylar__cc5b937a-bf08-4bfa-b580-9ed7d0e46715" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.rota_iptal_detaylar_c50a7e84-bf85-4acd-857c-7809409ee6a4"/>
+    <field name="name">Rota İptal Detayları group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.markalar_group_syste_d84b7102-5c6e-4465-896e-275ccb058384" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.markalar_d619f5ef-7331-41d4-8ce5-6da834e2159c"/>
+    <field name="name">Markalar group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.markalar_group_user_90c81512-cca3-4223-8ccf-06189c92f908" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.markalar_d619f5ef-7331-41d4-8ce5-6da834e2159c"/>
+    <field name="name">Markalar group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.markalar_persons_5777ccaa-d160-4a03-a0ff-fa20e3039b45" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="stock.group_stock_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.markalar_d619f5ef-7331-41d4-8ce5-6da834e2159c"/>
+    <field name="name">Markalar group_stock_users</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.urune_bagl_ozellikle_95c53305-936d-4020-b4f7-f46f5d3e6757" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="__export__.res_groups_121_86007431"/>
+    <field name="model_id" ref="tamekran_studio_customization.urune_bagl_ozellikle_2fe24f88-0606-419f-b230-d489b5fed9ce"/>
+    <field name="name">Ürüne Bağlı Özellikler group_edit_or_create_product</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.urun_dokumanlar_grou_108ebbd5-b892-46dd-95cc-41ad3bd98a63" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.urun_dokumanlar_d18605ca-010e-40c0-9432-617979ff78a8"/>
+    <field name="name">Ürün Dokümanları group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.urun_dokumanlar_grou_b21df8a1-b6a5-4217-bc75-ff41def674a0" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.urun_dokumanlar_d18605ca-010e-40c0-9432-617979ff78a8"/>
+    <field name="name">Ürün Dokümanları group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.musteri_tipleri_grou_9df31624-3c03-4d71-bfcf-1ab3071e3204" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="__export__.res_groups_183_2131a14b"/>
+    <field name="model_id" ref="tamekran_studio_customization.musteri_tipleri_c3274610-9705-43cc-b5ff-4c88a6c43535"/>
+    <field name="name">Müşteri Tipleri group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.musteri_tipleri_grou_ccea77f2-9ea2-4946-a2e7-10a59bf2d157" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="__export__.res_groups_184_81468b29"/>
+    <field name="model_id" ref="tamekran_studio_customization.musteri_tipleri_c3274610-9705-43cc-b5ff-4c88a6c43535"/>
+    <field name="name">Müşteri Tipleri group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.tahsilatlar_group_sy_85cfe461-3197-4122-b2fb-0ad480bc3428" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.tahsilatlar_c141e7ec-8971-4520-85d5-0f26c7940a6e"/>
+    <field name="name">Tahsilatlar group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.tahsilatlar_group_us_0a577f92-e43a-47a7-97f8-136770332d75" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.tahsilatlar_c141e7ec-8971-4520-85d5-0f26c7940a6e"/>
+    <field name="name">Tahsilatlar group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.odeme_tipleri_group__58218a62-242a-40de-8870-5a3468f8a6cc" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.odeme_tipleri_11b2373f-0968-405e-afd7-10e6ae2339fb"/>
+    <field name="name">Ödeme Tipleri group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.odeme_tipleri_group__74e8ca90-65e1-44f6-8bb5-020263ca0f4a" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.odeme_tipleri_11b2373f-0968-405e-afd7-10e6ae2339fb"/>
+    <field name="name">Ödeme Tipleri group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.odeme_vadeleri_group_dd653380-52ea-462b-ab26-2c0de7befeeb" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.odeme_vadeleri_d49bf8ea-d374-4772-a304-1eb9eff77347"/>
+    <field name="name">Ödeme Vadeleri group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.odeme_vadeleri_group_ee5d7e13-64ac-4913-9b27-88449c2efcbd" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.odeme_vadeleri_d49bf8ea-d374-4772-a304-1eb9eff77347"/>
+    <field name="name">Ödeme Vadeleri group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.urun_ailesi_group_sy_833f71e6-9c2c-41c7-aefa-6dc9c00d1ddf" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.urun_ailesi_9148fb60-27d1-46dd-ac29-43f28557382c"/>
+    <field name="name">Ürün Ailesi group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.urun_ailesi_group_us_1526ca11-d0d1-40ff-945d-a94df08032d2" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.urun_ailesi_9148fb60-27d1-46dd-ac29-43f28557382c"/>
+    <field name="name">Ürün Ailesi group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.odeme_turleri_group__a423e9aa-00a9-4a49-a6bc-1f4ed6295b50" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.odeme_turleri_35d430a5-63dc-4ac2-9ec4-2c3ef73e24e3"/>
+    <field name="name">Ödeme Türleri group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.odeme_turleri_group__0a1ed292-c737-4505-ad29-5b6ca27c83aa" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.odeme_turleri_35d430a5-63dc-4ac2-9ec4-2c3ef73e24e3"/>
+    <field name="name">Ödeme Türleri group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.ziyaret_turleri_grou_956365eb-0b18-42d6-b513-667cdc0367c1" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.ziyaret_turleri_af91dee9-7a71-4a9f-8c78-6c4d176ea579"/>
+    <field name="name">Ziyaret türleri group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.ziyaret_turleri_grou_8b124b46-a9ec-4665-8985-a8d7734272eb" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.ziyaret_turleri_af91dee9-7a71-4a9f-8c78-6c4d176ea579"/>
+    <field name="name">Ziyaret türleri group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.musteri_is_durumlar__6093df98-0f79-40bf-96dd-f530e18e6a59" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="tamekran_studio_customization.musteri_is_durumlar_87d6b868-6882-4145-9999-8fdefde26dcf"/>
+    <field name="name">Müşteri İş Durumları group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="tamekran_studio_customization.musteri_is_durumlar__8d8cd03c-bddc-47d8-a021-b2af00651bf6" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="tamekran_studio_customization.musteri_is_durumlar_87d6b868-6882-4145-9999-8fdefde26dcf"/>
+    <field name="name">Müşteri İş Durumları group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sale_order_line_stoc_b536a882-eb9a-4921-ae7c-a35b27fc33e8" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="model_id" ref="delivery.model_sale_order_line"/>
+    <field name="name">sale.order.line stock worker</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="False"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sale_order_line_dbd2b6ee-0330-430b-95a6-8f775fcf1b79" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="model_id" ref="delivery.model_sale_order_line"/>
+    <field name="name">sale.order.line</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sale_order_line_acco_c7b4d5ea-8dee-486f-b607-3f68f441f310" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="model_id" ref="delivery.model_sale_order_line"/>
+    <field name="name">sale.order.line accountant</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+</odoo>

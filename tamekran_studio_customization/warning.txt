@@ -1,0 +1,212 @@
+The following relational data haven't been exported because they either refer
+to a model that Studio doesn't export, or have no XML id:
+
+Record: account.group_account_invoice
+Model: res.groups
+Field: category_id
+Type: many2one
+Value: ir.module.category(1,) ('Muhasebe & Finans')
+
+Record: account.group_account_invoice
+Model: res.groups
+Field: users
+Type: many2many
+Value: res.users(1, 120, 33, 192, 193, 73, 191, 185, 30, 194, 190, 182) ('Administrator', 'Aysun Kaya', 'Cengiz Murat KURT', 'Depo Kullanıcısı', 'Erdoğan ŞAHİNOĞLU', 'MEHTAP YAZICI', 'Müge ÜN', 'Rabia KARAÇAM', 'SERKAN CAN', 'Şükrü KAPLAN', 'UMUT SİZKEN', 'Volkan Demirbağ')
+
+Record: stock.group_stock_manager
+Model: res.groups
+Field: category_id
+Type: many2one
+Value: ir.module.category(20,) ('Stok')
+
+Record: stock.group_stock_manager
+Model: res.groups
+Field: users
+Type: many2many
+Value: res.users(1, 120, 33, 193, 73, 191, 185, 30, 194, 190, 182) ('Administrator', 'Aysun Kaya', 'Cengiz Murat KURT', 'Erdoğan ŞAHİNOĞLU', 'MEHTAP YAZICI', 'Müge ÜN', 'Rabia KARAÇAM', 'SERKAN CAN', 'Şükrü KAPLAN', 'UMUT SİZKEN', 'Volkan Demirbağ')
+
+Record: tamekran_studio_customization.alacak_sigortas_limi_49301c20-c025-4a5d-a3bb-2585d2deff03
+Model: res.groups
+Field: users
+Type: many2many
+Value: res.users(1, 120, 30) ('Administrator', 'Aysun Kaya', 'SERKAN CAN')
+
+Record: __export__.res_groups_158_9fb7eb1d
+Model: res.groups
+Field: users
+Type: many2many
+Value: res.users(33, 194, 190) ('Cengiz Murat KURT', 'Şükrü KAPLAN', 'UMUT SİZKEN')
+
+Record: tamekran_studio_customization.birim_fiyat_gorebili_c4a0bac4-0fd8-4f81-a799-96fce079b2be
+Model: res.groups
+Field: users
+Type: many2many
+Value: res.users(120, 33, 30, 194, 190) ('Aysun Kaya', 'Cengiz Murat KURT', 'SERKAN CAN', 'Şükrü KAPLAN', 'UMUT SİZKEN')
+
+Record: tamekran_studio_customization.kontak_x_root_planne_f45eec2c-1ae4-4806-babb-75762c2f53ea
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.rota_turleri_x_root__3158514d-abf1-4245-bbe0-7ac33897fff2
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.asamalar_x_root_plan_a5385af2-e8bb-4826-a408-82e357ca6fc1
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.new_cok_satrl_metin__9cac1628-2779-4c1a-bf7d-af23c2cbe180
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.new_iliskili_alan_x__5c84be54-a6ec-41e7-a48b-63fe1262eaab
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.new_metin_x_root_pla_27f957cc-6b99-4252-afb1-2ba9f61dab5e
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.musteri_tipleri_x_ro_e4d5b9d7-2c2c-4224-9211-24aabe325397
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.gunluk_plan_x_root_p_39419b5c-4e92-460a-83aa-0302b596fd48
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.gunluk_plan_x_root_p_8c74e132-811a-46f8-add6-762cbb602a7a
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.new_iliskili_alan_x__7698b627-80cd-42a0-a7fd-a3f3d1eddbc6
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.kullanclar_x_root_pl_11ba9d91-e476-4838-94cf-68ab9e7ba2c6
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.new_iliskili_alan_x__9373fe71-d540-4963-8f9e-f96dc3058d98
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.new_iliskili_alan_x__08acf042-796c-48a3-a4b0-c59b88743563
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.ziyaret_turleri_x_ro_f9119e54-8241-4a37-b085-cbd77b2f544a
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.musteri_is_durumlar__69cde191-4e59-47d3-9356-0b15f0ab317f
+Model: ir.model.fields
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.odoo_studio_res_part_60dc1500-7539-4c3b-8ad2-192b403921df
+Model: ir.ui.view
+Field: inherit_id
+Type: many2one
+Value: ir.ui.view(16257,) ('res.partner.tree_customer_info')
+
+Record: tamekran_studio_customization.root_planndaki_bolge_6c8e14b0-6bab-4fb9-bf82-710a2a39f1c4
+Model: ir.actions.server
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.tarih_alann_doldurma_05f16559-4664-48de-bf8c-55f6bd3fba9a
+Model: ir.actions.server
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: tamekran_studio_customization.tarih_alann_doldurma_05f16559-4664-48de-bf8c-55f6bd3fba9a
+Model: ir.actions.server
+Field: fields_lines
+Type: one2many
+Value: ir.server.object.lines(2128,) ('ir.server.object.lines,2128')
+
+Record: tamekran_studio_customization.isim_alann_olusturma_e3ea2d03-a9e5-44a1-8312-c110172c9e4e
+Model: ir.actions.server
+Field: model_id
+Type: many2one
+Value: ir.model(1154,) ('Root Planı')
+
+Record: account.menu_finance
+Model: ir.ui.menu
+Field: groups_id
+Type: many2many
+Value: res.groups(42, 202, 41, 201, 43, 203) ('Muhasebe & Finans / Bütün Muhasebe Hesaplarını Göster', 'Muhasebe & Finans / Bütün Muhasebe Hesaplarını Göster (read)', 'Muhasebe & Finans / Faturalama', 'Muhasebe & Finans / Faturalama (read)', 'Muhasebe & Finans / Fatura Yöneticisi', 'Muhasebe & Finans / Fatura Yöneticisi (read)')
+
+Record: account_reports.menu_action_account_report_partner_ledger
+Model: ir.ui.menu
+Field: groups_id
+Type: many2many
+Value: res.groups(42, 202) ('Muhasebe & Finans / Bütün Muhasebe Hesaplarını Göster', 'Muhasebe & Finans / Bütün Muhasebe Hesaplarını Göster (read)')
+
+Record: account_reports.menu_account_financial_reports_tree
+Model: ir.ui.menu
+Field: groups_id
+Type: many2many
+Value: res.groups(43, 203, 8) ('Muhasebe & Finans / Fatura Yöneticisi', 'Muhasebe & Finans / Fatura Yöneticisi (read)', 'Ekstra Hakları / Teknik Özellikler')
+
+Record: tamekran_studio_customization.mt_tahsilat_listesi__47e2098b-1737-4c85-8cdf-d4e68ff34e09
+Model: ir.filters
+Field: action_id
+Type: many2one
+Value: ir.actions.actions(1724,) ('Yevmiye Kalemleri')
+
+Record: tamekran_studio_customization.m_t_baznda_k_k_tahsi_ac81af50-24df-4b33-b372-943c99b515ac
+Model: ir.filters
+Field: action_id
+Type: many2one
+Value: ir.actions.actions(1724,) ('Yevmiye Kalemleri')
+
+Record: tamekran_studio_customization.sale_order_line_stoc_b536a882-eb9a-4921-ae7c-a35b27fc33e8
+Model: ir.model.access
+Field: group_id
+Type: many2one
+Value: res.groups(200,) ('Stok / Kullanıcı (read)')
+
+Record: tamekran_studio_customization.sale_order_line_dbd2b6ee-0330-430b-95a6-8f775fcf1b79
+Model: ir.model.access
+Field: group_id
+Type: many2one
+Value: res.groups(201,) ('Muhasebe & Finans / Faturalama (read)')
+
+Record: tamekran_studio_customization.sale_order_line_acco_c7b4d5ea-8dee-486f-b607-3f68f441f310
+Model: ir.model.access
+Field: group_id
+Type: many2one
+Value: res.groups(202,) ('Muhasebe & Finans / Bütün Muhasebe Hesaplarını Göster (read)')

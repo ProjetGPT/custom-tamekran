@@ -1,0 +1,568 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="tamekran_studio_customization.transfer_miktarndan__b03faebd-d93c-4de0-a49a-d7aa4f14cd5a" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[if (record.picking_id.picking_type_code == 'outgoing'):
+  if (record.qty_done > record.product_uom_qty):
+    #if (record.product_uom_qty != 0):
+    raise Warning("Sipariş miktarından fazla ürün çıkışı yapamazsınız. Lütfen son okuttuğunuz ürünü ilgili rafına geri bırakınız...")
+
+
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="delivery.model_stock_move_line"/>
+    <field name="name">Transfer Miktarından fazla miktarda ürün okutamama</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.transfer_emrinde_olm_01f6d871-73bb-4f23-8cbf-899454c5d333" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[for b in record.sale_id.order_line:
+  if (b.product_id.barcode != record._barcode_scanned): 
+    raise Warning("Sipariş kalemlerinde olan ürünlerden farklı bir kalem ekleyemezsiniz. Muhtemelen yanlış ürünü okutuyorsunuz. Lütfen ürünleri tekrar kontrol ediniz.")
+    ]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="delivery.model_stock_picking"/>
+    <field name="name">Transfer Emrinde olmayan ürünü ekleyememe</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.alternatif_urunlerde_07ec0071-c162-40ab-9e93-0ccf173f8702" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[action = {'domain' : {'alternative_product_ids' : [('default_code', '!=', record.default_code)]}}
+
+
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="account.model_product_template"/>
+    <field name="name">Alternatif Ürünlerde Kendisi Gelmesin</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.root_planndaki_bolge_6c8e14b0-6bab-4fb9-bf82-710a2a39f1c4" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[if record.x_studio_field_8VSrL.state_id.code == '34':
+  record.update({'x_studio_field_PG3Ap': record.x_studio_field_8VSrL.city})
+else:
+  record.update({'x_studio_field_PG3Ap': record.x_studio_field_8VSrL.state_id.name})]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="name">Root Planındaki bölge alanını otomatik getirme</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.ozellik_degeri_domai_7b5fbaf6-4448-482d-aab7-ff782811a4fb" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[action = {
+  'domain': {
+    'x_studio_field_esjUA': [('x_studio_field_BA8ag', '=', record.x_studio_field_dGLv4.id)]
+  }
+}]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="tamekran_studio_customization.urune_bagl_ozellikle_2fe24f88-0606-419f-b230-d489b5fed9ce"/>
+    <field name="name">Özellik Değeri Domaini</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.mukerrer_ozellik_gru_bb816367-4e2c-4f1f-af31-84e7dfd90875" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[products = []
+for i in record.x_studio_field_3irPZ.x_studio_field_M4RN3:
+  products.append(i.x_studio_field_dGLv4.id)
+
+action = {'domain' : {'x_studio_field_dGLv4' : [('id', '!=', products)]}}
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="tamekran_studio_customization.urune_bagl_ozellikle_2fe24f88-0606-419f-b230-d489b5fed9ce"/>
+    <field name="name">Mükerrer Özellik Grubu Seçimini Engelleme</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.irsaliye_tipine_gore_48b4ab84-4e95-4019-a284-1a71425951a1_ir_actions_server" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[# Available variables:
+#  - env: Odoo Environment on which the action is triggered
+#  - model: Odoo Model of the record on which the action is triggered; is a void recordset
+#  - record: record on which the action is triggered; may be void
+#  - records: recordset of all records on which the action is triggered in multi-mode; may be void
+#  - time, datetime, dateutil, timezone: useful Python libraries
+#  - log: log(message, level='info'): logging function to record debug information in ir.logging table
+#  - Warning: Warning Exception to use with raise
+# To return an action, assign: action = {...}
+
+if(record.x_picking_type != False):
+  record.update({'invoice_state': 'none'})
+
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="delivery.model_stock_picking"/>
+    <field name="name">İrsaliye Tipine göre Fatura durumu alanını güncelleme</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.bakiye_alann_guncell_6095fb0d-6eae-4a08-998c-9f9b3948f5f6" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[# Available variables:
+#  - env: Odoo Environment on which the action is triggered
+#  - model: Odoo Model of the record on which the action is triggered; is a void recordset
+#  - record: record on which the action is triggered; may be void
+#  - records: recordset of all records on which the action is triggered in multi-mode; may be void
+#  - time, datetime, dateutil, timezone: useful Python libraries
+#  - log: log(message, level='info'): logging function to record debug information in ir.logging table
+#  - Warning: Warning Exception to use with raise
+# To return an action, assign: action = {...}
+
+
+
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="account.model_res_partner"/>
+    <field name="name">Bakiye alanını güncelleme</field>
+    <field name="sequence">5</field>
+    <field name="state">object_write</field>
+  </record>
+  <record id="tamekran_studio_customization.bakiye_hesapla_d1935741-47bf-438c-bd32-8db161a6e0ac" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[# Available variables:
+#  - env: Odoo Environment on which the action is triggered
+#  - model: Odoo Model of the record on which the action is triggered; is a void recordset
+#  - record: record on which the action is triggered; may be void
+#  - records: recordset of all records on which the action is triggered in multi-mode; may be void
+#  - time, datetime, dateutil, timezone: useful Python libraries
+#  - log: log(message, level='info'): logging function to record debug information in ir.logging table
+#  - Warning: Warning Exception to use with raise
+# To return an action, assign: action = {...}
+
+record.update({'x_studio_field_A9AN6': (record.partner_id.credit - record.partner_id.debit)})
+
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="name">Satış siparişi Bakiye hesapla</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.tarih_alann_doldurma_05f16559-4664-48de-bf8c-55f6bd3fba9a" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[# Available variables:
+#  - env: Odoo Environment on which the action is triggered
+#  - model: Odoo Model of the record on which the action is triggered; is a void recordset
+#  - record: record on which the action is triggered; may be void
+#  - records: recordset of all records on which the action is triggered in multi-mode; may be void
+#  - time, datetime, dateutil, timezone: useful Python libraries
+#  - log: log(message, level='info'): logging function to record debug information in ir.logging table
+#  - Warning: Warning Exception to use with raise
+# To return an action, assign: action = {...}
+
+
+
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="name">Tarih alanını doldurma</field>
+    <field name="sequence">5</field>
+    <field name="state">object_write</field>
+  </record>
+  <record id="tamekran_studio_customization.bakiye_alannn_hesapl_90345969-09dc-43bc-b095-bed4c7e7730b_ir_actions_server" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[record.update({'x_studio_field_Y3pUv': (record.amount_total - record.x_studio_field_INxEu)})]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="l10n_tr_account_document_purchase.model_purchase_order"/>
+    <field name="name">Bakiye Alanının Hesaplanması</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.rota_planndaki_durum_c66564ec-f9cd-40e0-896a-5a4d9c66a174" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[record.x_studio_field_dYHsL.update({'x_studio_field_JaVvX':3})
+
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="tamekran_studio_customization.rota_iptal_detaylar_c50a7e84-bf85-4acd-857c-7809409ee6a4"/>
+    <field name="name">Rota planındaki durum alanını güncelleme</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.isim_alann_olusturma_e3ea2d03-a9e5-44a1-8312-c110172c9e4e" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[record.update({'x_name': record.x_studio_field_8VSrL.name + ' - ' + str(record.x_studio_field_fJwte)})
+
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="name">Rota Planı ekranındaki İsim alanını oluşturma</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_km_bilgisi_he_03cd9a53-9df4-42b5-932d-c84f57b7f1f3" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[if(record.x_studio_field_ZOzw3 - record.x_studio_field_k5hiw) != record.x_studio_field_u2hBh:
+  record.update({'x_studio_field_u2hBh' : (record.x_studio_field_ZOzw3 - record.x_studio_field_k5hiw)})]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="tamekran_studio_customization.gunluk_plan_85df7b78-1d38-4882-8711-97087d84b0f9"/>
+    <field name="name">Günlük KM Bilgisi hesaplama</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.rota_turleri_bilgisi_2493b1e5-1d7d-4e01-bd14-a5db18be575d" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[ziyaret = 0
+arama = 0
+email = 0
+rutin_ziyaret = 0
+dijital_ziyaret = 0
+for r in record.x_studio_field_Yx0X5:
+  if r.x_studio_field_bFy5v.x_studio_field_woWgL == 'Ziyaret':
+    ziyaret = ziyaret + 1
+  if r.x_studio_field_bFy5v.x_studio_field_woWgL == 'Arama':
+    arama = arama + 1
+  if r.x_studio_field_bFy5v.x_studio_field_woWgL == 'E-Mail':
+    email = email + 1
+  
+  if r.x_studio_field_4b0YS.id == 1:
+    rutin_ziyaret += 1
+  elif r.x_studio_field_4b0YS.id == 2:
+    dijital_ziyaret += 1
+
+
+record.update({"x_studio_field_zlYiP": ziyaret})
+record.update({"x_studio_field_5kv6v": arama})
+record.update({"x_studio_field_g6P6h": email})
+record.update({"x_studio_field_GYgWG": rutin_ziyaret})
+record.update({"x_studio_field_nALhZ": dijital_ziyaret})
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="tamekran_studio_customization.gunluk_plan_85df7b78-1d38-4882-8711-97087d84b0f9"/>
+    <field name="name">Rota Türleri ve Ziyaret Türlerinin Toplamlarını Hesaplama</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.temsilci_bilgisini_g_ac1356a0-d939-45ed-ac1c-f0a061054948" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[record.update({'x_name': str(record.x_studio_field_hHZhh) + ' - ' + user.name})]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="tamekran_studio_customization.gunluk_plan_85df7b78-1d38-4882-8711-97087d84b0f9"/>
+    <field name="name">İsim alanını doldurma</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.mukerrer_ozellik_gru_5d5825a5-d780-48ac-8253-c74656d4bf22" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[l = []
+for m in record.x_studio_field_3irPZ.x_studio_field_M4RN3:
+  l.append(m.x_studio_field_dGLv4)
+if (l.count(record.x_studio_field_dGLv4)>=3):
+  raise Warning("Bir ürüne aynı özellik grubunu birden fazla giriş yapamazsınız.")
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="tamekran_studio_customization.urune_bagl_ozellikle_2fe24f88-0606-419f-b230-d489b5fed9ce"/>
+    <field name="name">Mükerrer özellik grubu girme</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.acil_durumlarda_mail_0ad72a58-8590-45b4-80db-5dd0caa68e82" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[# Available variables:
+#  - env: Odoo Environment on which the action is triggered
+#  - model: Odoo Model of the record on which the action is triggered; is a void recordset
+#  - record: record on which the action is triggered; may be void
+#  - records: recordset of all records on which the action is triggered in multi-mode; may be void
+#  - time, datetime, dateutil, timezone: useful Python libraries
+#  - log: log(message, level='info'): logging function to record debug information in ir.logging table
+#  - Warning: Warning Exception to use with raise
+# To return an action, assign: action = {...}
+
+
+
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="helpdesk.model_helpdesk_ticket"/>
+    <field name="name">Acil Durumlarda Mail Atama</field>
+    <field name="sequence">5</field>
+    <field name="state">email</field>
+  </record>
+  <record id="tamekran_studio_customization.urun_ailesine_eklene_ea5b310a-34fd-49ea-b198-13935e4c59d6" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[for u in record.x_studio_field_zkXly:
+  if u.x_studio_field_qlpRY.id != record.id:
+    u.update({'x_studio_field_qlpRY': record.id})
+    #record.x_studio_field_zkXly.update({'x_studio_field_qlpRY': record.id})
+
+for x in record.x_studio_field_TvKcA:
+  if x.x_studio_field_qlpRY.id != record.id:
+    x.update({'x_studio_field_qlpRY': record.id})
+    #record.x_studio_field_TvKcA.update({'x_studio_field_qlpRY': record.id})
+  
+
+#l = []
+#for i in record.x_studio_field_YIOKR:
+#  l.append(i.id)
+#
+#for a in l:
+#  if record in record.x_studio_field_YIOKR:
+#    #a['x_studio_field_YIOKR'] = [record.id]
+#    #env['x_product_family'].create({'x_studio_field_YIOKR' : [record.id]})
+#    record.x_studio_field_YIOKR.update({'x_studio_field_YIOKR': [record.id]})
+    #raise Warning(a)
+    
+    
+
+a = []
+for i in record.x_studio_field_YIOKR:
+  a.append(str(i.id)+" \n")
+
+xi = []
+for i in env['x_product_family'].search([('id', 'in', a),('x_studio_field_YIOKR', 'not in', record.id)]):
+  xi.append(i.id)
+
+for r in env['x_product_family'].search([('id', 'in', xi)]):
+  r['x_studio_field_YIOKR'] = [record.id]
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="tamekran_studio_customization.urun_ailesi_9148fb60-27d1-46dd-ac29-43f28557382c"/>
+    <field name="name">Ürün ailesine eklenen ürünlerin ürün ailesi alanını güncelleme</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.toplam_alanlarn_hesa_9cc28bb7-19ac-4de1-b350-a19e42e8bc9a" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[try_tahsilat = 0
+eur_tahsilat = 0
+usd_tahsilat = 0
+
+for t in record.x_studio_field_IwyHE:
+  if t.x_studio_field_t76HR.id == 32:
+    try_tahsilat = try_tahsilat + t.x_studio_field_MR0G6
+  if t.x_studio_field_t76HR.id == 1:
+    kur = env['res.currency.rate'].search([('currency_id', '=', t.x_studio_field_t76HR.id), ('name', '=', t.x_studio_field_GLBCx), ('currency_rate_type_id', '=', False), ('company_id', '=', t.x_studio_field_CtNkl.company_id.id)])
+    eur_tahsilat = eur_tahsilat + (kur.inverse_rate * t.x_studio_field_MR0G6)
+  if t.x_studio_field_t76HR.id == 3:
+    kur = env['res.currency.rate'].search([('currency_id', '=', t.x_studio_field_t76HR.id), ('name', '=', t.x_studio_field_GLBCx), ('currency_rate_type_id', '=', False), ('company_id', '=', t.x_studio_field_CtNkl.company_id.id)])
+    usd_tahsilat = usd_tahsilat + (kur.inverse_rate * t.x_studio_field_MR0G6)
+    
+record.update({'x_studio_field_72Wcu' : try_tahsilat + eur_tahsilat + usd_tahsilat})
+
+if not record.x_studio_field_IwyHE:
+  record.update({'x_studio_field_72Wcu' : 0})
+
+################  Tahsilat Hesaplaması Sonu  ################################################################################################
+
+try_fatura = 0
+eur_fatura = 0
+usd_fatura = 0
+try_iade_fatura = 0
+eur_iade_fatura = 0
+usd_iade_fatura = 0
+
+for f in record.x_studio_field_r69Th:
+  if f.state!= 'cancel':
+    if f.type == 'out_invoice':
+      if f.currency_id.id == 32:
+        try_fatura = try_fatura + f.amount_untaxed
+      if f.currency_id.id == 1:
+        eur_fatura = eur_fatura + (f.currency_inverse_rate * f.amount_untaxed)
+      if f.currency_id.id == 3:
+        usd_fatura = usd_fatura + (f.currency_inverse_rate * f.amount_untaxed)
+    if f.type == 'out_refund':
+      if f.currency_id.id == 32:
+        try_iade_fatura = try_iade_fatura + f.amount_untaxed
+      if f.currency_id.id == 1:
+        eur_iade_fatura = eur_iade_fatura + (f.currency_inverse_rate * f.amount_untaxed)
+      if f.currency_id.id == 3:
+        usd_iade_fatura = usd_iade_fatura + (f.currency_inverse_rate * f.amount_untaxed)
+        
+record.update({'x_studio_field_kCOZf' : try_fatura + eur_fatura + usd_fatura})
+record.update({'x_studio_field_DlxvT' : try_iade_fatura + eur_iade_fatura + usd_iade_fatura})
+  
+if not record.x_studio_field_r69Th:
+  record.update({'x_studio_field_kCOZf' : 0})
+  record.update({'x_studio_field_DlxvT' : 0})
+
+################  Faturaların Hesaplaması Sonu  ################################################################################################
+
+try_teklif = 0
+eur_teklif = 0
+usd_teklif = 0
+try_siparis = 0
+eur_siparis = 0
+usd_siparis = 0
+
+for o in record.x_studio_field_sSFci:
+  if o.state!= 'cancel':
+    if o.state in ('draft','sent'):
+      if o.currency_id.id == 32:
+        try_teklif = try_teklif + o.amount_untaxed
+      if o.currency_id.id == 1:
+        kur = env['res.currency.rate'].search([('currency_id', '=', o.currency_id.id), ('name', '=', o.date_order), ('currency_rate_type_id', '=', False), ('company_id', '=', o.company_id.id)])
+        eur_teklif = eur_teklif + (kur.inverse_rate * o.amount_untaxed)
+      if o.currency_id.id == 3:
+        kur = env['res.currency.rate'].search([('currency_id', '=', o.currency_id.id), ('name', '=', o.date_order), ('currency_rate_type_id', '=', False), ('company_id', '=', o.company_id.id)])
+        usd_teklif = usd_teklif + (kur.inverse_rate * o.amount_untaxed)
+    if o.state in ('sale','done'):
+      if o.currency_id.id == 32:
+        try_siparis = try_siparis + o.amount_untaxed
+      if o.currency_id.id == 1:
+        kur = env['res.currency.rate'].search([('currency_id', '=', o.currency_id.id), ('name', '=', o.date_order), ('currency_rate_type_id', '=', False), ('company_id', '=', o.company_id.id)])
+        eur_siparis = eur_siparis + (kur.inverse_rate * o.amount_untaxed)
+      if o.currency_id.id == 3:
+        kur = env['res.currency.rate'].search([('currency_id', '=', o.currency_id.id), ('name', '=', o.date_order), ('currency_rate_type_id', '=', False), ('company_id', '=', o.company_id.id)])
+        usd_siparis = usd_siparis + (kur.inverse_rate * o.amount_untaxed)
+        
+  record.update({'x_studio_field_1Lrtl' : try_teklif + eur_teklif + usd_teklif})
+  record.update({'x_studio_field_H4EPB' : try_siparis + eur_siparis + usd_siparis})
+
+if not record.x_studio_field_sSFci:
+  record.update({'x_studio_field_1Lrtl' : 0})
+  record.update({'x_studio_field_H4EPB' : 0})
+  
+################  Teklif ve Sipariş Hesaplaması Sonu  ################################################################################################
+
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="tamekran_studio_customization.gunluk_plan_85df7b78-1d38-4882-8711-97087d84b0f9"/>
+    <field name="name">Toplam alanlarını hesaplama</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.urun_ailesi_secimine_c0c9ce95-4632-4637-8401-848b3c14bf55" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[action = {
+  'domain': {
+    'x_studio_field_YIOKR': [('id', 'not in', record.id)]
+  }
+}]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="tamekran_studio_customization.urun_ailesi_9148fb60-27d1-46dd-ac29-43f28557382c"/>
+    <field name="name">Ürün ailesi seçimine kendisinin gelmesini engelleme</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.odeme_tiplerine_gore_8feb5853-3a5c-402f-8108-36b2a4e4a1a1" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[action = {
+  'domain': {
+    'x_studio_field_Lazge': [('x_studio_field_dCzdA', 'in', record.x_studio_field_r1b7f.id)]
+  }
+}]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="account.model_res_partner"/>
+    <field name="name">Ödeme Tiplerine Göre Vade Bilgisini Getirme</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.odeme_turlerine_gore_bf7b3a40-a716-47d7-b55c-30253e607fcc" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[action = {
+  'domain': {
+    'x_studio_field_r1b7f': [('x_studio_field_C4mNY', '=', record.x_studio_field_p4br6.id)]
+  }
+}]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="account.model_res_partner"/>
+    <field name="name">Ödeme Türlerine Göre Ödeme Tipleri Getirme</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="tamekran_studio_customization.odeme_tipine_gore_va_ea3e0d5e-5a13-4801-b72a-37490088f478" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[record.update({'x_studio_field_Lazge': False})]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="account.model_res_partner"/>
+    <field name="name">Ödeme Tipine Göre vade bilgisini boşaltma</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+</odoo>

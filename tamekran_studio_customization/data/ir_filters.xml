@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="tamekran_studio_customization.mt_tahsilat_listesi__47e2098b-1737-4c85-8cdf-d4e68ff34e09" model="ir.filters" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="context">{'pivot_measures': ['balance', 'debit', 'credit'], 'pivot_column_groupby': ['date'], 'pivot_row_groupby': ['date:year', 'x_studio_field_7c8Re', 'partner_id']}</field>
+    <field name="domain">["&amp;",["date","&gt;=","2020-01-01"],["account_id.code","=","12000000"]]</field>
+    <field name="is_default" eval="False"/>
+    <field name="model_id">account.move.line</field>
+    <field name="name">MT Tahsilat Listesi 2020</field>
+    <field name="sort">[]</field>
+  </record>
+  <record id="tamekran_studio_customization.m_t_baznda_k_k_tahsi_ac81af50-24df-4b33-b372-943c99b515ac" model="ir.filters" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="context">{'default_account_id': 10741, 'group_by': ['journal_id'], 'pivot_measures': ['balance'], 'pivot_column_groupby': ['date'], 'pivot_row_groupby': ['x_studio_field_7c8Re'], 'orderedBy': []}</field>
+    <field name="domain">[['account_id', '=', 10741], ['partner_id', '!=', False], ['date', '&gt;', '2019-12-31'], ['credit', '&gt;', 0], ['journal_id', '!=', 6], ['journal_id', '!=', 166], ['journal_id', '!=', 4]]</field>
+    <field name="is_default" eval="False"/>
+    <field name="model_id">account.move.line</field>
+    <field name="name">M.T. Bazında K.K. Tahsilat Raporu</field>
+    <field name="sort">[]</field>
+  </record>
+</odoo>

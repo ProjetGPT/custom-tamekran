@@ -1,0 +1,774 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="account.menu_finance" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="name">Muhasebe</field>
+    <field name="parent_id" eval="False"/>
+    <field name="sequence">40</field>
+    <field name="web_icon">account_accountant,static/description/icon.png</field>
+  </record>
+  <record id="stock.menu_stock_warehouse_mgmt" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Operasyonlar</field>
+    <field name="parent_id" ref="stock.menu_stock_root"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="sale.menu_sale_quotations" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="sale.action_quotations"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_salesman'), ref('sales_team.group_sale_manager')])]"/>
+    <field name="name">Teklifler</field>
+    <field name="parent_id" ref="sale.sale_order_menu"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="account.menu_finance_entries_generate_entries" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Kayıtları Oluştur</field>
+    <field name="parent_id" ref="account.menu_finance_entries"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="account_asset.menu_asset_depreciation_confirmation_wizard" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="account_asset.action_asset_depreciation_confirmation_wizard"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Sabit Kıymet Kayıtları Oluştur</field>
+    <field name="parent_id" ref="account.menu_finance_entries_generate_entries"/>
+    <field name="sequence">111</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="stock.stock_move_menu" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="stock.stock_move_action"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Stok Hareketleri</field>
+    <field name="parent_id" ref="stock.menu_warehouse_report"/>
+    <field name="sequence">140</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="sale.res_partner_menu" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_partner_form"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_salesman'), ref('sales_team.group_sale_manager')])]"/>
+    <field name="name">Müşteriler</field>
+    <field name="parent_id" ref="sale.sale_order_menu"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="sale.product_menu_catalog" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="product.product_template_action"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_salesman'), ref('sales_team.group_sale_manager')])]"/>
+    <field name="name">Katalog</field>
+    <field name="parent_id" ref="sale.sale_menu_root"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="account_reports.menu_action_account_report_partner_ledger" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="account_reports.action_account_report_partner_ledger"/>
+    <field name="active" eval="True"/>
+    <field name="name">İş Ortağı Defteri</field>
+    <field name="parent_id" ref="account_reports.account_reports_partners_reports_menu"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="account_reports.menu_account_financial_reports_tree" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="account_reports.action_account_financial_report_tree"/>
+    <field name="active" eval="True"/>
+    <field name="name">Mali Raporlar</field>
+    <field name="parent_id" ref="account.account_management_menu"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="account_accountant.menu_action_change_lock_date" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="account_accountant.action_view_account_change_lock_date"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_157_32c902eb')])]"/>
+    <field name="name">Kilit Tarihleri</field>
+    <field name="parent_id" ref="account.menu_finance_entries_actions"/>
+    <field name="sequence">30</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_urun_varyantlar_a250df13-9dbe-471f-8c16-45b9f679505c" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.urun_varyantlar_54d9bd12-468b-489e-8a5c-e2af9db1b761"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Ürün Varyantları</field>
+    <field name="parent_id" ref="stock.menu_stock_inventory_control"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.satnalma_satn_alma_k_63650b5b-0d88-4a76-83b5-e81f294bca60" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.satn_alma_kalemleri_64855118-f11c-4c38-b8d3-7a0929bcbcfb"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Satın Alma Kalemleri</field>
+    <field name="parent_id" ref="purchase.menu_procurement_management"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_nitelikler_c4addfcf-8720-4db7-a65a-020b05254f83" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.nitelikler_1c7fb017-2c59-42cb-a5c5-ad2df75e0f62"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Nitelikler</field>
+    <field name="parent_id" ref="sale.prod_config_main"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_nitelik_degerle_67d4fbf1-541b-4e04-beda-845459175ec9" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.nitelik_degerleri_6c1ccd52-af0d-4dbc-ba96-5b38f1ef8586"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Nitelik Değerleri</field>
+    <field name="parent_id" ref="sale.prod_config_main"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.crm_kaynak_65f0cd4c-2790-45e3-aeaf-547af2672eca" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.kaynak_d5c79d2b-d8b6-40f1-9e54-fac89bfb5cd8"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Kaynak</field>
+    <field name="parent_id" ref="crm.crm_menu_config"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.crm_kampanyalar_f4e2c9f8-1ccb-4dcf-b2e1-09d3b224c6bf" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.kampanyalar_efef5a7f-c565-4938-baa3-103ea5367825"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Kampanyalar</field>
+    <field name="parent_id" ref="crm.crm_menu_config"/>
+    <field name="sequence">4</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_tedarik_kuralla_c78eb140-1c53-4317-aa53-a7ef977742eb" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.tedarik_kurallar_a9dd8a74-2625-4779-bbce-c43642fee6c9"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Tedarik Kuralları</field>
+    <field name="parent_id" ref="stock.menu_stock_root"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.satnalma_urun_tedari_a483addf-5598-4b5d-a274-5ff214feea64" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.urun_tedarikci_bilgi_3a352843-14b5-4c23-a207-fe47f2eea867"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Ürün Tedarikçi Bilgileri</field>
+    <field name="parent_id" ref="purchase.menu_procurement_management"/>
+    <field name="sequence">7</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.crm_sektorler_bd854edb-210d-49e8-bd6e-b00152920385" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.sektorler_d01ab6d6-e31b-4f3f-8850-c19fa86bc5a7"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Sektörler</field>
+    <field name="parent_id" ref="crm.crm_menu_config"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_gelen_urunler_9a094a15-a95d-4d88-a439-9dda88b269ae" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.gelen_urunler_58920f1f-aec3-4fa3-b057-bfc1d50c837d"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Gelen Ürünler</field>
+    <field name="parent_id" ref="sale.product_menu_catalog"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.crm_sektorler_4f57ecd9-e9d3-4283-a484-d0a39deb4204" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.sektorler_4c776ffe-411e-4cf5-86b6-f09f985fe388"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Sektörler</field>
+    <field name="parent_id" ref="crm.crm_menu_config"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_stoklar_1d8def23-3d26-41be-a633-155424691b02" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.stoklar_70ccb0a1-a7b2-4bf4-bf99-512ed67cb4eb"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Stoklar</field>
+    <field name="parent_id" ref="stock.menu_warehouse_report"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_tedarik_kuralla_5391d39d-0d96-4022-8450-cff854c6d0d8" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.tedarik_kurallar_3fd0c75a-9bf8-4f97-afd6-de45b800a068"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Tedarik kuralları</field>
+    <field name="parent_id" ref="stock.menu_stock_root"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_tedarik_kuralla_46322b29-c000-417b-93e1-d92bed96764a" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.tedarik_kurallar_5634fb1b-cede-430d-8d02-9b47f213f30d"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Tedarik Kuralları</field>
+    <field name="parent_id" ref="stock.menu_stock_root"/>
+    <field name="sequence">4</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_tedarik_kuralla_760d8168-34a2-4938-8f84-3ad3f1d56f0a" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.tedarik_kurallar_89961eff-0b6f-4578-9fb7-7c3c10bc0cc7"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Tedarik Kuralları</field>
+    <field name="parent_id" ref="stock.menu_stock_root"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_musteri_bilgile_31c4c74b-d7c7-409d-90ad-63ccb01580b4" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.musteri_bilgileri_a06b2898-7097-422a-be73-5fb393bc0a9b"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Müşteri Bilgileri</field>
+    <field name="parent_id" ref="sale.sale_menu_root"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_musteri_bilgile_eff58a4a-c5b7-4f93-a47f-64c7c1672ec2" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.musteri_bilgileri_af74cd1a-e8e9-4540-b0c1-62d8984adbcb"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Müşteri Bilgileri</field>
+    <field name="parent_id" ref="sale.sale_menu_root"/>
+    <field name="sequence">7</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_tedarik_kuralla_2f320b4a-16b0-4235-8bc0-4566bfeee72d" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.tedarik_kurallar_af3c481b-79a3-4238-b033-32d42dac700e"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Tedarik Kuralları</field>
+    <field name="parent_id" ref="stock.menu_stock_config_settings"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_siparis_kalemle_6a1f9765-a65e-4bbb-957d-127520d52f44" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.siparis_kalemleri_be1bf1ea-64dc-4b5f-9f66-14bbaf0aa5a7"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Sipariş Kalemleri</field>
+    <field name="parent_id" ref="sale.sale_order_menu"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_ek_maliyet_82c331ca-603b-461e-a239-d7d7633ecf28" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.ek_maliyet_44b7993d-ff93-4387-9918-8be2f58af3b9"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Ek Maliyet</field>
+    <field name="parent_id" ref="stock.menu_stock_warehouse_mgmt"/>
+    <field name="sequence">5</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_tedarik_kuralla_d32536c6-d3ca-46ec-839f-423eec4f6007" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.tedarik_kurallar_01563882-04ea-4cb6-88f3-5665701b9c97"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Tedarik Kuralları</field>
+    <field name="parent_id" ref="stock.menu_stock_root"/>
+    <field name="sequence">4</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.muhasebe_muhasebe_is_3d1dbea7-c9e0-4d86-8cba-54ea674f7483" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Muhasebe İşlemleri</field>
+    <field name="parent_id" ref="account.menu_finance"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.muhasebe_yevmiye_kay_9ae00858-fa48-4002-8c48-19871b69be0f" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.yevmiye_kaytlar_5d869f16-d5cf-4b5b-9750-d26bcf591df8"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Yevmiye Kayıtları</field>
+    <field name="parent_id" ref="tamekran_studio_customization.muhasebe_muhasebe_is_3d1dbea7-c9e0-4d86-8cba-54ea674f7483"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.muhasebe_yevmiye_kal_66527e48-6d15-48d9-b8d4-0ef066e8b47e" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.yevmiye_kalemleri_5a55c6fc-02f3-4052-95a7-78e38f87a862"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Yevmiye Kalemleri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.muhasebe_muhasebe_is_3d1dbea7-c9e0-4d86-8cba-54ea674f7483"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_gorusmeler_cb70250b-f083-4893-ad7c-c6659f43cd7c" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_salesman'), ref('sales_team.group_sale_salesman_all_leads'), ref('sales_team.group_sale_manager')])]"/>
+    <field name="name">Görüşmeler</field>
+    <field name="parent_id" ref="sale.sale_menu_root"/>
+    <field name="sequence">8</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_planl_gorusmele_9adc80dd-1328-40d6-8c1c-87b2d03aa83a" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.planl_gorusmeler_334e6ff9-bfdf-4ac9-94c7-f02eaa5c7321"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_salesman'), ref('sales_team.group_sale_salesman_all_leads'), ref('sales_team.group_sale_manager')])]"/>
+    <field name="name">Planlı Görüşmeler</field>
+    <field name="parent_id" ref="tamekran_studio_customization.sats_gorusmeler_cb70250b-f083-4893-ad7c-c6659f43cd7c"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_gorusme_turleri_33699977-6642-4890-8570-ca222581dd92" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.gorusme_turleri_0d17bdb2-4853-4177-a5f0-584e4015d049"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_manager')])]"/>
+    <field name="name">Görüşme Türleri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.sats_gorusmeler_cb70250b-f083-4893-ad7c-c6659f43cd7c"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_yaplan_gorusmel_600d0ba0-3cab-4775-a623-e0b5eb946de0" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.yaplan_gorusmeler_ed690444-662f-4cfc-833b-02feb234629a"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_salesman'), ref('sales_team.group_sale_salesman_all_leads'), ref('sales_team.group_sale_manager')])]"/>
+    <field name="name">Yapılan Görüşmeler</field>
+    <field name="parent_id" ref="tamekran_studio_customization.sats_gorusmeler_cb70250b-f083-4893-ad7c-c6659f43cd7c"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_finans_adf4ef8a-a2bd-4a9e-b1c3-752c950beb67" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Finans</field>
+    <field name="parent_id" ref="sale.sale_menu_root"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_is_ortag_bakiye_161e7d5d-77de-42e9-b1f8-1f3d0a98cea7" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="account_reports.action_account_report_partner_ledger"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_salesman'), ref('sales_team.group_sale_salesman_all_leads'), ref('sales_team.group_sale_manager')])]"/>
+    <field name="name">İş ortağı Bakiye</field>
+    <field name="parent_id" ref="tamekran_studio_customization.sats_finans_adf4ef8a-a2bd-4a9e-b1c3-752c950beb67"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_alacak_yaslandr_278697f6-eae1-4fb4-8a34-2ab4cf167715" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="account_reports.action_account_report_ar"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_salesman'), ref('sales_team.group_sale_salesman_all_leads'), ref('sales_team.group_sale_manager')])]"/>
+    <field name="name">Alacak Yaşlandırma</field>
+    <field name="parent_id" ref="tamekran_studio_customization.sats_finans_adf4ef8a-a2bd-4a9e-b1c3-752c950beb67"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_musteri_odemele_6a579a7d-59ac-4471-b38a-b04b0327be59" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.musteri_odemeleri_b8984405-7c9d-4628-81ac-c9d1933e546c"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Müşteri Ödemeleri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.sats_finans_adf4ef8a-a2bd-4a9e-b1c3-752c950beb67"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.muhasebe_manuel_uzla_fb664dae-1df1-49d6-8b08-eeb53f266b24" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="account.action_manual_reconciliation"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Manuel Uzlaştırma</field>
+    <field name="parent_id" ref="tamekran_studio_customization.muhasebe_muhasebe_is_3d1dbea7-c9e0-4d86-8cba-54ea674f7483"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_tedarik_kural_cace5aa1-0fd1-4be2-b18c-ec08fe1ff611" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.tedarik_kural_bb570b5b-e9d2-4870-9db4-fbcc3a648784"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Tedarik kuralı</field>
+    <field name="parent_id" ref="stock.menu_stock_root"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_sanal_yaslandrm_2ebf194e-d6ec-4215-b204-42e8d3962e85" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="virtual_aging_partner_balance_report.virtual_aging_partner_balance_report_view"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_salesman'), ref('sales_team.group_sale_salesman_all_leads'), ref('sales_team.group_sale_manager')])]"/>
+    <field name="name">Sanal Yaşlandırma Raporu</field>
+    <field name="parent_id" ref="tamekran_studio_customization.sats_finans_adf4ef8a-a2bd-4a9e-b1c3-752c950beb67"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.test_9e728507-4fee-416e-acd4-dcb2020385d5" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">test</field>
+    <field name="parent_id" eval="False"/>
+    <field name="sequence">10</field>
+    <field name="web_icon">fa fa-code,#f1c40f,#34495e</field>
+  </record>
+  <record id="tamekran_studio_customization.test_testentity_e26f5956-0977-40cb-9bc0-13995e0db6d2" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">testentity</field>
+    <field name="parent_id" ref="tamekran_studio_customization.test_9e728507-4fee-416e-acd4-dcb2020385d5"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.muhasebe_donem_tiple_2d96603b-347c-40b0-9623-a7ecd1193534" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.donem_tipleri_c695d2c6-c9ea-4d57-9345-be195f517f91"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Dönem Tipleri</field>
+    <field name="parent_id" ref="date_range.menu_date_range_accounting"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_gelistirmeler_f645efb0-7855-4fb8-a7ea-8889ec24c07d" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Geliştirmeler</field>
+    <field name="parent_id" ref="stock.menu_stock_config_settings"/>
+    <field name="sequence">6</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_urun_ozellikler_31b7a2b9-d8da-420f-ab44-1d94b4006655" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Ürün Özellikleri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.stok_gelistirmeler_f645efb0-7855-4fb8-a7ea-8889ec24c07d"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_ozellik_gruplar_d7dea56a-1c09-4906-a0f1-46984fcd6ed6" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.ozellik_gruplar_f98c7d6d-c8f5-4341-a025-9219d0a30ce4"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Özellik Grupları</field>
+    <field name="parent_id" ref="tamekran_studio_customization.sats_urun_ozellikler_31b7a2b9-d8da-420f-ab44-1d94b4006655"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_ozellik_degerle_c30a4497-3c69-4b76-b34f-b96306d37277" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.ozellik_degerleri_7f68eb6d-7e31-4fa4-91a5-f754e6f93e91"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Özellik Değerleri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.sats_urun_ozellikler_31b7a2b9-d8da-420f-ab44-1d94b4006655"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.sats_urun_bagl_ozell_d01fb03d-370c-4f46-be66-d5caa735b6d4" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.urun_bagl_ozellikler_ddcf4e52-6fe7-4ef5-869c-3d515575564f"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Ürüne Bağlı Özellikler</field>
+    <field name="parent_id" ref="tamekran_studio_customization.sats_urun_ozellikler_31b7a2b9-d8da-420f-ab44-1d94b4006655"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.ayarlar_kullanc_logl_b4a04139-1dde-4386-b91f-8c3ab1676b3d" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.kullanc_loglar_b89d3860-d01e-409a-a1e7-63a23bc06e5e"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Kullanıcı Logları</field>
+    <field name="parent_id" ref="base.menu_users"/>
+    <field name="sequence">4</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.crm_aktiviteler_3d24eecb-cc17-4eb4-b788-95b77cf4d516" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.aktiviteler_cddb6b0a-a0d2-4c69-858e-6965b3525cc8"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Aktiviteler</field>
+    <field name="parent_id" ref="crm.crm_menu_root"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_184_81468b29')])]"/>
+    <field name="name">Günlük Plan</field>
+    <field name="parent_id" eval="False"/>
+    <field name="sequence">10</field>
+    <field name="web_icon">fa fa-folder-open,#00dec9,#F5F5F5</field>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_gunluk_p_41c119f6-7a78-49c2-ae63-40e9b770e2e7" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.gunluk_plan_e38af064-465a-4891-b1a0-084e0093b21f"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_184_81468b29')])]"/>
+    <field name="name">Günlük Plan</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_183_2131a14b')])]"/>
+    <field name="name">Yapılandırma</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
+    <field name="sequence">4</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_rota_tur_51431cac-340d-4221-9f93-d3ed4ba3e0ef" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.rota_turleri_c437bf91-3bb5-4d36-9fce-fb3b017f0bee"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_183_2131a14b')])]"/>
+    <field name="name">Rota Türleri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_asamalar_c4878808-ca87-459e-bc58-c79b9b91e979" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.asamalar_c21d617d-1a4e-4549-87a1-9a12f8095fb8"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Aşamalar</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_tamamlan_1c8daa76-70a8-4528-b3b0-18f99909b050" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.tamamlanamad_nedenle_2554b3fa-2d88-41a8-a873-65466c7ef900"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">İptal Nedenleri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_raporlar_e8c4c191-8702-42e8-9d7d-14ae6feec1ad" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_183_2131a14b')])]"/>
+    <field name="name">Raporlar</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_rota_ipt_59d535e7-4cfa-467f-a932-a27b3c4ddee2" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.rota_iptal_detaylar_4111d6df-6f3c-4109-bf5d-576ae4534321"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Rota İptal Detayları</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_raporlar_e8c4c191-8702-42e8-9d7d-14ae6feec1ad"/>
+    <field name="sequence">4</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_markalar_d43fc98e-c5ef-4302-b37a-052c7877b753" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.markalar_abb5e368-def9-42ec-a205-6d8e35abb25c"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Markalar</field>
+    <field name="parent_id" ref="stock.menu_stock_inventory_control"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_gunluk_p_e7279b0b-ed7a-4da7-93c6-ce6adc415050" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Günlük Plan</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_teklif_v_5af75aee-522b-46c6-a489-e9e0fa9c610d" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.teklif_ve_siparisler_5f86e3cf-42b5-47d3-8675-4055c69724a3"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Teklif ve Siparişler</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_raporlar_e8c4c191-8702-42e8-9d7d-14ae6feec1ad"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_masrafla_53a7d216-b586-4d81-8776-61d195d954cb" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Masrafların Listesi</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_raporlar_e8c4c191-8702-42e8-9d7d-14ae6feec1ad"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_tahsilat_71be5072-a094-4c9f-9663-cae84c3baed9" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.tahsilatlarn_listesi_c26248f8-9390-46eb-a5a3-e841ae9e57c7"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Tahsilatların Listesi</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_raporlar_e8c4c191-8702-42e8-9d7d-14ae6feec1ad"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_rota_pla_cd223a62-3234-4626-9a28-c43bb5ac8383" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.rota_planlar_listesi_7309917f-ef1f-4d72-ba9f-e8fd823d9512"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Rota Planları Listesi</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_raporlar_e8c4c191-8702-42e8-9d7d-14ae6feec1ad"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.ayarlar_category_dc67bc0c-0c5b-4d46-ace6-cd7ffa0db239" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.category_b5bf58c4-bc25-475f-83bc-1295e51ee92f"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">category</field>
+    <field name="parent_id" ref="base.menu_administration"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_ozellikler_3fc15f82-78d5-400e-a65b-49cc428ae4af" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Özellikler</field>
+    <field name="parent_id" ref="stock.menu_stock_root"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_e_ticaret_kateg_c457b403-728c-4121-81b4-6c1c4c8e5f24" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.e_ticaret_kategorile_176d64f1-4276-408b-be99-4e47ae266a19"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">E-Ticaret Kategorileri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.stok_gelistirmeler_f645efb0-7855-4fb8-a7ea-8889ec24c07d"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_urun_dokumanlar_7100011d-5cbc-45c1-b391-0dd7e51e45d4" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.urun_dokumanlar_82b7c31f-a4d8-40d2-9ac3-02ea5b682a53"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Ürün Dokümanları</field>
+    <field name="parent_id" ref="tamekran_studio_customization.stok_gelistirmeler_f645efb0-7855-4fb8-a7ea-8889ec24c07d"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_urun_resimleri_35750434-3574-4e34-a09d-6a8124369656" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.urun_resimleri_21b4e559-621e-4d21-9a47-c178461a73ed"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Ürün Resimleri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.stok_gelistirmeler_f645efb0-7855-4fb8-a7ea-8889ec24c07d"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_musteri__b1bfb504-f57f-4bfb-9e5b-9f5b513343f7" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.musteri_tipleri_1577825e-fbbf-427f-84cd-a7a06d1a3bd2"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Müşteri Tipleri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_tahsilat_efe38293-6af1-4163-8900-037719e7f86f" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.tahsilatlar_fdd0e5cd-1aa4-491a-a9db-7f90c433caf5"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Tahsilatlar</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_tahsilat_7e1d91a3-f0e7-467f-af5e-9e828026a3ca" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.tahsilatlar_4ceeaf43-31be-40cc-bded-979bf76c3d28"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Tahsilatlar</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
+    <field name="sequence">4</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.kontaklar_odeme_tipl_22cf5db0-c48b-4e04-8022-a13aec823b1f" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.odeme_tipleri_a5a33776-c256-48eb-9a0f-db63f2a018dc"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_manager')])]"/>
+    <field name="name">Ödeme Tipleri</field>
+    <field name="parent_id" ref="contacts.res_partner_menu_config"/>
+    <field name="sequence">6</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.kontaklar_odeme_vade_cbb1cfcd-4415-4bbd-b652-ce70262642ef" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.odeme_vadeleri_e8b45d78-971a-4300-afe3-5eca8ef1d31c"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_manager')])]"/>
+    <field name="name">Ödeme Vadeleri</field>
+    <field name="parent_id" ref="contacts.res_partner_menu_config"/>
+    <field name="sequence">7</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.stok_urun_ailesi_cedb51f3-d2d2-44e0-83a1-8f02207a86ac" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.urun_ailesi_0edc8cf5-e2b6-4d6b-9c38-e959c47c7d29"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_manager')])]"/>
+    <field name="name">Ürün Ailesi</field>
+    <field name="parent_id" ref="stock.menu_stock_inventory_control"/>
+    <field name="sequence">5</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.kontaklar_odeme_turu_21903b96-83f5-452f-a7ac-221ca042b319" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.odeme_turu_385fefad-7636-417c-9c94-33349cf2d767"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Ödeme Türü</field>
+    <field name="parent_id" ref="contacts.res_partner_menu_config"/>
+    <field name="sequence">5</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_ziyaret__21122692-56c2-4057-a5a8-f00900dafa03" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.ziyaret_turleri_b9cbbc4f-4869-4208-9169-4b8163019655"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_183_2131a14b')])]"/>
+    <field name="name">Ziyaret Türleri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
+    <field name="sequence">5</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_musteri__dd6e8f0c-fc6d-4bfd-8850-bd047effa167" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.musteri_is_durumlar_1702d0f8-e489-479b-9856-5a7a23e3e4e8"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Müşteri İş Durumları</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
+    <field name="sequence">6</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.ayarlar_model_data_20b50ddc-519e-4b91-92cf-6a8ceaf92575" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.model_data_a605fd36-2959-47fa-852f-f25e7c5de2e7"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Model Data</field>
+    <field name="parent_id" ref="base.menu_custom"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.ayarlar_model_data_290ee91b-ce54-4c5b-9ad2-c3f7496d50de" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.model_data_46bcb9ad-82a3-4076-99f8-907bf824efd2"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Model Data</field>
+    <field name="parent_id" ref="base.menu_custom"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+</odoo>
