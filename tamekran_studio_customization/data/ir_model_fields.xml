@@ -214,7 +214,7 @@
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">sale.order</field>
-    <field name="model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="model_id" ref="sale.model_sale_order"/>
     <field name="name">x_studio_field_d4BwV</field>
     <field name="on_delete" eval="False"/>
     <field name="readonly" eval="False"/>
@@ -243,7 +243,7 @@
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">sale.order</field>
-    <field name="model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="model_id" ref="sale.model_sale_order"/>
     <field name="name">x_studio_field_A9AN6</field>
     <field name="on_delete" eval="False"/>
     <field name="readonly" eval="False"/>
@@ -333,7 +333,7 @@ Muhtelif işlem yevmiyeleri için 'Genel' seçeneğini seçin.]]></field>
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">sale.order</field>
-    <field name="model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="model_id" ref="sale.model_sale_order"/>
     <field name="name">x_studio_field_rLUqc</field>
     <field name="on_delete" eval="False"/>
     <field name="readonly" eval="False"/>
@@ -1029,7 +1029,7 @@ Muhtelif işlem yevmiyeleri için 'Genel' seçeneğini seçin.]]></field>
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">sale.order</field>
-    <field name="model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="model_id" ref="sale.model_sale_order"/>
     <field name="name">x_studio_field_bY0ez</field>
     <field name="on_delete" eval="False"/>
     <field name="readonly" eval="False"/>
@@ -1365,64 +1365,6 @@ Muhtelif işlem yevmiyeleri için 'Genel' seçeneğini seçin.]]></field>
     <field name="track_visibility" eval="False"/>
     <field name="translate" eval="False"/>
     <field name="ttype">many2one</field>
-  </record>
-  <record id="tamekran_studio_customization.new_secim_helpdesk_t_3399fcfd-1601-4665-9c18-37e23e1d23f1" model="ir.model.fields" context="{'studio': True}">
-    <field name="complete_name" eval="False"/>
-    <field name="compute" eval="False"/>
-    <field name="copy" eval="False"/>
-    <field name="depends" eval="False"/>
-    <field name="domain">[]</field>
-    <field name="field_description">Destek Tipi</field>
-    <field name="groups" eval="[(6, 0, [])]"/>
-    <field name="help" eval="False"/>
-    <field name="index" eval="False"/>
-    <field name="model">helpdesk.ticket</field>
-    <field name="model_id" ref="helpdesk.model_helpdesk_ticket"/>
-    <field name="name">x_studio_field_GAPot</field>
-    <field name="on_delete" eval="False"/>
-    <field name="readonly" eval="False"/>
-    <field name="related" eval="False"/>
-    <field name="relation" eval="False"/>
-    <field name="relation_field" eval="False"/>
-    <field name="relation_table" eval="False"/>
-    <field name="required" eval="False"/>
-    <field name="selectable" eval="True"/>
-    <field name="selection">[['Destek', 'Destek'], ['Talep', 'Talep']]</field>
-    <field name="size" eval="False"/>
-    <field name="state">manual</field>
-    <field name="store" eval="True"/>
-    <field name="track_visibility" eval="False"/>
-    <field name="translate" eval="False"/>
-    <field name="ttype">selection</field>
-  </record>
-  <record id="tamekran_studio_customization.kontak_helpdesk_tick_c32fa57b-eb04-4e29-92d8-14cb4551ca08" model="ir.model.fields" context="{'studio': True}">
-    <field name="complete_name" eval="False"/>
-    <field name="compute" eval="False"/>
-    <field name="copy" eval="False"/>
-    <field name="depends" eval="False"/>
-    <field name="domain">[]</field>
-    <field name="field_description">Müşteri</field>
-    <field name="groups" eval="[(6, 0, [])]"/>
-    <field name="help" eval="False"/>
-    <field name="index" eval="False"/>
-    <field name="model">helpdesk.ticket</field>
-    <field name="model_id" ref="helpdesk.model_helpdesk_ticket"/>
-    <field name="name">x_studio_field_6BSVQ</field>
-    <field name="on_delete" eval="False"/>
-    <field name="readonly" eval="False"/>
-    <field name="related" eval="False"/>
-    <field name="relation">res.partner</field>
-    <field name="relation_field" eval="False"/>
-    <field name="relation_table">x_helpdesk_ticket_res_partner_rel</field>
-    <field name="required" eval="False"/>
-    <field name="selectable" eval="True"/>
-    <field name="selection" eval="False"/>
-    <field name="size" eval="False"/>
-    <field name="state">manual</field>
-    <field name="store" eval="True"/>
-    <field name="track_visibility" eval="False"/>
-    <field name="translate" eval="False"/>
-    <field name="ttype">many2many</field>
   </record>
   <record id="tamekran_studio_customization.new_html_product_tem_5ef10ab2-3534-40c2-a222-406972e9c9c8" model="ir.model.fields" context="{'studio': True}">
     <field name="complete_name" eval="False"/>
@@ -1771,35 +1713,6 @@ Muhtelif işlem yevmiyeleri için 'Genel' seçeneğini seçin.]]></field>
     <field name="track_visibility" eval="False"/>
     <field name="translate" eval="False"/>
     <field name="ttype">one2many</field>
-  </record>
-  <record id="tamekran_studio_customization.new_onay_kutusu_help_05c7f3bc-167a-426b-9a46-d39ab2dc82f8" model="ir.model.fields" context="{'studio': True}">
-    <field name="complete_name" eval="False"/>
-    <field name="compute" eval="False"/>
-    <field name="copy" eval="False"/>
-    <field name="depends" eval="False"/>
-    <field name="domain">[]</field>
-    <field name="field_description">Onaylandı</field>
-    <field name="groups" eval="[(6, 0, [])]"/>
-    <field name="help" eval="False"/>
-    <field name="index" eval="False"/>
-    <field name="model">helpdesk.ticket</field>
-    <field name="model_id" ref="helpdesk.model_helpdesk_ticket"/>
-    <field name="name">x_studio_field_J4hJL</field>
-    <field name="on_delete" eval="False"/>
-    <field name="readonly" eval="False"/>
-    <field name="related" eval="False"/>
-    <field name="relation" eval="False"/>
-    <field name="relation_field" eval="False"/>
-    <field name="relation_table" eval="False"/>
-    <field name="required" eval="False"/>
-    <field name="selectable" eval="True"/>
-    <field name="selection" eval="False"/>
-    <field name="size" eval="False"/>
-    <field name="state">manual</field>
-    <field name="store" eval="True"/>
-    <field name="track_visibility" eval="False"/>
-    <field name="translate" eval="False"/>
-    <field name="ttype">boolean</field>
   </record>
   <record id="tamekran_studio_customization.name_x_date_planned_2d7524b6-3ffb-4d59-806e-c392db0b7aaf" model="ir.model.fields" context="{'studio': True}">
     <field name="complete_name" eval="False"/>
@@ -5418,7 +5331,7 @@ for record in self: record['x_x_studio_field_8VSrL__x_root_planned_count'] = dic
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">sale.order</field>
-    <field name="model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="model_id" ref="sale.model_sale_order"/>
     <field name="name">x_studio_field_Cmm6W</field>
     <field name="on_delete">set null</field>
     <field name="readonly" eval="True"/>
@@ -5488,7 +5401,7 @@ for record in self: record['x_product_tmpl_id__product_product_count'] = dic.get
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">sale.order</field>
-    <field name="model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="model_id" ref="sale.model_sale_order"/>
     <field name="name">x_studio_field_u0rg5</field>
     <field name="on_delete">set null</field>
     <field name="readonly" eval="True"/>

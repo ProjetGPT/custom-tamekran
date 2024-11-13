@@ -1,13 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <odoo>
-  <record id="account.menu_finance" model="ir.ui.menu" context="{'studio': True}">
-    <field name="action" eval="False"/>
-    <field name="active" eval="True"/>
-    <field name="name">Muhasebe</field>
-    <field name="parent_id" eval="False"/>
-    <field name="sequence">40</field>
-    <field name="web_icon">account_accountant,static/description/icon.png</field>
-  </record>
   <record id="stock.menu_stock_warehouse_mgmt" model="ir.ui.menu" context="{'studio': True}">
     <field name="action" eval="False"/>
     <field name="active" eval="True"/>
@@ -35,15 +27,6 @@
     <field name="sequence">10</field>
     <field name="web_icon" eval="False"/>
   </record>
-  <record id="account_asset.menu_asset_depreciation_confirmation_wizard" model="ir.ui.menu" context="{'studio': True}">
-    <field name="action" ref="account_asset.action_asset_depreciation_confirmation_wizard"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="name">Sabit Kıymet Kayıtları Oluştur</field>
-    <field name="parent_id" ref="account.menu_finance_entries_generate_entries"/>
-    <field name="sequence">111</field>
-    <field name="web_icon" eval="False"/>
-  </record>
   <record id="stock.stock_move_menu" model="ir.ui.menu" context="{'studio': True}">
     <field name="action" ref="stock.stock_move_action"/>
     <field name="active" eval="True"/>
@@ -69,31 +52,6 @@
     <field name="name">Katalog</field>
     <field name="parent_id" ref="sale.sale_menu_root"/>
     <field name="sequence">2</field>
-    <field name="web_icon" eval="False"/>
-  </record>
-  <record id="account_reports.menu_action_account_report_partner_ledger" model="ir.ui.menu" context="{'studio': True}">
-    <field name="action" ref="account_reports.action_account_report_partner_ledger"/>
-    <field name="active" eval="True"/>
-    <field name="name">İş Ortağı Defteri</field>
-    <field name="parent_id" ref="account_reports.account_reports_partners_reports_menu"/>
-    <field name="sequence">10</field>
-    <field name="web_icon" eval="False"/>
-  </record>
-  <record id="account_reports.menu_account_financial_reports_tree" model="ir.ui.menu" context="{'studio': True}">
-    <field name="action" ref="account_reports.action_account_financial_report_tree"/>
-    <field name="active" eval="True"/>
-    <field name="name">Mali Raporlar</field>
-    <field name="parent_id" ref="account.account_management_menu"/>
-    <field name="sequence">10</field>
-    <field name="web_icon" eval="False"/>
-  </record>
-  <record id="account_accountant.menu_action_change_lock_date" model="ir.ui.menu" context="{'studio': True}">
-    <field name="action" ref="account_accountant.action_view_account_change_lock_date"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_157_32c902eb')])]"/>
-    <field name="name">Kilit Tarihleri</field>
-    <field name="parent_id" ref="account.menu_finance_entries_actions"/>
-    <field name="sequence">30</field>
     <field name="web_icon" eval="False"/>
   </record>
   <record id="tamekran_studio_customization.stok_urun_varyantlar_a250df13-9dbe-471f-8c16-45b9f679505c" model="ir.ui.menu" context="{'studio': True}">
@@ -357,24 +315,6 @@
     <field name="sequence">3</field>
     <field name="web_icon" eval="False"/>
   </record>
-  <record id="tamekran_studio_customization.sats_is_ortag_bakiye_161e7d5d-77de-42e9-b1f8-1f3d0a98cea7" model="ir.ui.menu" context="{'studio': True}">
-    <field name="action" ref="account_reports.action_account_report_partner_ledger"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_salesman'), ref('sales_team.group_sale_salesman_all_leads'), ref('sales_team.group_sale_manager')])]"/>
-    <field name="name">İş ortağı Bakiye</field>
-    <field name="parent_id" ref="tamekran_studio_customization.sats_finans_adf4ef8a-a2bd-4a9e-b1c3-752c950beb67"/>
-    <field name="sequence">1</field>
-    <field name="web_icon" eval="False"/>
-  </record>
-  <record id="tamekran_studio_customization.sats_alacak_yaslandr_278697f6-eae1-4fb4-8a34-2ab4cf167715" model="ir.ui.menu" context="{'studio': True}">
-    <field name="action" ref="account_reports.action_account_report_ar"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [ref('sales_team.group_sale_salesman'), ref('sales_team.group_sale_salesman_all_leads'), ref('sales_team.group_sale_manager')])]"/>
-    <field name="name">Alacak Yaşlandırma</field>
-    <field name="parent_id" ref="tamekran_studio_customization.sats_finans_adf4ef8a-a2bd-4a9e-b1c3-752c950beb67"/>
-    <field name="sequence" eval="False"/>
-    <field name="web_icon" eval="False"/>
-  </record>
   <record id="tamekran_studio_customization.sats_musteri_odemele_6a579a7d-59ac-4471-b38a-b04b0327be59" model="ir.ui.menu" context="{'studio': True}">
     <field name="action" ref="tamekran_studio_customization.musteri_odemeleri_b8984405-7c9d-4628-81ac-c9d1933e546c"/>
     <field name="active" eval="True"/>
@@ -434,7 +374,7 @@
     <field name="active" eval="True"/>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="name">Dönem Tipleri</field>
-    <field name="parent_id" ref="date_range.menu_date_range_accounting"/>
+    <field name="parent_id" ref="accounting_tr_date_range.menu_accounting_tr_date_range_accounting"/>
     <field name="sequence">1</field>
     <field name="web_icon" eval="False"/>
   </record>

@@ -39,7 +39,7 @@
   <record id="tamekran_studio_customization.teklif_ckt_4850db01-1f20-4346-a2ed-ab14d19b7964" model="ir.actions.report" context="{'studio': True}">
     <field name="attachment" eval="False"/>
     <field name="attachment_use" eval="False"/>
-    <field name="binding_model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="binding_model_id" ref="sale.model_sale_order"/>
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
@@ -87,7 +87,7 @@
   <record id="tamekran_studio_customization.teklif_ckt_2e13435c-113e-408f-bc15-615317b7dc67" model="ir.actions.report" context="{'studio': True}">
     <field name="attachment" eval="False"/>
     <field name="attachment_use" eval="False"/>
-    <field name="binding_model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="binding_model_id" ref="sale.model_sale_order"/>
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
@@ -99,7 +99,7 @@
   <record id="tamekran_studio_customization.teklif_ckt_d75d8590-bd9e-4dff-acbc-8dc36988221c" model="ir.actions.report" context="{'studio': True}">
     <field name="attachment" eval="False"/>
     <field name="attachment_use" eval="False"/>
-    <field name="binding_model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="binding_model_id" ref="sale.model_sale_order"/>
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
@@ -111,7 +111,7 @@
   <record id="tamekran_studio_customization.teklif_ckt_5349b166-5ce3-4a4c-b8cd-c016ac6cbaff" model="ir.actions.report" context="{'studio': True}">
     <field name="attachment" eval="False"/>
     <field name="attachment_use" eval="False"/>
-    <field name="binding_model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="binding_model_id" ref="sale.model_sale_order"/>
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
@@ -123,7 +123,7 @@
   <record id="tamekran_studio_customization.teklif_ckt_aec8b9df-97f9-41a1-a0e6-32710d2e2f98" model="ir.actions.report" context="{'studio': True}">
     <field name="attachment" eval="False"/>
     <field name="attachment_use" eval="False"/>
-    <field name="binding_model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="binding_model_id" ref="sale.model_sale_order"/>
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
@@ -135,7 +135,7 @@
   <record id="tamekran_studio_customization.teklif_ckt_12c4e3dc-58e9-4ac3-bf0a-e66bdecd8458" model="ir.actions.report" context="{'studio': True}">
     <field name="attachment" eval="False"/>
     <field name="attachment_use" eval="False"/>
-    <field name="binding_model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="binding_model_id" ref="sale.model_sale_order"/>
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
@@ -147,7 +147,7 @@
   <record id="tamekran_studio_customization.teklif_ckt_cde5c139-e263-49d1-a686-b8e88704dce9" model="ir.actions.report" context="{'studio': True}">
     <field name="attachment" eval="False"/>
     <field name="attachment_use" eval="False"/>
-    <field name="binding_model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="binding_model_id" ref="sale.model_sale_order"/>
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
@@ -159,7 +159,7 @@
   <record id="tamekran_studio_customization.teklif_ckt_54aecacc-cbad-4185-a356-23681e12ea39" model="ir.actions.report" context="{'studio': True}">
     <field name="attachment" eval="False"/>
     <field name="attachment_use" eval="False"/>
-    <field name="binding_model_id" ref="account_invoice_refund_account.model_sale_order"/>
+    <field name="binding_model_id" ref="sale.model_sale_order"/>
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
@@ -178,18 +178,6 @@
     <field name="multi" eval="False"/>
     <field name="name">Yevmiye Kalemleri Çıktı</field>
     <field name="report_name">tamekran_studio_customization.report_08f37c56-fe48-4d11-828d-a276ad2dd0fe</field>
-    <field name="report_type">qweb-pdf</field>
-  </record>
-  <record id="tamekran_studio_customization.talep_ckt_a5b3b310-19ab-412e-9600-8df8fe4eb317" model="ir.actions.report" context="{'studio': True}">
-    <field name="attachment" eval="False"/>
-    <field name="attachment_use" eval="False"/>
-    <field name="binding_model_id" ref="helpdesk.model_helpdesk_ticket"/>
-    <field name="binding_type">report</field>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="model">helpdesk.ticket</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Talep Çıktı</field>
-    <field name="report_name">tamekran_studio_customization.report_90d9e885-8bc7-4efa-a9f1-158a51d4d4c5</field>
     <field name="report_type">qweb-pdf</field>
   </record>
   <record id="tamekran_studio_customization.gunluk_plan_ckt_23f5fe68-3050-422b-b2f6-3266741a5fee" model="ir.actions.report" context="{'studio': True}">
