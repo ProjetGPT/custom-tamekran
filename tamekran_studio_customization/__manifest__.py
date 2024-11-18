@@ -27,10 +27,10 @@ It contains the apps created with Studio and the customizations of existing apps
     ],
     'data': [
         'data/res_groups.xml',
-        'data/ir_ui_view.xml',
+        'data/ir_ui_view_final.xml',
         'data/ir_model.xml',
         'data/ir_model_fields.xml',
-        
+        'data/ir_ui_view.xml',
         'data/ir_actions_act_window.xml',
         'data/ir_actions_report.xml',
         'data/ir_actions_server.xml',
