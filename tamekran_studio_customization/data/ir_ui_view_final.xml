@@ -70,7 +70,7 @@
     <field name="type">form</field>
   </record> -->
 
-  <record id="tamekran_studio_customization.odoo_studio_product__c60a3cc9-d263-4a7f-b781-7aa5c3cb1a7e" model="ir.ui.view" context="{'studio': True}">
+  <!-- <record id="tamekran_studio_customization.odoo_studio_product__c60a3cc9-d263-4a7f-b781-7aa5c3cb1a7e" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
       <data>
@@ -284,8 +284,9 @@
     <field name="name">Odoo Studio: product.template.product.form customization</field>
     <field name="priority">99</field>
     <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_product__8a9a2d35-46b8-4253-803a-7df35e3493ad" model="ir.ui.view" context="{'studio': True}">
+  </record> -->
+
+  <!-- <record id="tamekran_studio_customization.odoo_studio_product__8a9a2d35-46b8-4253-803a-7df35e3493ad" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
       <data>
@@ -331,8 +332,9 @@
     <field name="name">Odoo Studio: product.product.form customization</field>
     <field name="priority">99</field>
     <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_journal__f4da3fd4-30d6-4d12-9ded-60b079ea4986" model="ir.ui.view" context="{'studio': True}">
+  </record> -->
+
+  <!-- <record id="tamekran_studio_customization.odoo_studio_journal__f4da3fd4-30d6-4d12-9ded-60b079ea4986" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
       <data>
@@ -349,8 +351,9 @@
     <field name="name">Odoo Studio: Journal Items customization</field>
     <field name="priority">99</field>
     <field name="type">search</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_purchase_72903692-8a12-4a71-ada2-ec4c49788ddd" model="ir.ui.view" context="{'studio': True}">
+  </record> -->
+
+  <!-- <record id="tamekran_studio_customization.odoo_studio_purchase_72903692-8a12-4a71-ada2-ec4c49788ddd" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
       <data>
@@ -386,8 +389,9 @@
     <field name="name">Odoo Studio: purchase.order.line.tree customization</field>
     <field name="priority">99</field>
     <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_purchase_49f995ea-9266-4c91-9eff-54ff1e2630a2" model="ir.ui.view" context="{'studio': True}">
+  </record> -->
+
+  <!-- <record id="tamekran_studio_customization.odoo_studio_purchase_49f995ea-9266-4c91-9eff-54ff1e2630a2" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
       <data>
@@ -416,8 +420,10 @@
     <field name="name">Odoo Studio: purchase.order.line.form2 customization</field>
     <field name="priority">99</field>
     <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_purchase_1c7d8d38-9a69-42f2-80dc-9ad40b6cc43f" model="ir.ui.view" context="{'studio': True}">
+  </record> -->
+
+
+  <!-- <record id="tamekran_studio_customization.odoo_studio_purchase_1c7d8d38-9a69-42f2-80dc-9ad40b6cc43f" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
       <data>
@@ -479,8 +485,10 @@
     <field name="name">Odoo Studio: purchase.order.form customization</field>
     <field name="priority">99</field>
     <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_purchase_c0b87fe4-dcc2-4c5a-ade4-b3e32713addd" model="ir.ui.view" context="{'studio': True}">
+  </record> -->
+
+
+  <!-- <record id="tamekran_studio_customization.odoo_studio_purchase_c0b87fe4-dcc2-4c5a-ade4-b3e32713addd" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
       <data>
@@ -498,7 +506,8 @@
     <field name="name">Odoo Studio: purchase.order.tree customization</field>
     <field name="priority">99</field>
     <field name="type">tree</field>
-  </record>
+  </record> -->
+  
   <record id="tamekran_studio_customization.odoo_studio_res_comp_7dbba2c4-bc3d-42e7-a80e-010a078201f7" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -531,7 +540,8 @@
     <field name="priority">99</field>
     <field name="type">form</field>
   </record>
-  <record id="tamekran_studio_customization.odoo_studio_res_part_4fc092f8-425c-4644-b69f-0be5fb053bb0" model="ir.ui.view" context="{'studio': True}">
+
+  <!-- <record id="tamekran_studio_customization.odoo_studio_res_part_4fc092f8-425c-4644-b69f-0be5fb053bb0" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
       <data>
@@ -1234,8 +1244,9 @@
     <field name="name">Odoo Studio: res.partner.form customization</field>
     <field name="priority">99</field>
     <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_sale_ord_95d5eec7-7b09-4dcd-bcef-f5f660586406" model="ir.ui.view" context="{'studio': True}">
+  </record> -->
+
+  <!-- <record id="tamekran_studio_customization.odoo_studio_sale_ord_95d5eec7-7b09-4dcd-bcef-f5f660586406" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
       <data>
@@ -1337,7 +1348,9 @@
     <field name="name">Odoo Studio: sale.order.form customization</field>
     <field name="priority">99</field>
     <field name="type">form</field>
-  </record>
+  </record> -->
+
+
   <record id="tamekran_studio_customization.odoo_studio_stock_mo_4d805bbf-7139-491e-a4db-140938853682" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -1366,6 +1379,7 @@
     <field name="priority">99</field>
     <field name="type">tree</field>
   </record>
+
   <record id="tamekran_studio_customization.odoo_studio_stock_pi_10b56f10-83f8-413b-a69e-6dbaf347d57b" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -1385,6 +1399,7 @@
     <field name="priority">99</field>
     <field name="type">tree</field>
   </record>
+
   <record id="tamekran_studio_customization.odoo_studio_stock_pi_262b42b4-e37b-4000-aa8e-385e9a246c2d" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="False"/>
     <field name="arch" type="xml">
