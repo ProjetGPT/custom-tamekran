@@ -10,12 +10,6 @@
         <xpath expr="//field[@name='journal_id']" position="attributes">
           <attribute name="widget">many2one</attribute>
         </xpath>
-        <!-- <xpath expr="//field[@name='communication']" position="attributes">
-          <attribute name="string">Ödeme Referansı</attribute>
-        </xpath>
-        <xpath expr="//field[@name='communication']" position="after">
-          <field name="payment_reference" attrs="{&quot;readonly&quot;: [[&quot;id&quot;,&quot;=&quot;,&quot;199999999999&quot;]]}" string="Kısa Not"/>
-        </xpath> -->
         <xpath expr='//group[2]' position="inside">
           <field name="company_id" attrs="{}" readonly="1"/>
           <field name="x_studio_field_cpfFe" string="Müşteri Temsilcisi"/>
@@ -31,11 +25,12 @@
     <field name="priority">99</field>
     <field name="type">form</field>
   </record>
-  <record id="tamekran_studio_customization.odoo_studio_account__9c591a0d-b811-4bd8-8744-d5c57609d4cf" model="ir.ui.view" context="{'studio': True}">
+
+  <!-- <record id="tamekran_studio_customization.odoo_studio_account__9c591a0d-b811-4bd8-8744-d5c57609d4cf" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
       <data>
-        <xpath expr="//form[1]/sheet[1]/h1[1]/field[@name='name']" position="attributes">
+        <xpath expr="//h1[1]/field[@name='name']" position="attributes">
           <attribute name="attrs">{"invisible": [["name","=","/"]], "readonly": []}</attribute>
           <attribute name="readonly"/>
         </xpath>
@@ -73,7 +68,8 @@
     <field name="name">Odoo Studio: account.move.form customization</field>
     <field name="priority">99</field>
     <field name="type">form</field>
-  </record>
+  </record> -->
+
   <record id="tamekran_studio_customization.odoo_studio_product__c60a3cc9-d263-4a7f-b781-7aa5c3cb1a7e" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -7496,4 +7492,10 @@
     <field name="priority">99</field>
     <field name="type">tree</field>
   </record>
+
+
+
+
+
+
 </odoo>
