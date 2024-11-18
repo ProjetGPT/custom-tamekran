@@ -75,10 +75,10 @@
   <record id="tamekran_studio_customization.fatura_ckt_46363476-5a30-4bb4-94ed-bdfd4e4b2cff" model="ir.actions.report" context="{'studio': True}">
     <field name="attachment" eval="False"/>
     <field name="attachment_use" eval="False"/>
-    <field name="binding_model_id" ref="account.model_account_invoice"/>
+    <field name="binding_model_id" ref="account.model_account_move"/>
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="model">account.invoice</field>
+    <field name="model">account.move</field>
     <field name="multi" eval="False"/>
     <field name="name">Işıklar Led</field>
     <field name="report_name">tamekran_studio_customization.report_a7edccb3-afb9-45dd-a390-cb76ef14088f</field>
