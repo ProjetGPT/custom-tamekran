@@ -206,7 +206,7 @@
     <field name="sequence">2</field>
     <field name="web_icon" eval="False"/>
   </record>
-  <record id="tamekran_studio_customization.gunluk_plan_tahsilat_71be5072-a094-4c9f-9663-cae84c3baed9" model="ir.ui.menu" context="{'studio': True}">
+  <!-- <record id="tamekran_studio_customization.gunluk_plan_tahsilat_71be5072-a094-4c9f-9663-cae84c3baed9" model="ir.ui.menu" context="{'studio': True}">
     <field name="action" ref="tamekran_studio_customization.tahsilatlarn_listesi_c26248f8-9390-46eb-a5a3-e841ae9e57c7"/>
     <field name="active" eval="True"/>
     <field name="groups_id" eval="[(6, 0, [])]"/>
@@ -214,7 +214,7 @@
     <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_raporlar_e8c4c191-8702-42e8-9d7d-14ae6feec1ad"/>
     <field name="sequence">3</field>
     <field name="web_icon" eval="False"/>
-  </record>
+  </record> -->
   <record id="tamekran_studio_customization.gunluk_plan_rota_pla_cd223a62-3234-4626-9a28-c43bb5ac8383" model="ir.ui.menu" context="{'studio': True}">
     <field name="action" ref="tamekran_studio_customization.rota_planlar_listesi_7309917f-ef1f-4d72-ba9f-e8fd823d9512"/>
     <field name="active" eval="True"/>
