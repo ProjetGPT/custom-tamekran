@@ -90,51 +90,6 @@
     <field name="sequence">2</field>
     <field name="web_icon" eval="False"/>
   </record>
-  <!-- <record id="tamekran_studio_customization.gunluk_plan_musteri__b1bfb504-f57f-4bfb-9e5b-9f5b513343f7" model="ir.ui.menu">
-    <field name="action" ref="tamekran_studio_customization.musteri_tipleri_1577825e-fbbf-427f-84cd-a7a06d1a3bd2"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="name">Müşteri Tipleri</field>
-    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
-    <field name="sequence">3</field>
-    <field name="web_icon" eval="False"/>
-  </record> -->
-  <record id="tamekran_studio_customization.gunluk_plan_tahsilat_efe38293-6af1-4163-8900-037719e7f86f" model="ir.ui.menu">
-    <field name="action" ref="tamekran_studio_customization.tahsilatlar_fdd0e5cd-1aa4-491a-a9db-7f90c433caf5"/>
-    <field name="active" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="name">Tahsilatlar</field>
-    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
-    <field name="sequence">10</field>
-    <field name="web_icon" eval="False"/>
-  </record>
-  <record id="tamekran_studio_customization.gunluk_plan_raporlar_e8c4c191-8702-42e8-9d7d-14ae6feec1ad" model="ir.ui.menu" context="{'studio': True}">
-    <field name="action" ref="base.action_open_website"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_183_2131a14b')])]"/>
-    <field name="name">Raporlar</field>
-    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
-    <field name="sequence">3</field>
-    <field name="web_icon" eval="False"/>
-  </record>
-  <record id="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc" model="ir.ui.menu" context="{'studio': True}">
-    <field name="action" ref="base.action_open_website"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_183_2131a14b')])]"/>
-    <field name="name">Yapılandırma</field>
-    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
-    <field name="sequence">4</field>
-    <field name="web_icon" eval="False"/>
-  </record>
-  <!-- <record id="tamekran_studio_customization.gunluk_plan_tahsilat_7e1d91a3-f0e7-467f-af5e-9e828026a3ca" model="ir.ui.menu">
-    <field name="action" ref="tamekran_studio_customization.tahsilatlar_4ceeaf43-31be-40cc-bded-979bf76c3d28"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="name">Tahsilatlar</field>
-    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
-    <field name="sequence">4</field>
-    <field name="web_icon" eval="False"/>
-  </record> -->
   <record id="tamekran_studio_customization.kontaklar_odeme_tipl_22cf5db0-c48b-4e04-8022-a13aec823b1f" model="ir.ui.menu">
     <field name="action" ref="tamekran_studio_customization.odeme_tipleri_a5a33776-c256-48eb-9a0f-db63f2a018dc"/>
     <field name="active" eval="True"/>
@@ -171,24 +126,6 @@
     <field name="sequence">5</field>
     <field name="web_icon" eval="False"/>
   </record>
-  <!-- <record id="tamekran_studio_customization.gunluk_plan_ziyaret__21122692-56c2-4057-a5a8-f00900dafa03" model="ir.ui.menu">
-    <field name="action" ref="tamekran_studio_customization.ziyaret_turleri_b9cbbc4f-4869-4208-9"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_183_2131a14b')])]"/>
-    <field name="name">Ziyaret Türleri</field>
-    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
-    <field name="sequence">5</field>
-    <field name="web_icon" eval="False"/>
-  </record> -->
-  <!-- <record id="tamekran_studio_customization.gunluk_plan_musteri__dd6e8f0c-fc6d-4bfd-8850-bd047effa167" model="ir.ui.menu">
-    <field name="action" ref="tamekran_studio_customization.musteri_is_durumlar_1702d0f8-e489-479b-9856-5a7a23e3e4e8"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="name">Müşteri İş Durumları</field>
-    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
-    <field name="sequence">6</field>
-    <field name="web_icon" eval="False"/>
-  </record> -->
   <!-- <record id="tamekran_studio_customization.ayarlar_model_data_20b50ddc-519e-4b91-92cf-6a8ceaf92575" model="ir.ui.menu">
     <field name="action" ref="tamekran_studio_customization.model_data_a605fd36-2959-47fa-852f-f25e7c5de2e7"/>
     <field name="active" eval="False"/>
@@ -231,6 +168,69 @@
     <field name="name">Günlük Plan</field>
     <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
     <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_tahsilat_efe38293-6af1-4163-8900-037719e7f86f" model="ir.ui.menu">
+    <field name="action" ref="tamekran_studio_customization.tahsilatlar_fdd0e5cd-1aa4-491a-a9db-7f90c433caf5"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Tahsilatlar</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_raporlar_e8c4c191-8702-42e8-9d7d-14ae6feec1ad" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_183_2131a14b')])]"/>
+    <field name="name">Raporlar</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_183_2131a14b')])]"/>
+    <field name="name">Yapılandırma</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
+    <field name="sequence">4</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_musteri__b1bfb504-f57f-4bfb-9e5b-9f5b513343f7" model="ir.ui.menu">
+    <field name="action" ref="tamekran_studio_customization.musteri_tipleri_1577825e-fbbf-427f-84cd-a7a06d1a3bd2"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Müşteri Tipleri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_tahsilat_7e1d91a3-f0e7-467f-af5e-9e828026a3ca" model="ir.ui.menu">
+    <field name="action" ref="tamekran_studio_customization.tahsilatlar_4ceeaf43-31be-40cc-bded-979bf76c3d28"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Tahsilatlar</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
+    <field name="sequence">4</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_ziyaret__21122692-56c2-4057-a5a8-f00900dafa03" model="ir.ui.menu">
+    <field name="action" ref="tamekran_studio_customization.ziyaret_turleri_b9cbbc4f-4869-4208-9"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_183_2131a14b')])]"/>
+    <field name="name">Ziyaret Türleri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
+    <field name="sequence">5</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_musteri__dd6e8f0c-fc6d-4bfd-8850-bd047effa167" model="ir.ui.menu">
+    <field name="action" ref="tamekran_studio_customization.musteri_is_durumlar_1702d0f8-e489-479b-9856-5a7a23e3e4e8"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Müşteri İş Durumları</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
+    <field name="sequence">6</field>
     <field name="web_icon" eval="False"/>
   </record>
 </odoo>

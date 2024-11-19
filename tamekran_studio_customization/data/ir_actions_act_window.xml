@@ -597,8 +597,7 @@
     <field name="type">ir.actions.act_window</field>
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
-    <field name="view_mode">tree</field>
-    <field name="view_mode">form</field>
+    <field name="view_mode">tree,form</field>
   </record>
   <record id="tamekran_studio_customization.gunluk_plan_e38af064-465a-4891-b1a0-084e0093b21f" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -624,7 +623,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form,pivot,graph</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.gorusme_turleri_0d17bdb2-4853-4177-a5f0-584e4015d049" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
