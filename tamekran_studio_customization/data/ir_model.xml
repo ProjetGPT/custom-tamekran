@@ -68,7 +68,7 @@
     <field name="state">manual</field>
     <field name="transient" eval="False"/>
   </record>
-  <record id="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni" model="ir.model" context="{'studio': True}">
+  <record id="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq" model="ir.model" context="{'studio': True}">
     <field name="info">
 Main super-class for regular database-persisted Odoo models.
 
