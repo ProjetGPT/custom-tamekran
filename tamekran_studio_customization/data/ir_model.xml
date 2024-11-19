@@ -80,7 +80,6 @@ Main super-class for regular database-persisted Odoo models.
    The system will later instantiate the class once per database (on
    which the class' module is installed)
     </field>
-    <field name="is_mail_thread" eval="False"/>
     <field name="model">x_root_planned</field>
     <field name="name">Root Planı</field>
     <field name="state">manual</field>
