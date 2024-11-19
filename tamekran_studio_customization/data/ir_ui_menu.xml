@@ -197,15 +197,6 @@
     <field name="sequence">4</field>
     <field name="web_icon" eval="False"/>
   </record>
-  <record id="tamekran_studio_customization.gunluk_plan_teklif_v_5af75aee-522b-46c6-a489-e9e0fa9c610d" model="ir.ui.menu" context="{'studio': True}">
-    <field name="action" ref="tamekran_studio_customization.teklif_ve_siparisler_5f86e3cf-42b5-47d3-8675-4055c69724a3"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="name">Teklif ve Siparişler</field>
-    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_raporlar_e8c4c191-8702-42e8-9d7d-14ae6feec1ad"/>
-    <field name="sequence">1</field>
-    <field name="web_icon" eval="False"/>
-  </record>
   <record id="tamekran_studio_customization.gunluk_plan_masrafla_53a7d216-b586-4d81-8776-61d195d954cb" model="ir.ui.menu" context="{'studio': True}">
     <field name="action" eval="False"/>
     <field name="active" eval="True"/>
