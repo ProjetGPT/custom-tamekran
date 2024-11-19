@@ -313,7 +313,7 @@ Muhtelif işlem yevmiyeleri için 'Genel' seçeneğini seçin.]]></field>
     <field name="state">manual</field>
     <field name="store" eval="True"/>
     <field name="translate" eval="False"/>
-    <field name="ttype">cahr</field>
+    <field name="ttype">char</field>
   </record>
   <record id="tamekran_studio_customization.new_onay_kutusu_sale_9671e573-5ccc-4a55-960e-0ae68b54514e" model="ir.model.fields" context="{'studio': True}">
     <field name="complete_name" eval="False"/>
