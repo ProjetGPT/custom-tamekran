@@ -189,4 +189,31 @@
     <field name="sequence" eval="False"/>
     <field name="web_icon" eval="False"/>
   </record> -->
+  <record id="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_184_81468b29')])]"/>
+    <field name="name">Günlük Plan</field>
+    <field name="parent_id" eval="False"/>
+    <field name="sequence">10</field>
+    <field name="web_icon">fa fa-folder-open,#00dec9,#F5F5F5</field>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_gunluk_p_41c119f6-7a78-49c2-ae63-40e9b770e2e7" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.gunluk_plan_e38af064-465a-4891-b1a0-084e0093b21f"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_184_81468b29')])]"/>
+    <field name="name">Günlük Plan</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_gunluk_p_e7279b0b-ed7a-4da7-93c6-ce6adc415050" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Günlük Plan</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
 </odoo>
