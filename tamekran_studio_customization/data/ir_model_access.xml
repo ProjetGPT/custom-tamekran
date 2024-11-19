@@ -20,30 +20,30 @@
     <field name="perm_unlink" eval="True"/>
     <field name="perm_write" eval="True"/>
   </record>
-  <record id="stock.access_product_uom_stock_manager" model="ir.model.access" context="{'studio': True}">
+  <record id="access_product_uom_stock_manager" model="ir.model.access" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="group_id" ref="stock.group_stock_manager"/>
-    <field name="model_id" ref="product.model_product_uom"/>
+    <field name="model_id" ref="uom.model_uom_uom"/>
     <field name="name">product.uom stock_manager</field>
     <field name="perm_create" eval="False"/>
     <field name="perm_read" eval="True"/>
     <field name="perm_unlink" eval="False"/>
     <field name="perm_write" eval="False"/>
   </record>
-  <record id="purchase.access_product_uom_purchase_manager" model="ir.model.access" context="{'studio': True}">
+  <record id="access_product_uom_purchase_manager" model="ir.model.access" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="group_id" ref="purchase.group_purchase_manager"/>
-    <field name="model_id" ref="product.model_product_uom"/>
+    <field name="model_id" ref="uom.model_uom_uom"/>
     <field name="name">product.uom purchase_manager</field>
     <field name="perm_create" eval="False"/>
     <field name="perm_read" eval="True"/>
     <field name="perm_unlink" eval="False"/>
     <field name="perm_write" eval="False"/>
   </record>
-  <record id="sale.access_product_uom_sale_manager" model="ir.model.access" context="{'studio': True}">
+  <record id="access_product_uom_sale_manager" model="ir.model.access" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="group_id" ref="sales_team.group_sale_manager"/>
-    <field name="model_id" ref="product.model_product_uom"/>
+    <field name="model_id" ref="uom.model_uom_uom"/>
     <field name="name">product.uom salemanager</field>
     <field name="perm_create" eval="False"/>
     <field name="perm_read" eval="True"/>
@@ -60,7 +60,7 @@
     <field name="perm_unlink" eval="False"/>
     <field name="perm_write" eval="False"/>
   </record>
-  <record id="__export__.ir_model_access_1278" model="ir.model.access" context="{'studio': True}">
+  <!-- <record id="__export__.ir_model_access_1278" model="ir.model.access" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="group_id" ref="__export__.res_groups_82_dcc15e1d"/>
     <field name="model_id" ref="account.model_res_partner"/>
@@ -69,11 +69,11 @@
     <field name="perm_read" eval="True"/>
     <field name="perm_unlink" eval="False"/>
     <field name="perm_write" eval="True"/>
-  </record>
+  </record> -->
   <record id="tamekran_studio_customization.product_uom_5f98fa25-67e9-49fc-b573-ac1c9e122103" model="ir.model.access" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="group_id" ref="base.group_system"/>
-    <field name="model_id" ref="product.model_product_uom"/>
+    <field name="model_id" ref="uom.model_uom_uom"/>
     <field name="name">product.uom</field>
     <field name="perm_create" eval="True"/>
     <field name="perm_read" eval="True"/>
@@ -260,7 +260,7 @@
     <field name="perm_unlink" eval="True"/>
     <field name="perm_write" eval="True"/>
   </record>
-  <record id="tamekran_studio_customization.urune_bagl_ozellikle_95c53305-936d-4020-b4f7-f46f5d3e6757" model="ir.model.access" context="{'studio': True}">
+  <!-- <record id="tamekran_studio_customization.urune_bagl_ozellikle_95c53305-936d-4020-b4f7-f46f5d3e6757" model="ir.model.access" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="group_id" ref="__export__.res_groups_121_86007431"/>
     <field name="model_id" ref="tamekran_studio_customization.urune_bagl_ozellikle_2fe24f88-0606-419f-b230-d489b5fed9ce"/>
@@ -269,7 +269,7 @@
     <field name="perm_read" eval="True"/>
     <field name="perm_unlink" eval="True"/>
     <field name="perm_write" eval="True"/>
-  </record>
+  </record> -->
   <record id="tamekran_studio_customization.urun_dokumanlar_grou_108ebbd5-b892-46dd-95cc-41ad3bd98a63" model="ir.model.access" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="group_id" ref="base.group_system"/>
@@ -290,7 +290,7 @@
     <field name="perm_unlink" eval="False"/>
     <field name="perm_write" eval="False"/>
   </record>
-  <record id="tamekran_studio_customization.musteri_tipleri_grou_9df31624-3c03-4d71-bfcf-1ab3071e3204" model="ir.model.access" context="{'studio': True}">
+  <!-- <record id="tamekran_studio_customization.musteri_tipleri_grou_9df31624-3c03-4d71-bfcf-1ab3071e3204" model="ir.model.access" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="group_id" ref="__export__.res_groups_183_2131a14b"/>
     <field name="model_id" ref="tamekran_studio_customization.musteri_tipleri_c3274610-9705-43cc-b5ff-4c88a6c43535"/>
@@ -299,8 +299,8 @@
     <field name="perm_read" eval="True"/>
     <field name="perm_unlink" eval="True"/>
     <field name="perm_write" eval="True"/>
-  </record>
-  <record id="tamekran_studio_customization.musteri_tipleri_grou_ccea77f2-9ea2-4946-a2e7-10a59bf2d157" model="ir.model.access" context="{'studio': True}">
+  </record> -->
+  <!-- <record id="tamekran_studio_customization.musteri_tipleri_grou_ccea77f2-9ea2-4946-a2e7-10a59bf2d157" model="ir.model.access" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="group_id" ref="__export__.res_groups_184_81468b29"/>
     <field name="model_id" ref="tamekran_studio_customization.musteri_tipleri_c3274610-9705-43cc-b5ff-4c88a6c43535"/>
@@ -309,7 +309,7 @@
     <field name="perm_read" eval="True"/>
     <field name="perm_unlink" eval="False"/>
     <field name="perm_write" eval="True"/>
-  </record>
+  </record> -->
   <record id="tamekran_studio_customization.tahsilatlar_group_sy_85cfe461-3197-4122-b2fb-0ad480bc3428" model="ir.model.access" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="group_id" ref="base.group_system"/>

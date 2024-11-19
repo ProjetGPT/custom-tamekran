@@ -2401,32 +2401,7 @@
     <field name="priority">99</field>
     <field name="type">form</field>
   </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_15a4e9a7-7bec-4a37-a8f7-3a08477a8677" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="crm.sector">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_ffe398">
-            <group name="studio_group_ffe398_left"/>
-            <group name="studio_group_ffe398_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_crm.sector</field>
-    <field name="name">Default form view for x_crm.sector</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
+  
   <record id="tamekran_studio_customization.odoo_studio_crm_lead_b563b8d4-e58b-4e0e-92a8-ea80a6e0399b" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -5369,158 +5344,10 @@
     <field name="priority">99</field>
     <field name="type">tree</field>
   </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_0fdbd957-7d95-4904-b0a4-9031ca53856f" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Görüşmeler">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_992f0a">
-            <group name="studio_group_992f0a_left"/>
-            <group name="studio_group_992f0a_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_crm_meetings</field>
-    <field name="name">Default form view for x_crm_meetings</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__01f27ce7-cc24-412b-9853-9b3ed7249ba8" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//form[1]/sheet[1]" position="before">
-          <header>
-            <button name="1735" type="action" style="background-color:blue" confirm="Yapıldı olarak işaretlenecek, onaylıyor musunuz?" string="YAPILDI OLARAK İŞARETLE" class="oe_highlight"/>
-            <button name="1730" type="action" style="background-color:red" confirm="İptal etmek istiyor musunuz?" string="İPTAL ET" class="oe_highlight"/>
-            <field name="x_studio_field_D9f3o" widget="statusbar" readonly="1"/>
-          </header>
-        </xpath>
-        <xpath expr="//field[@name='x_name']" position="attributes">
-          <attribute name="placeholder">Görüşme özetini buraya yazınız....</attribute>
-          <attribute name="string">Özet</attribute>
-        </xpath>
-        <xpath expr="//group[@name='studio_group_992f0a_left']" position="inside">
-          <field name="x_studio_field_RGMh9" string="Telefon" placeholder="Örnek : 0216 500 00 00"/>
-          <field name="x_studio_field_BKc3K" string="Tarih" attrs="{}" required="1"/>
-          <field name="x_studio_field_G2MkP" string="Müşteri" attrs="{}" required="1"/>
-          <field name="x_studio_field_sdYGU" string="Tür" attrs="{}" required="1"/>
-          <field name="x_studio_field_RSELz" string="Mobil" placeholder="Örnek : 0532 500 00 00"/>
-        </xpath>
-        <xpath expr="//group[@name='studio_group_992f0a_right']" position="inside">
-          <field name="x_studio_field_FKFEW" string="Sorumlu"/>
-          <field name="x_studio_field_le7GI" string="Süre (saat)" widget="float_time"/>
-        </xpath>
-        <xpath expr="//form[1]/sheet[1]" position="after">
-          <div class="oe_chatter" name="studio_div_d688dc">
-            <field name="message_follower_ids" widget="mail_followers"/>
-            <field name="message_ids" widget="mail_thread"/>
-          </div>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_0fdbd957-7d95-4904-b0a4-9031ca53856f"/>
-    <field name="mode">extension</field>
-    <field name="model">x_crm_meetings</field>
-    <field name="name">Odoo Studio: Default form view for x_crm_meetings customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_b782b3c7-6dc0-43ea-9d7c-33f3c2a2564f" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Tür">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_c48d93">
-            <group name="studio_group_c48d93_left"/>
-            <group name="studio_group_c48d93_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_crm_meetings_type</field>
-    <field name="name">Default form view for x_crm_meetings_type</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_tree_view_fo_0821a252-fb31-4687-970a-41593910ef7e" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree string="Görüşmeler">
-        <field name="x_name" modifiers="{}"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_crm_meetings</field>
-    <field name="name">Default tree view for x_crm_meetings</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__26747b4e-a637-48fb-9450-e5582ae71848" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//field[@name='x_name']" position="after">
-          <field name="x_studio_field_G2MkP"/>
-          <field name="x_studio_field_RGMh9"/>
-          <field name="x_studio_field_RSELz"/>
-          <field name="x_studio_field_FKFEW"/>
-          <field name="x_studio_field_BKc3K"/>
-          <field name="x_studio_field_le7GI"/>
-          <field name="x_studio_field_sdYGU"/>
-          <field name="x_studio_field_D9f3o"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_tree_view_fo_0821a252-fb31-4687-970a-41593910ef7e"/>
-    <field name="mode">extension</field>
-    <field name="model">x_crm_meetings</field>
-    <field name="name">Odoo Studio: Default tree view for x_crm_meetings customization</field>
-    <field name="priority">99</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.default_tree_view_fo_8d6afcbe-7814-4b2f-bbc6-e31badb87656" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree string="Tür">
-        <field name="x_name" modifiers="{}"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_crm_meetings_type</field>
-    <field name="name">Default tree view for x_crm_meetings_type</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
+
+
+
+
   <record id="tamekran_studio_customization.odoo_studio_ir_actio_73dad3da-6933-4115-a339-80e4953df704" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -5698,356 +5525,7 @@
     <field name="priority">16</field>
     <field name="type">qweb</field>
   </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_a5376514-85d0-4a3f-8bd0-232027e4bb69" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Özellik Grubu">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_24fbb3">
-            <group name="studio_group_24fbb3_left"/>
-            <group name="studio_group_24fbb3_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_product_attribute_group</field>
-    <field name="name">Default form view for x_product_attribute_group</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_0774bbe7-c000-445c-9593-80b43e793b47" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Özellik Değerleri">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_c1337e">
-            <group name="studio_group_c1337e_left"/>
-            <group name="studio_group_c1337e_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_product_attribute_value</field>
-    <field name="name">Default form view for x_product_attribute_value</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_tree_view_fo_8d763c69-b920-4436-8a61-9f8ebb3e8f95" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree string="Özellik Grubu">
-        <field name="x_name" modifiers="{}"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_product_attribute_group</field>
-    <field name="name">Default tree view for x_product_attribute_group</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__fd9463ee-5d4a-451b-b734-f7443195a8ed" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//form[1]/sheet[1]/div[1]/h1[1]" position="replace"/>
-        <xpath expr="//group[@name='studio_group_24fbb3_left']" position="inside">
-          <field name="x_name" string="İsim" attrs="{}" required="1"/>
-          <field name="x_studio_field_fu8Kp" string="Web Adı"/>
-          <field name="x_studio_field_D7Wx2" string="Web'te Yayında"/>
-          <field name="x_studio_field_jUNVS" string="Gösterim Sırası"/>
-        </xpath>
-        <xpath expr="//form[1]/sheet[1]" position="after">
-          <div class="oe_chatter" name="studio_div_7b0584">
-            <field name="message_follower_ids" widget="mail_followers"/>
-            <field name="message_ids" widget="mail_thread"/>
-          </div>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_a5376514-85d0-4a3f-8bd0-232027e4bb69"/>
-    <field name="mode">extension</field>
-    <field name="model">x_product_attribute_group</field>
-    <field name="name">Odoo Studio: Default form view for x_product_attribute_group customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__9ba6fb44-5fca-41d4-8368-eaa7c5437a48" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//field[@name='x_name']" position="before">
-          <field name="x_studio_field_jUNVS" widget="handle"/>
-        </xpath>
-        <xpath expr="//field[@name='x_name']" position="after">
-          <field name="x_studio_field_fu8Kp"/>
-          <field name="x_studio_field_D7Wx2" widget="boolean_toggle"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_tree_view_fo_8d763c69-b920-4436-8a61-9f8ebb3e8f95"/>
-    <field name="mode">extension</field>
-    <field name="model">x_product_attribute_group</field>
-    <field name="name">Odoo Studio: Default tree view for x_product_attribute_group customization</field>
-    <field name="priority">99</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.default_tree_view_fo_3393e8ec-0ba7-4636-9d97-a3aaad7ce72d" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree string="Özellik Değerleri">
-        <field name="x_name" modifiers="{}"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_product_attribute_value</field>
-    <field name="name">Default tree view for x_product_attribute_value</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__c6c994d6-23d4-446c-a7cf-2597ffcacb77" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//form[1]/sheet[1]/div[1]/h1[1]" position="replace"/>
-        <xpath expr="//group[@name='studio_group_c1337e_left']" position="inside">
-          <field name="x_name" string="İsim"/>
-          <field name="x_studio_field_AL9br" string="B2B İsmi"/>
-          <field name="x_studio_field_cWnOW" string="B2C İsmi"/>
-        </xpath>
-        <xpath expr="//group[@name='studio_group_c1337e_right']" position="inside">
-          <field name="x_studio_field_BA8ag"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_cWnOW'][not(ancestor::field)]" position="replace"/>
-        <xpath expr="//field[@name='x_studio_field_AL9br'][not(ancestor::field)]" position="attributes">
-          <attribute name="string">Web Adı</attribute>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_AL9br'][not(ancestor::field)]" position="after">
-          <field name="x_studio_field_6nhuU"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_6nhuU'][not(ancestor::field)]" position="attributes">
-          <attribute name="string">Web'te Yayında</attribute>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_AL9br'][not(ancestor::field)]" position="after">
-          <field name="x_studio_field_ePGjz"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_ePGjz'][not(ancestor::field)]" position="attributes">
-          <attribute name="string">Renk Değeri</attribute>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_ePGjz'][not(ancestor::field)]" position="after">
-          <field name="x_studio_field_UTx7C"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_UTx7C'][not(ancestor::field)]" position="attributes">
-          <attribute name="string">Renk Değeri (rgb)</attribute>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_UTx7C'][not(ancestor::field)]" position="attributes">
-          <attribute name="attrs">{}</attribute>
-          <attribute name="invisible">1</attribute>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_ePGjz'][not(ancestor::field)]" position="attributes">
-          <attribute name="attrs">{}</attribute>
-          <attribute name="invisible">1</attribute>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_6nhuU'][not(ancestor::field)]" position="attributes">
-          <attribute name="attrs">{"invisible": [["x_studio_field_ePGjz","=",True]]}</attribute>
-          <attribute name="invisible"/>
-        </xpath>
-        <xpath expr="//sheet" position="after">
-          <div class="oe_chatter">
-            <field name="message_follower_ids" widget="mail_followers"/>
-            <field name="message_ids" widget="mail_thread"/>
-          </div>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_ePGjz'][not(ancestor::field)]" position="attributes">
-          <attribute name="attrs">{}</attribute>
-          <attribute name="invisible"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_UTx7C'][not(ancestor::field)]" position="attributes">
-          <attribute name="attrs">{"invisible": [["x_studio_field_ePGjz","=",True]]}</attribute>
-          <attribute name="invisible"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_BA8ag'][not(ancestor::field)]" position="replace"/>
-        <xpath expr="//field[@name='x_name'][not(ancestor::field)]" position="before">
-          <field name="x_studio_field_BA8ag"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_UTx7C'][not(ancestor::field)]" position="after">
-          <field name="x_studio_field_CXq0j"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_CXq0j'][not(ancestor::field)]" position="attributes">
-          <attribute name="string">Gösterim Sırası</attribute>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_UTx7C'][not(ancestor::field)]" position="attributes">
-          <attribute name="attrs">{"invisible": [["x_studio_field_ePGjz","=",False]]}</attribute>
-          <attribute name="invisible"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_6nhuU'][not(ancestor::field)]" position="attributes">
-          <attribute name="attrs">{}</attribute>
-          <attribute name="invisible"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_0774bbe7-c000-445c-9593-80b43e793b47"/>
-    <field name="mode">extension</field>
-    <field name="model">x_product_attribute_value</field>
-    <field name="name">Odoo Studio: Default form view for x_product_attribute_value customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__2bf2cd61-bde9-4608-aa01-751c70a1c013" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//field[@name='x_name']" position="before">
-          <field name="x_studio_field_CXq0j" widget="handle"/>
-          <field name="x_studio_field_BA8ag" attrs="{}" required="1"/>
-        </xpath>
-        <xpath expr="//field[@name='x_name']" position="attributes">
-          <attribute name="attrs">{}</attribute>
-          <attribute name="required">1</attribute>
-        </xpath>
-        <xpath expr="//field[@name='x_name']" position="after">
-          <field name="x_studio_field_AL9br"/>
-          <field name="x_studio_field_ePGjz"/>
-          <field name="x_studio_field_UTx7C"/>
-          <field name="x_studio_field_6nhuU" widget="boolean_toggle"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_tree_view_fo_3393e8ec-0ba7-4636-9d97-a3aaad7ce72d"/>
-    <field name="mode">extension</field>
-    <field name="model">x_product_attribute_value</field>
-    <field name="name">Odoo Studio: Default tree view for x_product_attribute_value customization</field>
-    <field name="priority">99</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_12029bf4-6956-4204-93b5-08c356cd2fa3" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Ürüne Bağlı Özellikler">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_508b73">
-            <group name="studio_group_508b73_left"/>
-            <group name="studio_group_508b73_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_product_attributes</field>
-    <field name="name">Default form view for x_product_attributes</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_tree_view_fo_9c49b5d8-6075-4a61-a08e-fcdfbb0b4e57" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree string="Ürüne Bağlı Özellikler">
-        <field name="x_name" modifiers="{}"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_product_attributes</field>
-    <field name="name">Default tree view for x_product_attributes</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__602353f5-930f-43e8-a219-79bd2f5f625b" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//group[@name='studio_group_508b73_right']" position="replace"/>
-        <xpath expr="//form[1]/sheet[1]/div[1]/h1[1]" position="replace"/>
-        <xpath expr="//group[@name='studio_group_508b73_left']" position="inside">
-          <field name="x_studio_field_3irPZ" attrs="{}" required="1"/>
-          <field name="x_studio_field_dGLv4" attrs="{}" required="1"/>
-          <field name="x_studio_field_esjUA" widget="many2many_tags" attrs="{}" required="1"/>
-          <field name="x_studio_field_XV3ur"/>
-          <field name="x_studio_field_NMV2p"/>
-          <field name="x_studio_field_ONBvH"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_12029bf4-6956-4204-93b5-08c356cd2fa3"/>
-    <field name="mode">extension</field>
-    <field name="model">x_product_attributes</field>
-    <field name="name">Odoo Studio: Default form view for x_product_attributes customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__9857a3a7-c9f8-45d1-a72e-42137bdc6d70" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//field[@name='x_name']" position="replace"/>
-        <xpath expr="//tree[1]" position="inside">
-          <field name="x_studio_field_ONBvH" widget="integer"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_ONBvH']" position="attributes">
-          <attribute name="name">x_studio_field_ONBvH</attribute>
-          <attribute name="widget">integer</attribute>
-        </xpath>
-        <xpath expr="//tree[1]" position="inside">
-          <field name="x_studio_field_3irPZ" widget="many2one"/>
-          <field name="x_studio_field_dGLv4"/>
-          <field name="x_studio_field_esjUA" widget="many2many_tags"/>
-          <field name="x_studio_field_XV3ur"/>
-          <field name="x_studio_field_NMV2p"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_tree_view_fo_9c49b5d8-6075-4a61-a08e-fcdfbb0b4e57"/>
-    <field name="mode">extension</field>
-    <field name="model">x_product_attributes</field>
-    <field name="name">Odoo Studio: Default tree view for x_product_attributes customization</field>
-    <field name="priority">99</field>
-    <field name="type">tree</field>
-  </record>
+  
   <record id="tamekran_studio_customization.default_tree_view_fo_000641e1-bd12-4794-b401-33b85c1191b9" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -6107,619 +5585,7 @@
     <field name="priority">99</field>
     <field name="type">tree</field>
   </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_2bc773c5-c760-4bc5-9bcd-5d80d865afb4" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Günlük Plan">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_f6d7ba">
-            <group name="studio_group_f6d7ba_left"/>
-            <group name="studio_group_f6d7ba_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_date_planned</field>
-    <field name="name">Default form view for x_date_planned</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__23ba2bcf-3fef-4cbd-ab47-dca417b8fdbc" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//form[1]/sheet[1]" position="before">
-          <header>
-            <field name="x_studio_field_KQ3w2" widget="statusbar" clickable="True"/>
-          </header>
-        </xpath>
-        <xpath expr="//field[@name='x_name']" position="attributes">
-          <attribute name="attrs">{}</attribute>
-          <attribute name="invisible">1</attribute>
-          <attribute name="required"/>
-        </xpath>
-        <xpath expr="//group[@name='studio_group_f6d7ba_left']" position="inside">
-          <field name="x_studio_field_hHZhh" string="Tarih" attrs="{}" required="1"/>
-          <field name="x_studio_field_Ytl4Z" string="Satış Temsilcisi" context="{}" attrs="{}" readonly="1"/>
-          <field name="x_studio_field_BpW2F" string="Satış Ekibi"/>
-        </xpath>
-        <xpath expr="//group[@name='studio_group_f6d7ba_right']" position="inside">
-          <field name="x_studio_field_k5hiw" string="Başlangıç KM"/>
-          <field name="x_studio_field_ZOzw3"/>
-          <field name="x_studio_field_XfhLR" string="Şahsi KM"/>
-        </xpath>
-        <xpath expr="//group[@name='studio_group_f6d7ba']" position="after">
-          <group name="studio_group_Bco9s" string="Gün Sonu Değerlendirmesi">
-            <field name="x_studio_field_OmY1E" string="Gün Sonu Değerlendirmesi" nolabel="1"/>
-          </group>
-          <notebook name="studio_notebook_TAkSb">
-            <page name="studio_page_TAkSb" string="Rota Planı">
-              <group name="studio_group_TAkSb">
-                <field name="x_studio_field_Yx0X5" string="Root Planı" nolabel="1">
-                  <tree string="Root Planı" editable="top">
-                    <field name="x_name" attrs="{}" invisible="1"/>
-                    <field name="x_studio_field_fJwte" string="Tarih" readonly="1" attrs="{}" force_save="True"/>
-                    <field name="x_studio_field_24VYx" string="Müşteri Tipi" options="{'no_create_edit': True,'no_create': True,'no_edit': True}" attrs="{}" required="1"/>
-                    <field name="x_studio_field_4b0YS" string="Ziyaret Türü" options="{'no_create_edit': True,'no_create': True,'no_edit': True}" attrs="{}" required="1"/>
-                    <field name="x_studio_field_8VSrL" string="Müşteri" attrs="{}" domain="[[&quot;parent_id&quot;,&quot;=&quot;,False]]" required="1"/>
-                    <field name="x_studio_field_bFy5v" string="Rota Türü" options="{'no_create_edit': True,'no_create': True,'no_edit': True}" attrs="{}" required="1"/>
-                    <field name="x_studio_field_2Gsci" string="İş Durumu" options="{'no_create_edit': True,'no_create': True,'no_edit': True}" attrs="{}" required="1"/>
-                    <field name="x_studio_field_PG3Ap" string="Bölge" force_save="True" attrs="{}" readonly="1"/>
-                    <field name="x_studio_field_3TYcn"/>
-                    <field name="x_studio_field_JaVvX" options="{'no_create_edit': True}" string="Aşama" attrs="{}" readonly="1"/>
-                    <button name="1988" string="İptal" class="btn-danger" type="action" context="{'default_x_studio_field_dYHsL': id}" attrs="{'invisible': [('x_studio_field_JaVvX', '!=', 1)]}"/>
-                    <button name="2011" string="Tamamlandı" class="btn-primary" type="action" attrs="{'invisible': [('x_studio_field_JaVvX', '!=', 1)]}"/>
-                  </tree>
-                  <form>
-                    <sheet string="Root Planı" name="studio_sheet_e8d898">
-                      <group name="studio_group_Phtmq">
-                        <field name="x_studio_field_fJwte"/>
-                        <field name="x_studio_field_8VSrL" domain="[[&quot;parent_id&quot;,&quot;=&quot;,False]]"/>
-                        <field name="x_studio_field_bFy5v"/>
-                        <field name="x_studio_field_JaVvX" string="Aşama"/>
-                        <field name="x_studio_field_3TYcn"/>
-                      </group>
-                    </sheet>
-                  </form>
-                </field>
-              </group>
-            </page>
-            <page name="studio_page_JCRW8" string="Teklif ve Siparişler">
-              <group name="studio_group_JCRW8">
-                <field name="x_studio_field_sSFci" nolabel="1">
-                  <tree>
-                    <field name="name"/>
-                    <field name="date_order"/>
-                    <field name="partner_id"/>
-                    <field name="user_id"/>
-                    <field name="state"/>
-                    <field name="amount_total"/>
-                  </tree>
-                </field>
-              </group>
-            </page>
-            <page name="studio_page_KBZrO" string="Tahsilatlar">
-              <group name="studio_group_KBZrO">
-                <field name="x_studio_field_IwyHE" string="Tahsilatlar" nolabel="1">
-                  <tree editable="buttom">
-                    <field name="x_studio_field_uYiFx" string="Makbuz Seri/No"/>
-                    <field name="x_studio_field_1goyK" string="Müşteri" attrs="{}" required="1"/>
-                    <field name="x_name" string="Açıklama"/>
-                    <field name="x_studio_field_WULf1" string="Ödeme Tipi" options="{'no_create_edit': True,'no_create': True,'no_edit': True}" required="1"/>
-                    <field name="x_studio_field_DPyee" string="Banka" options="{'no_create_edit': True,'no_create': True,'no_edit': True}"/>
-                    <field name="x_studio_field_yG1C9" string="Şubesi"/>
-                    <field name="x_studio_field_ABc0t" string="Çek No"/>
-                    <field name="x_studio_field_xAOwa" string="Hesap No"/>
-                    <field name="x_studio_field_GLBCx" string="Ödeme Vadesi" attrs="{&quot;readonly&quot;: [[&quot;id&quot;,&quot;=&quot;,&quot;1111111111111111111111&quot;]]}"/>
-                    <field name="x_studio_field_MR0G6" string="Ödeme Tutarı"/>
-                    <field name="x_studio_field_t76HR" string="Döviz Cinsi"/>
-                  </tree>
-                </field>
-              </group>
-            </page>
-            <page name="studio_page_lzIvy" string="Faturalar">
-              <group name="studio_group_lzIvy">
-                <field name="x_studio_field_r69Th" string="Faturalar" nolabel="1">
-                  <tree create="0" edit="0">
-                    <field name="type"/>
-                    <field name="partner_id"/>
-                    <field name="date_invoice"/>
-                    <field name="date_due"/>
-                    <field name="name"/>
-                    <field name="delivery_type"/>
-                    <field name="user_id"/>
-                    <field name="amount_total"/>
-                    <field name="currency_id"/>
-                    <field name="state"/>
-                  </tree>
-                </field>
-              </group>
-            </page>
-          </notebook>
-          <group name="studio_group_KRPmO">
-            <group name="studio_group_KRPmO_left" string="Toplamlar">
-              <field name="x_studio_field_u2hBh" force_save="True" attrs="{}" readonly="1"/>
-              <field name="x_studio_field_5kv6v" force_save="True" attrs="{}" readonly="1"/>
-              <field name="x_studio_field_zlYiP" force_save="True" attrs="{}" readonly="1"/>
-              <field name="x_studio_field_g6P6h" force_save="True" attrs="{}" readonly="1"/>
-              <field name="x_studio_field_GYgWG" string="Rutin Ziyaret Sayısı" force_save="True" attrs="{}" readonly="1"/>
-              <field name="x_studio_field_nALhZ" string="Dijital Ziyaret Sayısı" force_save="True" attrs="{}" readonly="1"/>
-            </group>
-            <group name="studio_group_KRPmO_right" string="Toplamlar (TRY) ₺">
-              <field name="x_studio_field_1Lrtl" string="Teklif Toplamı" force_save="True" attrs="{}" readonly="1"/>
-              <field name="x_studio_field_H4EPB" string="Sipariş Toplamı" force_save="True" attrs="{}" readonly="1"/>
-              <field name="x_studio_field_kCOZf" string="Fatura Toplamı" force_save="True" attrs="{}" readonly="1"/>
-              <field name="x_studio_field_DlxvT" string="İade Fatura Toplamı" force_save="True" attrs="{}" readonly="1"/>
-              <field name="x_studio_field_72Wcu" string="Tahsilat Toplamı" force_save="True" attrs="{}" readonly="1"/>
-            </group>
-          </group>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_2bc773c5-c760-4bc5-9bcd-5d80d865afb4"/>
-    <field name="mode">extension</field>
-    <field name="model">x_date_planned</field>
-    <field name="name">Odoo Studio: Default form view for x_date_planned customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_tree_view_fo_d34220fd-369e-4846-9094-748f7484bc7b" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree string="Günlük Plan">
-        <field name="x_name" modifiers="{}"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_date_planned</field>
-    <field name="name">Default tree view for x_date_planned</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_69d83164-225f-483c-9b03-2c4e730c7a93" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Rota Türleri">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_4cb83f">
-            <group name="studio_group_4cb83f_left"/>
-            <group name="studio_group_4cb83f_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_route_type</field>
-    <field name="name">Default form view for x_route_type</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_a4cc2ed3-1fab-4f78-8988-63d4116d59b2" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Aşamalar">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_a5201e">
-            <group name="studio_group_a5201e_left"/>
-            <group name="studio_group_a5201e_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_stage</field>
-    <field name="name">Default form view for x_stage</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__e1c02b7a-85ec-4c36-a727-dd4f6a4886e9" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//field[@name='x_name']" position="replace"/>
-        <xpath expr="//tree[1]" position="inside">
-          <field name="x_studio_field_hHZhh"/>
-          <field name="x_studio_field_Ytl4Z"/>
-          <field name="x_studio_field_BpW2F"/>
-          <field name="x_studio_field_k5hiw"/>
-          <field name="x_studio_field_ZOzw3"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_tree_view_fo_d34220fd-369e-4846-9094-748f7484bc7b"/>
-    <field name="mode">extension</field>
-    <field name="model">x_date_planned</field>
-    <field name="name">Odoo Studio: Default tree view for x_date_planned customization</field>
-    <field name="priority">99</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__7e60a29a-d5ef-4c70-a518-d1eea85ca5da" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//group[@name='studio_group_4cb83f_left']" position="inside">
-          <field name="x_studio_field_woWgL" string="Kategori"/>
-        </xpath>
-        <xpath expr="//form[1]/sheet[1]" position="after">
-          <div class="oe_chatter" name="studio_div_1e8663">
-            <field name="message_follower_ids" widget="mail_followers"/>
-            <field name="message_ids" widget="mail_thread"/>
-          </div>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_69d83164-225f-483c-9b03-2c4e730c7a93"/>
-    <field name="mode">extension</field>
-    <field name="model">x_route_type</field>
-    <field name="name">Odoo Studio: Default form view for x_route_type customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_fa3d2a7a-6680-431e-9941-791b98c6412a" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="İptal Nedenleri">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_797ad0">
-            <group name="studio_group_797ad0_left"/>
-            <group name="studio_group_797ad0_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_not_complete_type</field>
-    <field name="name">Default form view for x_not_complete_type</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_tree_view_fo_28fa3b33-2cc3-43ab-8aba-d4669c451935" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree string="İptal Nedenleri">
-        <field name="x_name" modifiers="{}"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_not_complete_type</field>
-    <field name="name">Default tree view for x_not_complete_type</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_a915425a-a806-4788-b100-e587a9dc6f90" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Rota İptal Detayları">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_c6f32f">
-            <group name="studio_group_c6f32f_left"/>
-            <group name="studio_group_c6f32f_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_route_not_completed_details</field>
-    <field name="name">Default form view for x_route_not_completed_details</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_tree_view_fo_f2cc357f-2da9-4a4b-bb2d-04ff2164f25e" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree string="Rota İptal Detayları">
-        <field name="x_name" modifiers="{}"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_route_not_completed_details</field>
-    <field name="name">Default tree view for x_route_not_completed_details</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__28bbbb2e-b4da-48e6-bffd-f01333c7f174" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//field[@name='x_name']" position="replace"/>
-        <xpath expr="//tree[1]" position="inside">
-          <field name="x_studio_field_5hFyr" string="İptal Nedeni"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_5hFyr']" position="attributes">
-          <attribute name="name">x_studio_field_5hFyr</attribute>
-          <attribute name="string">İptal Nedeni</attribute>
-        </xpath>
-        <xpath expr="//tree[1]" position="inside">
-          <field name="x_studio_field_ilknB" string="İptal Notu"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_tree_view_fo_f2cc357f-2da9-4a4b-bb2d-04ff2164f25e"/>
-    <field name="mode">extension</field>
-    <field name="model">x_route_not_completed_details</field>
-    <field name="name">Odoo Studio: Default tree view for x_route_not_completed_details customization</field>
-    <field name="priority">99</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__de9fba3a-f371-4138-b9a9-d1d6983792a5" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//group[@name='studio_group_c6f32f_left']" position="replace"/>
-        <xpath expr="//group[@name='studio_group_c6f32f_right']" position="replace"/>
-        <xpath expr="//group[@name='studio_group_c6f32f']" position="inside">
-          <field name="x_studio_field_5hFyr"/>
-          <field name="x_studio_field_ilknB"/>
-        </xpath>
-        <xpath expr="//form[1]/sheet[1]/div[1]/h1[1]" position="replace"/>
-        <xpath expr="//group[@name='studio_group_c6f32f']" position="after">
-          <footer>
-            <button string="Kaydet ve Kapat" class="btn-default" special="save"/>
-            <button string="Vazgeç" class="btn-default" special="cancel"/>
-          </footer>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_a915425a-a806-4788-b100-e587a9dc6f90"/>
-    <field name="mode">extension</field>
-    <field name="model">x_route_not_completed_details</field>
-    <field name="name">Odoo Studio: Default form view for x_route_not_completed_details customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_3650b149-bf91-46aa-a533-f1e86be1df7e" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Markalar">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_f999ac"/>
-          <group name="studio_group_f363ac">
-            <group name="studio_group_f363ac_left"/>
-            <group name="studio_group_f363ac_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_dcworks_brands</field>
-    <field name="name">Default form view for x_dcworks_brands</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_tree_view_fo_18729c31-9a21-458f-8bd7-a59e1863821c" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree string="Markalar">
-        <field name="x_name" modifiers="{}"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_dcworks_brands</field>
-    <field name="name">Default tree view for x_dcworks_brands</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_7f26b366-a870-4c02-a370-385c96d3eadb" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Root Planı">
-          <group col="4">
-            <newline/>
-            <field name="website_message_ids" colspan="4" modifiers="{}"/>
-            <newline/>
-            <field name="message_is_follower" modifiers="{&quot;readonly&quot;: true}"/>
-            <newline/>
-            <field name="message_follower_ids" colspan="4" on_change="1" modifiers="{}"/>
-            <newline/>
-            <newline/>
-            <field name="message_partner_ids" colspan="4" can_create="true" can_write="true" modifiers="{&quot;readonly&quot;: true}"/>
-            <newline/>
-            <newline/>
-            <field name="message_channel_ids" colspan="4" can_create="true" can_write="true" modifiers="{&quot;readonly&quot;: true}"/>
-            <newline/>
-            <newline/>
-            <field name="message_ids" colspan="4" modifiers="{}" options="{'display_log_button': True}"/>
-            <newline/>
-            <field name="message_last_post" modifiers="{}"/>
-            <field name="message_unread" modifiers="{&quot;readonly&quot;: true}"/>
-            <field name="message_unread_counter" modifiers="{&quot;readonly&quot;: true}"/>
-            <field name="message_needaction" modifiers="{&quot;readonly&quot;: true}"/>
-            <field name="message_needaction_counter" modifiers="{&quot;readonly&quot;: true}"/>
-            <field name="x_studio_field_fJwte" modifiers="{&quot;readonly&quot;: true}"/>
-            <newline/>
-            <field name="x_studio_field_3TYcn" colspan="4" modifiers="{}"/>
-            <newline/>
-            <field name="x_studio_field_JaVvX" can_create="true" can_write="true" modifiers="{}"/>
-            <field name="x_studio_field_bFy5v" can_create="true" can_write="true" modifiers="{}"/>
-            <field name="x_studio_field_8VSrL" can_create="true" can_write="true" modifiers="{}"/>
-            <field name="x_date_planned_id" on_change="1" can_create="true" can_write="true" modifiers="{}"/>
-            <field name="x_name" modifiers="{}"/>
-            <separator/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_root_planned</field>
-    <field name="name">Default form view for x_root_planned</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__86c30e38-6991-4fa8-a169-fe65e4622d87" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//field[@name='website_message_ids'][not(ancestor::field)]" position="replace"/>
-        <xpath expr="//field[@name='message_channel_ids'][not(ancestor::field)]" position="replace"/>
-        <xpath expr="//field[@name='message_partner_ids'][not(ancestor::field)]" position="replace"/>
-        <xpath expr="/form[1]/sheet[1]" position="inside">
-          <group name="studio_group_nD8jP">
-            <group name="studio_group_nD8jP_left" string="Left Title"/>
-            <group name="studio_group_nD8jP_right" string="Right Title"/>
-          </group>
-        </xpath>
-        <xpath expr="/form[1]/sheet[1]/group[1]" position="replace"/>
-        <xpath expr="//sheet" position="after">
-          <div class="oe_chatter">
-            <field name="message_follower_ids" widget="mail_followers"/>
-            <field name="message_ids" widget="mail_thread"/>
-          </div>
-        </xpath>
-        <xpath expr="//group[@name='studio_group_nD8jP_right'][not(ancestor::field)]" position="replace"/>
-        <xpath expr="//group[@name='studio_group_nD8jP_left'][not(ancestor::field)]" position="replace"/>
-        <xpath expr="//group[@name='studio_group_nD8jP'][not(ancestor::field)]" position="inside">
-          <field name="x_studio_field_8VSrL"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_8VSrL'][not(ancestor::field)]" position="after">
-          <field name="x_studio_field_JaVvX"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_JaVvX'][not(ancestor::field)]" position="attributes">
-          <attribute name="string">Aşama</attribute>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_JaVvX'][not(ancestor::field)]" position="after">
-          <field name="x_studio_field_3TYcn"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_8VSrL'][not(ancestor::field)]" position="after">
-          <field name="x_studio_field_bFy5v"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_8VSrL'][not(ancestor::field)]" position="before">
-          <field name="x_studio_field_fJwte"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_7f26b366-a870-4c02-a370-385c96d3eadb"/>
-    <field name="mode">extension</field>
-    <field name="model">x_root_planned</field>
-    <field name="name">Odoo Studio: Default form view for x_root_planned customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_tree_view_fo_a56b6cb7-021a-4cf6-a31a-74c42c4b5197" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree string="Root Planı">
-        <field name="x_name" modifiers="{}"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_root_planned</field>
-    <field name="name">Default tree view for x_root_planned</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__68027ffe-956b-4782-834b-8102f9c4a375" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//field[@name='x_name']" position="replace"/>
-        <xpath expr="//tree[1]" position="inside">
-          <field name="x_studio_field_fJwte"/>
-        </xpath>
-        <xpath expr="//field[@name='x_studio_field_fJwte']" position="attributes">
-          <attribute name="name">x_studio_field_fJwte</attribute>
-        </xpath>
-        <xpath expr="//tree[1]" position="inside">
-          <field name="x_studio_field_8VSrL"/>
-          <field name="x_studio_field_vDmQs" string="Satış Temsilcisi"/>
-          <field name="x_studio_field_4b0YS"/>
-          <field name="x_studio_field_24VYx"/>
-          <field name="x_studio_field_bFy5v"/>
-          <field name="x_studio_field_2Gsci"/>
-          <field name="x_studio_field_JaVvX"/>
-          <field name="x_studio_field_3TYcn"/>
-          <field name="x_studio_field_PG3Ap"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_tree_view_fo_a56b6cb7-021a-4cf6-a31a-74c42c4b5197"/>
-    <field name="mode">extension</field>
-    <field name="model">x_root_planned</field>
-    <field name="name">Odoo Studio: Default tree view for x_root_planned customization</field>
-    <field name="priority">99</field>
-    <field name="type">tree</field>
-  </record>
+  
   <record id="tamekran_studio_customization.odoo_studio_ir_modul_d3b75391-860b-4e17-a381-93341462a979" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -6882,106 +5748,7 @@
     <field name="priority">99</field>
     <field name="type">form</field>
   </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_345df671-929b-4339-993d-c447f5295b8d" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Ürün Dokümanları">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_b3e505">
-            <group name="studio_group_b3e505_left"/>
-            <group name="studio_group_b3e505_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_product.document</field>
-    <field name="name">Default form view for x_product.document</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_tree_view_fo_4995b388-93ea-4d7e-b5cb-7e8089cc85cf" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree string="Ürün Dokümanları">
-        <field name="x_name" modifiers="{}"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_product.document</field>
-    <field name="name">Default tree view for x_product.document</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__6d75ea9a-5862-42af-9a7b-360dec92fb20" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//field[@name='x_name']" position="before">
-          <field name="x_studio_field_133CK" widget="handle"/>
-        </xpath>
-        <xpath expr="//field[@name='x_name']" position="after">
-          <field name="x_studio_field_fPBq7"/>
-          <field name="x_studio_field_S8FrE"/>
-          <field name="x_studio_field_JMClo"/>
-          <field name="x_studio_field_3ZMQB"/>
-          <field name="x_studio_field_1kuAz"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_tree_view_fo_4995b388-93ea-4d7e-b5cb-7e8089cc85cf"/>
-    <field name="mode">extension</field>
-    <field name="model">x_product.document</field>
-    <field name="name">Odoo Studio: Default tree view for x_product.document customization</field>
-    <field name="priority">99</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__781f3bbf-6426-4131-ad9f-f168f8621499" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//group[@name='studio_group_b3e505_left']" position="inside">
-          <field name="x_studio_field_CKtb1" widget="binary"/>
-          <field name="x_studio_field_fPBq7" string="Video"/>
-          <field name="x_studio_field_133CK" widget="integer" string="Gösterim Sırası"/>
-        </xpath>
-        <xpath expr="//group[@name='studio_group_b3e505_right']" position="inside">
-          <field name="x_studio_field_S8FrE"/>
-          <field name="x_studio_field_JMClo"/>
-          <field name="x_studio_field_3ZMQB"/>
-          <field name="x_studio_field_1kuAz"/>
-        </xpath>
-        <xpath expr="//group[@name='studio_group_b3e505']" position="after">
-          <notebook name="studio_notebook_tQHEw">
-            <page name="studio_page_tQHEw" string="Ürünler">
-              <field name="x_studio_field_OBtfN"/>
-            </page>
-          </notebook>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_345df671-929b-4339-993d-c447f5295b8d"/>
-    <field name="mode">extension</field>
-    <field name="model">x_product.document</field>
-    <field name="name">Odoo Studio: Default form view for x_product.document customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
+  
   <record id="tamekran_studio_customization.default_tree_view_fo_673e0e65-741a-42de-9b51-109ff211bace" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -7021,214 +5788,6 @@
     <field name="priority">99</field>
     <field name="type">tree</field>
   </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_3ca40e3f-5d0b-40ef-8d40-fca8fa901bcb" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Müşteri Tipleri">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_40f133">
-            <group name="studio_group_40f133_left"/>
-            <group name="studio_group_40f133_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_customer_type</field>
-    <field name="name">Default form view for x_customer_type</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_913957b7-689f-4953-8260-e76a29c793c2" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Tahsilatlar">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_dc6210">
-            <group name="studio_group_dc6210_left"/>
-            <group name="studio_group_dc6210_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_payments</field>
-    <field name="name">Default form view for x_payments</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_tree_view_fo_aaac33cc-769d-42ec-b202-c49ebbe43e33" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree string="Tahsilatlar">
-        <field name="x_name" modifiers="{}"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_payments</field>
-    <field name="name">Default tree view for x_payments</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__b39a17e7-9a96-4bc1-bb69-dea3f0cf1dbf" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//group[@name='studio_group_dc6210_left']" position="inside">
-          <field name="x_studio_field_1goyK" domain="[[&quot;customer&quot;,&quot;=&quot;,True]]"/>
-          <field name="x_studio_field_GLBCx" attrs="{&quot;readonly&quot;: [[&quot;id&quot;,&quot;=&quot;,1]]}" string="Tarih"/>
-          <field name="x_studio_field_WULf1" string="Ödeme Tipi"/>
-          <field name="x_studio_field_MR0G6" string="Tutar"/>
-          <field name="x_studio_field_t76HR" string="Döviiz Cinsi"/>
-        </xpath>
-        <xpath expr="//group[@name='studio_group_dc6210_right']" position="inside">
-          <field name="x_studio_field_AlSea"/>
-          <field name="x_studio_field_CtNkl" string="Satış Temsilcisi"/>
-        </xpath>
-        <xpath expr="//form[1]/sheet[1]" position="after">
-          <div class="oe_chatter" name="studio_div_48c16b">
-            <field name="message_follower_ids" widget="mail_followers"/>
-            <field name="message_ids" widget="mail_thread"/>
-          </div>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_913957b7-689f-4953-8260-e76a29c793c2"/>
-    <field name="mode">extension</field>
-    <field name="model">x_payments</field>
-    <field name="name">Odoo Studio: Default form view for x_payments customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__d0c1bb93-20f3-4474-9781-688fcaf7daa2" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//field[@name='x_name']" position="before">
-          <field name="x_studio_field_1goyK" string="Müşteri"/>
-          <field name="x_studio_field_WULf1"/>
-          <field name="x_studio_field_GLBCx"/>
-        </xpath>
-        <xpath expr="//field[@name='x_name']" position="attributes">
-          <attribute name="string">Açıklama</attribute>
-        </xpath>
-        <xpath expr="//field[@name='x_name']" position="after">
-          <field name="x_studio_field_MR0G6"/>
-          <field name="x_studio_field_t76HR" string="Döviz Cinsi"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_tree_view_fo_aaac33cc-769d-42ec-b202-c49ebbe43e33"/>
-    <field name="mode">extension</field>
-    <field name="model">x_payments</field>
-    <field name="name">Odoo Studio: Default tree view for x_payments customization</field>
-    <field name="priority">99</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.default_pivot_view_f_bf07a84f-86f4-4d47-9a56-8d13ef7354e7" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <pivot string="Günlük Plan">
-        <field name="x_studio_field_1Lrtl" type="measure"/>
-        <field name="x_studio_field_H4EPB" type="measure"/>
-        <field name="x_studio_field_kCOZf" type="measure"/>
-        <field name="x_studio_field_DlxvT" type="measure"/>
-        <field name="x_studio_field_72Wcu" type="measure"/>
-        <field name="x_studio_field_hHZhh" interval="year" type="row"/>
-        <field name="x_studio_field_hHZhh" interval="month" type="row"/>
-        <field name="x_studio_field_Ytl4Z" type="row"/>
-      </pivot>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_date_planned</field>
-    <field name="name">Default pivot view for x_date_planned</field>
-    <field name="priority">16</field>
-    <field name="type">pivot</field>
-  </record>
-  <record id="tamekran_studio_customization.default_graph_view_f_e488454d-2397-45f8-966b-246044ebc02d" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <graph string="Günlük Plan">
-        <field name="x_name" modifiers="{}"/>
-      </graph>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_date_planned</field>
-    <field name="name">Default graph view for x_date_planned</field>
-    <field name="priority">16</field>
-    <field name="type">graph</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__d835e12b-c80d-42fb-96e2-c2a612cd7432" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//group[@name='studio_group_f999ac']" position="inside">
-          <field name="x_studio_field_3YlrU" string="Açıklama"/>
-        </xpath>
-        <xpath expr="//group[@name='studio_group_f363ac_left']" position="inside">
-          <field name="x_studio_field_WaCSZ" string="Meta Başlık"/>
-          <field name="x_studio_field_4fyQb" string="Meta Açıklama"/>
-          <field name="x_studio_field_XNWXC" string="Meta Anahtar Kelimeler"/>
-          <field name="x_studio_field_pnj9t" string="Yayında"/>
-        </xpath>
-        <xpath expr="//group[@name='studio_group_f363ac_right']" position="inside">
-          <field name="x_studio_field_ccTdj" widget="image" string="Marka Logosu"/>
-        </xpath>
-        <xpath expr="//group[@name='studio_group_f363ac']" position="after">
-          <notebook name="studio_notebook_6HEwu">
-            <page name="studio_page_UnYXr" string="İlişkili Ürünler">
-              <group name="studio_group_UnYXr">
-                <field name="x_studio_field_2DZdB" widget="one2many" nolabel="1"/>
-              </group>
-            </page>
-          </notebook>
-        </xpath>
-        <xpath expr="//form[1]/sheet[1]" position="after">
-          <div class="oe_chatter" name="studio_div_fad22e">
-            <field name="message_follower_ids" widget="mail_followers"/>
-            <field name="message_ids" widget="mail_thread"/>
-          </div>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_3650b149-bf91-46aa-a533-f1e86be1df7e"/>
-    <field name="mode">extension</field>
-    <field name="model">x_dcworks_brands</field>
-    <field name="name">Odoo Studio: Default form view for x_dcworks_brands customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
   <record id="tamekran_studio_customization.odoo_studio_res_user_a0ea22ab-fe02-4c96-9939-0a00c3f49079" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -7248,246 +5807,7 @@
     <field name="priority">99</field>
     <field name="type">tree</field>
   </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__f33a3567-bf88-4c48-af58-191c4429011b" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//field[@name='x_name']" position="before">
-          <field name="x_studio_field_ccTdj" widget="image"/>
-        </xpath>
-        <xpath expr="//field[@name='x_name']" position="after">
-          <field name="x_studio_field_pnj9t" widget="boolean_toggle"/>
-          <field name="x_studio_field_2DZdB"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_tree_view_fo_18729c31-9a21-458f-8bd7-a59e1863821c"/>
-    <field name="mode">extension</field>
-    <field name="model">x_dcworks_brands</field>
-    <field name="name">Odoo Studio: Default tree view for x_dcworks_brands customization</field>
-    <field name="priority">99</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_a3fa0460-95ab-4ed6-a214-a9e4b47fe35a" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Ödeme Tipleri">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_4ecf7c">
-            <group name="studio_group_4ecf7c_left"/>
-            <group name="studio_group_4ecf7c_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_dcworks_payment_types</field>
-    <field name="name">Default form view for x_dcworks_payment_types</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_6a8d145c-f50a-4d63-a25e-3655f6aa9217" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Ödeme Vadeleri">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_f5d172">
-            <group name="studio_group_f5d172_left"/>
-            <group name="studio_group_f5d172_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_dcworks_payment_due</field>
-    <field name="name">Default form view for x_dcworks_payment_due</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__23f216ea-49bb-4e68-909e-3a095e84ef92" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//group[@name='studio_group_4ecf7c_left']" position="inside">
-          <field name="x_studio_field_GZXmn" string="Vadeli mi?"/>
-          <field name="x_studio_field_C4mNY" string="Ödeme Türü"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_a3fa0460-95ab-4ed6-a214-a9e4b47fe35a"/>
-    <field name="mode">extension</field>
-    <field name="model">x_dcworks_payment_types</field>
-    <field name="name">Odoo Studio: Default form view for x_dcworks_payment_types customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__e9c5fdbc-e473-4801-8b66-374d9efa9cdb" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//group[@name='studio_group_f5d172_left']" position="inside">
-          <field name="x_studio_field_dCzdA" widget="many2many_tags" domain="[[&quot;x_studio_field_GZXmn&quot;,&quot;=&quot;,True]]"/>
-          <field name="x_studio_field_fjBfg" string="Vade"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_6a8d145c-f50a-4d63-a25e-3655f6aa9217"/>
-    <field name="mode">extension</field>
-    <field name="model">x_dcworks_payment_due</field>
-    <field name="name">Odoo Studio: Default form view for x_dcworks_payment_due customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_8c581f08-ab75-44f1-9fc1-d453f70cfac8" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Ürün Ailesi">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_e1af1c">
-            <group name="studio_group_e1af1c_left"/>
-            <group name="studio_group_e1af1c_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_product_family</field>
-    <field name="name">Default form view for x_product_family</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_tree_view_fo_9e2e1356-c780-4402-b54c-0ef367df7ba9" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree string="Ürün Ailesi">
-        <field name="x_name" modifiers="{}"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_product_family</field>
-    <field name="name">Default tree view for x_product_family</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.odoo_studio_default__526996cf-4898-4719-94f2-33c7b39b1778" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//group[@name='studio_group_e1af1c']" position="after">
-          <notebook name="studio_notebook_BciPK">
-            <page name="studio_page_BciPK" string="Ürünler">
-              <group name="studio_group_BciPK">
-                <field name="x_studio_field_zkXly" nolabel="1"/>
-              </group>
-            </page>
-            <page name="studio_page_mEyF5" string="Ürün Aksesuarları">
-              <group name="studio_group_mEyF5">
-                <field name="x_studio_field_TvKcA" nolabel="1"/>
-              </group>
-            </page>
-            <page name="studio_page_9H1g0" string="Opsiyonel Ürün Grupları">
-              <group name="studio_group_9H1g0">
-                <field name="x_studio_field_YIOKR" nolabel="1">
-                  <tree string="Ürün Ailesi">
-                    <field name="x_name" modifiers="{}" string="Açıklama"/>
-                  </tree>
-                </field>
-              </group>
-            </page>
-          </notebook>
-        </xpath>
-        <xpath expr="//form[1]/sheet[1]" position="after">
-          <div class="oe_chatter" name="studio_div_ad78b1">
-            <field name="message_follower_ids" widget="mail_followers"/>
-            <field name="message_ids" widget="mail_thread"/>
-          </div>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_8c581f08-ab75-44f1-9fc1-d453f70cfac8"/>
-    <field name="mode">extension</field>
-    <field name="model">x_product_family</field>
-    <field name="name">Odoo Studio: Default form view for x_product_family customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_9db779c5-d662-44c4-a90a-55d5fc78a125" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Ödeme Türleri">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_6b6ff2">
-            <group name="studio_group_6b6ff2_left"/>
-            <group name="studio_group_6b6ff2_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_payment_class</field>
-    <field name="name">Default form view for x_payment_class</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_tree_view_fo_bd676e05-63a7-44f2-b9e8-2a3372abc790" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree string="Ödeme Tipleri">
-        <field name="x_name" modifiers="{}"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_dcworks_payment_types</field>
-    <field name="name">Default tree view for x_dcworks_payment_types</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
+  
   <record id="tamekran_studio_customization.odoo_studio_account__e24493e3-b2e7-4630-afe8-9b42465c57ef" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -7505,58 +5825,6 @@
     <field name="name">Odoo Studio: account.bank.statement.line.tree customization</field>
     <field name="priority">99</field>
     <field name="type">tree</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_db984bce-2f31-46e7-90fc-ce5c5585da1e" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Ziyaret türleri">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_fa26fb">
-            <group name="studio_group_fa26fb_left"/>
-            <group name="studio_group_fa26fb_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_visit_types</field>
-    <field name="name">Default form view for x_visit_types</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.default_form_view_fo_657542dd-2f7c-4116-8ef2-88de6474c63d" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <sheet string="Müşteri İş Durumları">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1"/>
-            </h1>
-          </div>
-          <group name="studio_group_55ec60">
-            <group name="studio_group_55ec60_left"/>
-            <group name="studio_group_55ec60_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_customer_business_case</field>
-    <field name="name">Default form view for x_customer_business_case</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
   </record>
   <record id="tamekran_studio_customization.report_d3bed716-a29d-414e-93c7-6210a9bffa96" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
@@ -8234,5 +6502,213 @@
     <field name="name">Odoo Studio: stock.quant.tree customization</field>
     <field name="priority">99</field>
     <field name="type">tree</field>
+  </record>
+  <record id="tamekran_studio_customization.ziyaret_turleri_b9cbbc4f-4869-4208-9169-4b8163019655" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p>
+                        This is your new action ; by default, it contains a list view and a form view.
+                    </p>
+                    <p>
+                        You can start customizing these screens by clicking on the Studio icon on the
+                        top right corner (you can also customize this help message there).
+                    </p>
+                ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Ziyaret Türleri</field>
+    <field name="res_model">x_visit_types</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="tamekran_studio_customization.default_form_view_fo_7f26b366-a870-4c02-a370-385c96d3eadb" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <form>
+        <sheet string="Root Planı">
+          <group col="4">
+            <newline/>
+            <field name="website_message_ids" colspan="4" modifiers="{}"/>
+            <newline/>
+            <field name="message_is_follower" modifiers="{&quot;readonly&quot;: true}"/>
+            <newline/>
+            <field name="message_follower_ids" colspan="4" on_change="1" modifiers="{}"/>
+            <newline/>
+            <newline/>
+            <field name="message_partner_ids" colspan="4" can_create="true" can_write="true" modifiers="{&quot;readonly&quot;: true}"/>
+            <newline/>
+            <newline/>
+            <field name="message_channel_ids" colspan="4" can_create="true" can_write="true" modifiers="{&quot;readonly&quot;: true}"/>
+            <newline/>
+            <newline/>
+            <field name="message_ids" colspan="4" modifiers="{}" options="{'display_log_button': True}"/>
+            <newline/>
+            <field name="message_last_post" modifiers="{}"/>
+            <field name="message_unread" modifiers="{&quot;readonly&quot;: true}"/>
+            <field name="message_unread_counter" modifiers="{&quot;readonly&quot;: true}"/>
+            <field name="message_needaction" modifiers="{&quot;readonly&quot;: true}"/>
+            <field name="message_needaction_counter" modifiers="{&quot;readonly&quot;: true}"/>
+            <field name="x_studio_field_fJwte" modifiers="{&quot;readonly&quot;: true}"/>
+            <newline/>
+            <field name="x_studio_field_3TYcn" colspan="4" modifiers="{}"/>
+            <newline/>
+            <field name="x_studio_field_JaVvX" can_create="true" can_write="true" modifiers="{}"/>
+            <field name="x_studio_field_bFy5v" can_create="true" can_write="true" modifiers="{}"/>
+            <field name="x_studio_field_8VSrL" can_create="true" can_write="true" modifiers="{}"/>
+            <field name="x_date_planned_id" on_change="1" can_create="true" can_write="true" modifiers="{}"/>
+            <field name="x_name" modifiers="{}"/>
+            <separator/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_root_planned</field>
+    <field name="name">Default form view for x_root_planned</field>
+    <field name="priority">16</field>
+    <field name="type">form</field>
+  </record>
+    <record id="tamekran_studio_customization.odoo_studio_default__86c30e38-6991-4fa8-a169-fe65e4622d87" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='website_message_ids'][not(ancestor::field)]" position="replace"/>
+        <xpath expr="//field[@name='message_channel_ids'][not(ancestor::field)]" position="replace"/>
+        <xpath expr="//field[@name='message_partner_ids'][not(ancestor::field)]" position="replace"/>
+        <xpath expr="/form[1]/sheet[1]" position="inside">
+          <group name="studio_group_nD8jP">
+            <group name="studio_group_nD8jP_left" string="Left Title"/>
+            <group name="studio_group_nD8jP_right" string="Right Title"/>
+          </group>
+        </xpath>
+        <xpath expr="/form[1]/sheet[1]/group[1]" position="replace"/>
+        <xpath expr="//sheet" position="after">
+          <div class="oe_chatter">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_nD8jP_right'][not(ancestor::field)]" position="replace"/>
+        <xpath expr="//group[@name='studio_group_nD8jP_left'][not(ancestor::field)]" position="replace"/>
+        <xpath expr="//group[@name='studio_group_nD8jP'][not(ancestor::field)]" position="inside">
+          <field name="x_studio_field_8VSrL"/>
+        </xpath>
+        <xpath expr="//field[@name='x_studio_field_8VSrL'][not(ancestor::field)]" position="after">
+          <field name="x_studio_field_JaVvX"/>
+        </xpath>
+        <xpath expr="//field[@name='x_studio_field_JaVvX'][not(ancestor::field)]" position="attributes">
+          <attribute name="string">Aşama</attribute>
+        </xpath>
+        <xpath expr="//field[@name='x_studio_field_JaVvX'][not(ancestor::field)]" position="after">
+          <field name="x_studio_field_3TYcn"/>
+        </xpath>
+        <xpath expr="//field[@name='x_studio_field_8VSrL'][not(ancestor::field)]" position="after">
+          <field name="x_studio_field_bFy5v"/>
+        </xpath>
+        <xpath expr="//field[@name='x_studio_field_8VSrL'][not(ancestor::field)]" position="before">
+          <field name="x_studio_field_fJwte"/>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_7f26b366-a870-4c02-a370-385c96d3eadb"/>
+    <field name="mode">extension</field>
+    <field name="model">x_root_planned</field>
+    <field name="name">Odoo Studio: Default form view for x_root_planned customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+  </record>
+  <record id="tamekran_studio_customization.default_tree_view_fo_a56b6cb7-021a-4cf6-a31a-74c42c4b5197" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <tree string="Root Planı">
+        <field name="x_name" modifiers="{}"/>
+      </tree>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_root_planned</field>
+    <field name="name">Default tree view for x_root_planned</field>
+    <field name="priority">16</field>
+    <field name="type">tree</field>
+  </record>
+  <record id="tamekran_studio_customization.odoo_studio_default__68027ffe-956b-4782-834b-8102f9c4a375" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="replace"/>
+        <xpath expr="//tree[1]" position="inside">
+          <field name="x_studio_field_fJwte"/>
+        </xpath>
+        <xpath expr="//field[@name='x_studio_field_fJwte']" position="attributes">
+          <attribute name="name">x_studio_field_fJwte</attribute>
+        </xpath>
+        <xpath expr="//tree[1]" position="inside">
+          <field name="x_studio_field_8VSrL"/>
+          <field name="x_studio_field_vDmQs" string="Satış Temsilcisi"/>
+          <field name="x_studio_field_4b0YS"/>
+          <field name="x_studio_field_24VYx"/>
+          <field name="x_studio_field_bFy5v"/>
+          <field name="x_studio_field_2Gsci"/>
+          <field name="x_studio_field_JaVvX"/>
+          <field name="x_studio_field_3TYcn"/>
+          <field name="x_studio_field_PG3Ap"/>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="tamekran_studio_customization.default_tree_view_fo_a56b6cb7-021a-4cf6-a31a-74c42c4b5197"/>
+    <field name="mode">extension</field>
+    <field name="model">x_root_planned</field>
+    <field name="name">Odoo Studio: Default tree view for x_root_planned customization</field>
+    <field name="priority">99</field>
+    <field name="type">tree</field>
+  </record>
+  <record id="tamekran_studio_customization.odoo_studio_default__b39a17e7-9a96-4bc1-bb69-dea3f0cf1dbf" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//group[@name='studio_group_dc6210_left']" position="inside">
+          <field name="x_studio_field_1goyK" domain="[[&quot;customer&quot;,&quot;=&quot;,True]]"/>
+          <field name="x_studio_field_GLBCx" attrs="{&quot;readonly&quot;: [[&quot;id&quot;,&quot;=&quot;,1]]}" string="Tarih"/>
+          <field name="x_studio_field_WULf1" string="Ödeme Tipi"/>
+          <field name="x_studio_field_MR0G6" string="Tutar"/>
+          <field name="x_studio_field_t76HR" string="Döviiz Cinsi"/>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_dc6210_right']" position="inside">
+          <field name="x_studio_field_AlSea"/>
+          <field name="x_studio_field_CtNkl" string="Satış Temsilcisi"/>
+        </xpath>
+        <xpath expr="//form[1]/sheet[1]" position="after">
+          <div class="oe_chatter" name="studio_div_48c16b">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_913957b7-689f-4953-8260-e76a29c793c2"/>
+    <field name="mode">extension</field>
+    <field name="model">x_payments</field>
+    <field name="name">Odoo Studio: Default form view for x_payments customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
   </record>
 </odoo>

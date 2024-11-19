@@ -6,7 +6,7 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">debit,credit</field>
+    <!-- <field name="trigger_field_ids">debit,credit</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type">day</field>
@@ -18,7 +18,6 @@
     <field name="filter_domain">["&amp;",["x_studio_field_k5hiw","&gt;",0],["x_studio_field_ZOzw3","&gt;",0]]</field>
     <field name="filter_pre_domain">[]</field>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields" eval="False"/>
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type" eval="False"/>
@@ -30,7 +29,6 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields" eval="False"/>
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type" eval="False"/>
@@ -42,7 +40,7 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">alternative_product_ids</field>
+    <!-- <field name="trigger_field_ids">alternative_product_ids</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type">day</field>
@@ -54,31 +52,31 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">partner_id</field>
+    <!-- <field name="trigger_field_ids">partner_id</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type" eval="False"/>
     <field name="trigger">on_change</field>
   </record>
-  <record id="tamekran_studio_customization.isim_alann_olusturma_54e9e7e3-fd92-461c-b3ea-cba34e102a76" model="base.automation" context="{'studio': True}">
+  <!-- <record id="tamekran_studio_customization.isim_alann_olusturma_54e9e7e3-fd92-461c-b3ea-cba34e102a76" model="base.automation" context="{'studio': True}">
     <field name="action_server_id" ref="tamekran_studio_customization.isim_alann_olusturma_e3ea2d03-a9e5-44a1-8312-c110172c9e4e"/>
     <field name="active" eval="True"/>
     <field name="filter_domain">[["x_studio_field_8VSrL","!=",False]]</field>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">x</field>
+    <field name="trigger_field_ids">x</field>
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type" eval="False"/>
     <field name="trigger">on_create</field>
-  </record>
+  </record> -->
   <record id="tamekran_studio_customization.bakiye_alannn_hesapl_90345969-09dc-43bc-b095-bed4c7e7730b" model="base.automation" context="{'studio': True}">
     <field name="action_server_id" ref="tamekran_studio_customization.bakiye_alannn_hesapl_90345969-09dc-43bc-b095-bed4c7e7730b_ir_actions_server"/>
     <field name="active" eval="True"/>
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">x_studio_field_INxEu,amount_total</field>
+    <!-- <field name="trigger_field_ids">x_studio_field_INxEu,amount_total</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type">day</field>
@@ -90,7 +88,7 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">_barcode_scanned</field>
+    <!-- <field name="trigger_field_ids">_barcode_scanned</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type">day</field>
@@ -102,7 +100,7 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">qty_done</field>
+    <!-- <field name="trigger_field_ids">qty_done</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type">day</field>
@@ -114,7 +112,7 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">x_studio_field_dGLv4,x_studio_field_esjUA</field>
+    <!-- <field name="trigger_field_ids">x_studio_field_dGLv4,x_studio_field_esjUA</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type">day</field>
@@ -126,43 +124,41 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">create_uid</field>
+    <!-- <field name="trigger_field_ids">create_uid</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type" eval="False"/>
     <field name="trigger">on_create</field>
   </record>
-  <record id="tamekran_studio_customization.root_planndaki_bolge_95c83b92-7f84-48c5-b9b9-8ed1214de664" model="base.automation" context="{'studio': True}">
+  <!-- <record id="tamekran_studio_customization.root_planndaki_bolge_95c83b92-7f84-48c5-b9b9-8ed1214de664" model="base.automation" context="{'studio': True}">
     <field name="action_server_id" ref="tamekran_studio_customization.root_planndaki_bolge_6c8e14b0-6bab-4fb9-bf82-710a2a39f1c4"/>
     <field name="active" eval="True"/>
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">x_studio_field_8VSrL</field>
+    <field name="trigger_field_ids">x_studio_field_8VSrL</field>
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type">day</field>
     <field name="trigger">on_change</field>
-  </record>
-  <record id="tamekran_studio_customization.tarih_alann_doldurma_f53a05db-fa27-4e89-b7e7-1fd9dd1bbc5f" model="base.automation" context="{'studio': True}">
+  </record> -->
+  <!-- <record id="tamekran_studio_customization.tarih_alann_doldurma_f53a05db-fa27-4e89-b7e7-1fd9dd1bbc5f" model="base.automation" context="{'studio': True}">
     <field name="action_server_id" ref="tamekran_studio_customization.tarih_alann_doldurma_05f16559-4664-48de-bf8c-55f6bd3fba9a"/>
     <field name="active" eval="True"/>
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields" eval="False"/>
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type" eval="False"/>
     <field name="trigger">on_create</field>
-  </record>
+  </record> -->
   <record id="tamekran_studio_customization.toplam_alanlarn_hesa_b38e38c9-bf02-459c-b9e9-8c83eca9a533" model="base.automation" context="{'studio': True}">
     <field name="action_server_id" ref="tamekran_studio_customization.toplam_alanlarn_hesa_9cc28bb7-19ac-4de1-b350-a19e42e8bc9a"/>
     <field name="active" eval="True"/>
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields" eval="False"/>
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type" eval="False"/>
@@ -174,7 +170,6 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields" eval="False"/>
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type" eval="False"/>
@@ -186,7 +181,7 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">x_studio_field_r1b7f</field>
+    <!-- <field name="trigger_field_ids">x_studio_field_r1b7f</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type">day</field>
@@ -198,7 +193,7 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">x_studio_field_zkXly,write_date</field>
+    <!-- <field name="trigger_field_ids">x_studio_field_zkXly,write_date</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type" eval="False"/>
@@ -210,7 +205,6 @@
     <field name="filter_domain">[["x_studio_field_Yx0X5","!=",False]]</field>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields" eval="False"/>
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type" eval="False"/>
@@ -222,7 +216,7 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">x_studio_field_r1b7f,x_studio_field_Lazge</field>
+    <!-- <field name="trigger_field_ids">x_studio_field_r1b7f,x_studio_field_Lazge</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type">day</field>
@@ -234,7 +228,7 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">x_studio_field_p4br6,x_studio_field_r1b7f</field>
+    <!-- <field name="trigger_field_ids">x_studio_field_p4br6,x_studio_field_r1b7f</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type">day</field>
@@ -246,7 +240,7 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">x_studio_field_YIOKR,id</field>
+    <!-- <field name="trigger_field_ids">x_studio_field_YIOKR,id</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type">day</field>
@@ -258,7 +252,7 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">x_studio_field_3irPZ,x_studio_field_dGLv4</field>
+    <!-- <field name="trigger_field_ids">x_studio_field_3irPZ,x_studio_field_dGLv4</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type">day</field>
@@ -270,7 +264,7 @@
     <field name="filter_domain" eval="False"/>
     <field name="filter_pre_domain" eval="False"/>
     <field name="last_run" eval="False"/>
-    <field name="on_change_fields">x_studio_field_dGLv4</field>
+    <!-- <field name="trigger_field_ids">x_studio_field_dGLv4</field> -->
     <field name="trg_date_id" eval="False"/>
     <field name="trg_date_range" eval="False"/>
     <field name="trg_date_range_type">day</field>

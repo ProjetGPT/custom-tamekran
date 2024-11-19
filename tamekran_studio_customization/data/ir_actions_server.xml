@@ -51,7 +51,7 @@
     <field name="sequence">5</field>
     <field name="state">code</field>
   </record>
-  <record id="tamekran_studio_customization.root_planndaki_bolge_6c8e14b0-6bab-4fb9-bf82-710a2a39f1c4" model="ir.actions.server" context="{'studio': True}">
+  <!-- <record id="tamekran_studio_customization.root_planndaki_bolge_6c8e14b0-6bab-4fb9-bf82-710a2a39f1c4" model="ir.actions.server" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="child_ids" eval="[(6, 0, [])]"/>
@@ -65,7 +65,7 @@ else:
     <field name="name">Root Planındaki bölge alanını otomatik getirme</field>
     <field name="sequence">5</field>
     <field name="state">code</field>
-  </record>
+  </record> -->
   <record id="tamekran_studio_customization.ozellik_degeri_domai_7b5fbaf6-4448-482d-aab7-ff782811a4fb" model="ir.actions.server" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
@@ -177,7 +177,7 @@ record.update({'x_studio_field_A9AN6': (record.partner_id.credit - record.partne
     <field name="sequence">5</field>
     <field name="state">code</field>
   </record>
-  <record id="tamekran_studio_customization.tarih_alann_doldurma_05f16559-4664-48de-bf8c-55f6bd3fba9a" model="ir.actions.server" context="{'studio': True}">
+  <!-- <record id="tamekran_studio_customization.tarih_alann_doldurma_05f16559-4664-48de-bf8c-55f6bd3fba9a" model="ir.actions.server" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="child_ids" eval="[(6, 0, [])]"/>
@@ -200,7 +200,7 @@ record.update({'x_studio_field_A9AN6': (record.partner_id.credit - record.partne
     <field name="name">Tarih alanını doldurma</field>
     <field name="sequence">5</field>
     <field name="state">object_write</field>
-  </record>
+  </record> -->
   <record id="tamekran_studio_customization.bakiye_alannn_hesapl_90345969-09dc-43bc-b095-bed4c7e7730b_ir_actions_server" model="ir.actions.server" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
@@ -229,7 +229,7 @@ record.update({'x_studio_field_A9AN6': (record.partner_id.credit - record.partne
     <field name="sequence">5</field>
     <field name="state">code</field>
   </record>
-  <record id="tamekran_studio_customization.isim_alann_olusturma_e3ea2d03-a9e5-44a1-8312-c110172c9e4e" model="ir.actions.server" context="{'studio': True}">
+  <!-- <record id="tamekran_studio_customization.isim_alann_olusturma_e3ea2d03-a9e5-44a1-8312-c110172c9e4e" model="ir.actions.server" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="child_ids" eval="[(6, 0, [])]"/>
@@ -242,7 +242,7 @@ record.update({'x_studio_field_A9AN6': (record.partner_id.credit - record.partne
     <field name="name">Rota Planı ekranındaki İsim alanını oluşturma</field>
     <field name="sequence">5</field>
     <field name="state">code</field>
-  </record>
+  </record> -->
   <record id="tamekran_studio_customization.gunluk_km_bilgisi_he_03cd9a53-9df4-42b5-932d-c84f57b7f1f3" model="ir.actions.server" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>

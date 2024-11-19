@@ -7,7 +7,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">x_date_planned</field>
-    <field name="multi" eval="False"/>
     <field name="name">Tahsilat Makbuzu</field>
     <field name="report_name">tamekran_studio_customization.report_d3bed716-a29d-414e-93c7-6210a9bffa96</field>
     <field name="report_type">qweb-pdf</field>
@@ -19,7 +18,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">stock.picking</field>
-    <field name="multi" eval="False"/>
     <field name="name">Işıklar Toplama Listesi - Transfer Emri</field>
     <field name="report_name">tamekran_studio_customization.report_19b621c5-b9a9-43b0-af50-504bd99a791f</field>
     <field name="report_type">qweb-pdf</field>
@@ -31,7 +29,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">stock.picking</field>
-    <field name="multi" eval="False"/>
     <field name="name">Kargo Etiketi</field>
     <field name="report_name">tamekran_studio_customization.report_168b3257-648b-4383-8305-fda744fb6449</field>
     <field name="report_type">qweb-pdf</field>
@@ -43,7 +40,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
-    <field name="multi" eval="False"/>
     <field name="name">Işıklar Toplama Listesi - Sipariş</field>
     <field name="report_name">tamekran_studio_customization.report_eecc88a8-e8bf-4edd-aea4-4ecef2bd76ae</field>
     <field name="report_type">qweb-pdf</field>
@@ -55,7 +51,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">stock.picking</field>
-    <field name="multi" eval="False"/>
     <field name="name">Işıklar Led İrsaliye</field>
     <field name="report_name">tamekran_studio_customization.report_d5ec938b-23e6-42d8-aa3a-2ce5239196f2</field>
     <field name="report_type">qweb-pdf</field>
@@ -67,7 +62,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">res.partner</field>
-    <field name="multi" eval="False"/>
     <field name="name">İhtarname</field>
     <field name="report_name">tamekran_studio_customization.report_8b8a3d09-0bbe-44a5-a797-d78cef6eea34</field>
     <field name="report_type">qweb-pdf</field>
@@ -79,7 +73,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">account.move</field>
-    <field name="multi" eval="False"/>
     <field name="name">Işıklar Led</field>
     <field name="report_name">tamekran_studio_customization.report_a7edccb3-afb9-45dd-a390-cb76ef14088f</field>
     <field name="report_type">qweb-pdf</field>
@@ -91,7 +84,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
-    <field name="multi" eval="False"/>
     <field name="name">Işıklar Led Teklif</field>
     <field name="report_name">tamekran_studio_customization.report_64b819b6-5bd3-4f23-ac40-67347395f0b8</field>
     <field name="report_type">qweb-pdf</field>
@@ -103,7 +95,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
-    <field name="multi" eval="False"/>
     <field name="name">Işıklar Led Teklif - ING</field>
     <field name="report_name">tamekran_studio_customization.report_5faee039-a2fd-4cbe-8864-15f0c7bb35af</field>
     <field name="report_type">qweb-pdf</field>
@@ -115,7 +106,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
-    <field name="multi" eval="False"/>
     <field name="name">Limba Teklif</field>
     <field name="report_name">tamekran_studio_customization.report_b0665911-a576-4587-9c98-cde2b9337f8b</field>
     <field name="report_type">qweb-pdf</field>
@@ -127,7 +117,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
-    <field name="multi" eval="False"/>
     <field name="name">Limba Teklif - ING</field>
     <field name="report_name">tamekran_studio_customization.report_1f6405b9-e9e3-4d1b-9a7f-441069abffd2</field>
     <field name="report_type">qweb-pdf</field>
@@ -139,7 +128,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
-    <field name="multi" eval="False"/>
     <field name="name">Tam Ekran Teklif</field>
     <field name="report_name">tamekran_studio_customization.report_0537d81c-c75f-4614-bb2c-cdd6f38a62ac</field>
     <field name="report_type">qweb-pdf</field>
@@ -151,7 +139,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
-    <field name="multi" eval="False"/>
     <field name="name">Tam Ekran Teklif - ING</field>
     <field name="report_name">tamekran_studio_customization.report_22f70011-90fe-4c00-8c9b-0cbbd0ba123b</field>
     <field name="report_type">qweb-pdf</field>
@@ -163,7 +150,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">sale.order</field>
-    <field name="multi" eval="False"/>
     <field name="name">Kargo Etiketi</field>
     <field name="report_name">tamekran_studio_customization.report_d7dbf2f7-c6f8-4cec-a091-856f3da534e8</field>
     <field name="report_type">qweb-pdf</field>
@@ -175,7 +161,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">account.move.line</field>
-    <field name="multi" eval="False"/>
     <field name="name">Yevmiye Kalemleri Çıktı</field>
     <field name="report_name">tamekran_studio_customization.report_08f37c56-fe48-4d11-828d-a276ad2dd0fe</field>
     <field name="report_type">qweb-pdf</field>
@@ -187,7 +172,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">x_date_planned</field>
-    <field name="multi" eval="False"/>
     <field name="name">Günlük Plan Sipariş Çıktı</field>
     <field name="report_name">tamekran_studio_customization.report_f865b774-cd23-4763-91b8-05eb1958b4d1</field>
     <field name="report_type">qweb-pdf</field>
@@ -199,7 +183,6 @@
     <field name="binding_type">report</field>
     <field name="groups_id" eval="[(6, 0, [])]"/>
     <field name="model">x_date_planned</field>
-    <field name="multi" eval="False"/>
     <field name="name">Günlük Plan Toplama Listesi</field>
     <field name="report_name">tamekran_studio_customization.report_bde0f95f-ccf4-493c-a209-6bc29cb1b8a3</field>
     <field name="report_type">qweb-pdf</field>

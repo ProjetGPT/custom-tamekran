@@ -1,29 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <odoo>
-  <record id="account.action_account_invoice_report_all" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" ref="base.model_ir_ui_menu"/>
-    <field name="binding_type">action</field>
-    <field name="context">{'search_default_current':1, 'search_default_customer':1, 'group_by':[], 'group_by_no_leaf':1, 'search_default_year': 1}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>Bu rapordan, müşterilerinize kestiğiniz faturaların tutarlarını gözden geçirebilirsiniz. Arama aracı ile Fatura raporlarını da ihtiyaçlarınıza göre kişiselleştirebilirsiniz, ve böylece gereksinimize göre analiz seçebilirsiniz.</p>]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Faturaların Analizi</field>
-    <field name="res_model">account.invoice.report</field>
-    <field name="search_view_id" ref="account.view_account_invoice_report_search"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">graph,pivot,tree</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.aktiviteler_cddb6b0a-a0d2-4c69-858e-6965b3525cc8" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
+
+  
+  <record id="tamekran_studio_customization.ziyaret_turleri_b9cbbc4f-4869-4208-9169-4b8163019655" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="context">{}</field>
@@ -39,944 +18,37 @@
                     </p>
                 ]]></field>
     <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Aktiviteler</field>
-    <field name="res_model">mail.activity</field>
+    <field name="name">Ziyaret Türleri</field>
+    <field name="res_model">x_visit_types</field>
     <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
     <field name="target">current</field>
     <field name="type">ir.actions.act_window</field>
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
+    <field name="view_mode">form</field>
   </record>
-  <record id="tamekran_studio_customization.alacak_yaslandrma_6c4d401d-df8e-420d-868e-9696c98645c1" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
+  <record id="tamekran_studio_customization.yaplan_gorusmeler_ed690444-662f-4cfc-833b-02feb234629a" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="context">{}</field>
-    <field name="domain" eval="False"/>
+    <field name="domain">[["x_studio_field_D9f3o","=","done"]]</field>
     <field name="filter" eval="False"/>
     <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
+    <field name="help"><![CDATA[<p class="oe_view_nocontent_create">Yeni belge ekleme için burayı tıklayın</p><p>Yapılan görüşmelerinizin takibini buradan kolayca yapabilirsiniz.</p>
                 ]]></field>
     <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Alacak Yaşlandırma</field>
-    <field name="res_model">account.analytic.account</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.asamalar_c21d617d-1a4e-4549-87a1-9a12f8095fb8" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Aşamalar</field>
-    <field name="res_model">x_stage</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.category_b5bf58c4-bc25-475f-83bc-1295e51ee92f" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">category</field>
-    <field name="res_model">ir.module.category</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.dddddd_d55ec32b-f7f3-4056-8405-c595f0f988a1" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{'search_default_x_date_planned_id': active_id,'default_x_date_planned_id': active_id}</field>
-    <field name="domain">[('x_date_planned_id', '=', active_id)]</field>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help" eval="False"/>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">dddddd</field>
-    <field name="res_model">sale.order</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.dfgdfgdfg_10cf6c2f-4cbc-4834-921b-6ddcfa7c5520" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{'search_default_x_date_planned_id': active_id,'default_x_date_planned_id': active_id}</field>
-    <field name="domain">[('x_date_planned_id', '=', active_id)]</field>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help" eval="False"/>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">dfgdfgdfg</field>
-    <field name="res_model">sale.order</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.donem_tipleri_c695d2c6-c9ea-4d57-9345-be195f517f91" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Dönem Tipleri</field>
-    <field name="res_model">date.range.type</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.ek_maliyet_44b7993d-ff93-4387-9918-8be2f58af3b9" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Ek Maliyet</field>
-    <field name="res_model">stock.landed.cost</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.e_ticaret_kategorile_176d64f1-4276-408b-be99-4e47ae266a19" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">E-Ticaret Kategorileri</field>
-    <field name="res_model">product.public.category</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.gelen_urunler_58920f1f-aec3-4fa3-b057-bfc1d50c837d" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain">[('picking_id.picking_type_id.code', '=', 'incoming'), ('location_id.usage', '!=', 'internal'), ('location_dest_id.usage', '=', 'internal')]</field>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Gelen Ürünler</field>
-    <field name="res_model">stock.move</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.gorusme_turleri_0d17bdb2-4853-4177-a5f0-584e4015d049" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Görüşme Türleri</field>
-    <field name="res_model">x_crm_meetings_type</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.gunluk_plan_e38af064-465a-4891-b1a0-084e0093b21f" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{'default_x_studio_field_Ytl4Z' : uid,'default_x_studio_field_hHZhh': datetime.datetime.today()}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p class="oe_view_nocontent_create">Yeni belge ekleme için burayı tıklayın</p><p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Günlük Plan</field>
-    <field name="res_model">x_date_planned</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form,pivot,graph</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.gunluk_planlar_db6409a3-f061-4e2e-a6b8-7379112258b0" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{'search_default_x_studio_field_8VSrL': active_id,'default_x_studio_field_8VSrL': active_id}</field>
-    <field name="domain">[('x_studio_field_8VSrL', '=', active_id)]</field>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p class="oe_view_nocontent_create">Yeni belge ekleme için burayı tıklayın</p>]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Günlük Planlar</field>
-    <field name="res_model">x_root_planned</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.is_ortag_bakiye_777b4184-8479-4578-9a7b-79781b917c94" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p class="oe_view_nocontent_create">Yeni belge ekleme için burayı tıklayın</p><p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">İş ortağı Bakiye</field>
-    <field name="res_model">account.report.partner.ledger</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" ref="account.account_report_partner_ledger_view"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.kampanyalar_efef5a7f-c565-4938-baa3-103ea5367825" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Kampanyalar</field>
-    <field name="res_model">utm.campaign</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.kaynak_d5c79d2b-d8b6-40f1-9e54-fac89bfb5cd8" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Kaynak</field>
-    <field name="res_model">utm.source</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.kullanc_loglar_b89d3860-d01e-409a-a1e7-63a23bc06e5e" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Kullanıcı Logları</field>
-    <field name="res_model">res.users.log</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.markalar_abb5e368-def9-42ec-a205-6d8e35abb25c" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Markalar</field>
-    <field name="res_model">x_dcworks_brands</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.model_data_46bcb9ad-82a3-4076-99f8-907bf824efd2" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Model Data</field>
-    <field name="res_model">ir.model.data</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.model_data_a605fd36-2959-47fa-852f-f25e7c5de2e7" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Model Data</field>
-    <field name="res_model">ir.model.data</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.musteri_bilgileri_65ef9904-4ca8-4c3a-9501-850ee2e8c1b1" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Müşteri Bilgileri</field>
-    <field name="res_model">res.partner</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.musteri_bilgileri_a06b2898-7097-422a-be73-5fb393bc0a9b" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Müşteri Bilgileri</field>
-    <field name="res_model">x_customer_info</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.musteri_bilgileri_af74cd1a-e8e9-4540-b0c1-62d8984adbcb" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain">[["customer","=",True]]</field>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p class="oe_view_nocontent_create">Yeni belge ekleme için burayı tıklayın</p><p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Müşteri Bilgileri</field>
-    <field name="res_model">res.partner</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.musteri_is_durumlar_1702d0f8-e489-479b-9856-5a7a23e3e4e8" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Müşteri İş Durumları</field>
-    <field name="res_model">x_customer_business_case</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.musteri_odemeleri_b8984405-7c9d-4628-81ac-c9d1933e546c" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{'default_payment_type': 'inbound', 'default_partner_type': 'customer', 'search_default_receivable_filter': 1}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p class="oe_view_nocontent_create">Yeni bir ödeme kaydetmek için tıklayın.</p><p>Ödemeler likidite hareketlerini kaydetmek (para göndermek, toplamak veya aktarmak) için kullanılır. \ N Sonra bu ödemeleri kendi imkanlarıyla veya kurulu tesisler kullanarak işleyebilirsiniz.</p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Müşteri Ödemeleri</field>
-    <field name="res_model">account.payment</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" ref="account.view_account_payment_tree"/>
-    <field name="view_mode">tree,kanban,form,graph</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.musteri_tipleri_1577825e-fbbf-427f-84cd-a7a06d1a3bd2" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Müşteri Tipleri</field>
-    <field name="res_model">x_customer_type</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.nitelik_degerleri_6c1ccd52-af0d-4dbc-ba96-5b38f1ef8586" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Nitelik Değerleri</field>
-    <field name="res_model">product.attribute.value</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.nitelikler_1c7fb017-2c59-42cb-a5c5-ad2df75e0f62" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Nitelikler</field>
-    <field name="res_model">product.attribute</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odeme_tipleri_a5a33776-c256-48eb-9a0f-db63f2a018dc" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Ödeme Tipleri</field>
-    <field name="res_model">x_dcworks_payment_types</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odeme_turu_385fefad-7636-417c-9c94-33349cf2d767" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Ödeme Türü</field>
-    <field name="res_model">x_payment_class</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.odeme_vadeleri_e8b45d78-971a-4300-afe3-5eca8ef1d31c" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Ödeme Vadeleri</field>
-    <field name="res_model">x_dcworks_payment_due</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.ozellik_degerleri_7f68eb6d-7e31-4fa4-91a5-f754e6f93e91" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Özellik Değerleri</field>
-    <field name="res_model">x_product_attribute_value</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.ozellik_gruplar_f98c7d6d-c8f5-4341-a025-9219d0a30ce4" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Özellik Grupları</field>
-    <field name="res_model">x_product_attribute_group</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.planl_gorusmeler_334e6ff9-bfdf-4ac9-94c7-f02eaa5c7321" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{'default_x_studio_field_FKFEW':uid,'default_x_studio_field_D9f3o':'open'}</field>
-    <field name="domain">["|",["x_studio_field_D9f3o","=","open"],["x_studio_field_D9f3o","=","cancel"]]</field>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p class="oe_view_nocontent_create">Yeni belge ekleme için burayı tıklayın</p><p>Planlı görüşmelerinizi buradan oluşturup takibini kolayca yapabilirsiniz.</p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Planlı Görüşmeler</field>
+    <field name="name">Yapılan Görüşmeler</field>
     <field name="res_model">x_crm_meetings</field>
     <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
     <field name="target">current</field>
     <field name="type">ir.actions.act_window</field>
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
+    <field name="view_mode">form</field>
   </record>
-  <record id="tamekran_studio_customization.rota_iptal_detaylar_4111d6df-6f3c-4109-bf5d-576ae4534321" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
+  <record id="tamekran_studio_customization.urun_bagl_ozellikler_ddcf4e52-6fe7-4ef5-869c-3d515575564f" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="context">{}</field>
@@ -992,42 +64,17 @@
                     </p>
                 ]]></field>
     <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Rota İptal Detayları</field>
-    <field name="res_model">x_route_not_completed_details</field>
+    <field name="name">Ürün Bağlı Özellikler</field>
+    <field name="res_model">x_product_attributes</field>
     <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
     <field name="target">current</field>
     <field name="type">ir.actions.act_window</field>
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
+    <field name="view_mode">form</field>
   </record>
-  <record id="tamekran_studio_customization.rota_planlar_listesi_7309917f-ef1f-4d72-ba9f-e8fd823d9512" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain">[('x_date_planned_id','!=',False)]</field>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p><br></p>]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Rota Planları Listesi</field>
-    <field name="res_model">x_root_planned</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.rota_planlar_listesi_e38cd73d-dc32-44cc-a0c7-4276e525a926" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
+  <record id="tamekran_studio_customization.urun_dokumanlar_82b7c31f-a4d8-40d2-9ac3-02ea5b682a53" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="context">{}</field>
@@ -1043,20 +90,17 @@
                     </p>
                 ]]></field>
     <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Rota Planları Listesi</field>
-    <field name="res_model">x_root_planned</field>
+    <field name="name">Ürün Dokümanları</field>
+    <field name="res_model">x_product.document</field>
     <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
     <field name="target">current</field>
     <field name="type">ir.actions.act_window</field>
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
+    <field name="view_mode">form</field>
   </record>
-  <record id="tamekran_studio_customization.rota_turleri_c437bf91-3bb5-4d36-9fce-fb3b017f0bee" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
+  <record id="tamekran_studio_customization.urun_ailesi_0edc8cf5-e2b6-4d6b-9c38-e959c47c7d29" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="context">{}</field>
@@ -1072,165 +116,17 @@
                     </p>
                 ]]></field>
     <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Rota Türleri</field>
-    <field name="res_model">x_route_type</field>
+    <field name="name">Ürün Ailesi</field>
+    <field name="res_model">x_product_family</field>
     <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
     <field name="target">current</field>
     <field name="type">ir.actions.act_window</field>
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
+    <field name="view_mode">form</field>
   </record>
-  <record id="tamekran_studio_customization.satn_alma_kalemleri_64855118-f11c-4c38-b8d3-7a0929bcbcfb" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Satın Alma Kalemleri</field>
-    <field name="res_model">purchase.order.line</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.sektorler_4c776ffe-411e-4cf5-86b6-f09f985fe388" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Sektörler</field>
-    <field name="res_model">res.partner.industry</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.sektorler_d01ab6d6-e31b-4f3f-8850-c19fa86bc5a7" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Sektörler</field>
-    <field name="res_model">x_crm.sector</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.siparis_kalemleri_be1bf1ea-64dc-4b5f-9f66-14bbaf0aa5a7" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Sipariş Kalemleri</field>
-    <field name="res_model">sale.order.line</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.stoklar_70ccb0a1-a7b2-4bf4-bf99-512ed67cb4eb" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Stoklar</field>
-    <field name="res_model">stock.quant</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form,pivot</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.tahsilatlar_4ceeaf43-31be-40cc-bded-979bf76c3d28" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
+  <record id="tamekran_studio_customization.tamamlanamad_nedenle_2554b3fa-2d88-41a8-a873-65466c7ef900" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="context">{}</field>
@@ -1246,20 +142,43 @@
                     </p>
                 ]]></field>
     <field name="limit">80</field>
-    <field name="multi" eval="False"/>
+    <field name="name">İptal Nedenleri</field>
+    <field name="res_model">x_not_complete_type</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="tamekran_studio_customization.tahsilatlar_4ceeaf43-31be-40cc-bded-979bf76c3d28" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="oe_view_nocontent_create">Yeni belge ekleme için burayı tıklayın</p><p>
+                        This is your new action ; by default, it contains a list view and a form view.
+                    </p>
+                    <p>
+                        You can start customizing these screens by clicking on the Studio icon on the
+                        top right corner (you can also customize this help message there).
+                    </p>
+                ]]></field>
+    <field name="limit">80</field>
     <field name="name">Tahsilatlar</field>
     <field name="res_model">x_payments</field>
     <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
     <field name="target">current</field>
     <field name="type">ir.actions.act_window</field>
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
+    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.tahsilatlar_fdd0e5cd-1aa4-491a-a9db-7f90c433caf5" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="context">{'default_x_studio_field_7sAzo': datetime.datetime.today()}</field>
@@ -1275,20 +194,17 @@
                     </p>
                 ]]></field>
     <field name="limit">80</field>
-    <field name="multi" eval="False"/>
     <field name="name">Tahsilatlar</field>
     <field name="res_model">x_payments</field>
     <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
     <field name="target">current</field>
     <field name="type">ir.actions.act_window</field>
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
+    <field name="view_mode">form</field>
   </record>
-  <record id="tamekran_studio_customization.tahsilatlarn_listesi_378ed5b1-d8b5-491b-8bd8-ff7744d0f200" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
+  <record id="tamekran_studio_customization.sektorler_d01ab6d6-e31b-4f3f-8850-c19fa86bc5a7" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="context">{}</field>
@@ -1304,45 +220,390 @@
                     </p>
                 ]]></field>
     <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Tahsilatların Listesi</field>
-    <field name="res_model">account.payment</field>
+    <field name="name">Sektörler</field>
+    <field name="res_model">x_crm.sector</field>
     <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
     <field name="target">current</field>
     <field name="type">ir.actions.act_window</field>
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
+    <field name="view_mode">form</field>
   </record>
-  <record id="tamekran_studio_customization.tahsilatlarn_listesi_c26248f8-9390-46eb-a5a3-e841ae9e57c7" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
+  <record id="tamekran_studio_customization.ozellik_gruplar_f98c7d6d-c8f5-4341-a025-9219d0a30ce4" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p>
+                        This is your new action ; by default, it contains a list view and a form view.
+                    </p>
+                    <p>
+                        You can start customizing these screens by clicking on the Studio icon on the
+                        top right corner (you can also customize this help message there).
+                    </p>
+                ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Özellik Grupları</field>
+    <field name="res_model">x_product_attribute_group</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="tamekran_studio_customization.planl_gorusmeler_334e6ff9-bfdf-4ac9-94c7-f02eaa5c7321" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{'default_x_studio_field_FKFEW':uid,'default_x_studio_field_D9f3o':'open'}</field>
+    <field name="domain">["|",["x_studio_field_D9f3o","=","open"],["x_studio_field_D9f3o","=","cancel"]]</field>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="oe_view_nocontent_create">Yeni belge ekleme için burayı tıklayın</p><p>Planlı görüşmelerinizi buradan oluşturup takibini kolayca yapabilirsiniz.</p>
+                ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Planlı Görüşmeler</field>
+    <field name="res_model">x_crm_meetings</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="tamekran_studio_customization.rota_iptal_detaylar_4111d6df-6f3c-4109-bf5d-576ae4534321" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p>
+                        This is your new action ; by default, it contains a list view and a form view.
+                    </p>
+                    <p>
+                        You can start customizing these screens by clicking on the Studio icon on the
+                        top right corner (you can also customize this help message there).
+                    </p>
+                ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Rota İptal Detayları</field>
+    <field name="res_model">x_route_not_completed_details</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="tamekran_studio_customization.rota_planlar_listesi_7309917f-ef1f-4d72-ba9f-e8fd823d9512" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="context">{}</field>
     <field name="domain">[('x_date_planned_id','!=',False)]</field>
     <field name="filter" eval="False"/>
     <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p class="oe_view_nocontent_create">Yeni belge ekleme için burayı tıklayın</p><p><br></p>]]></field>
+    <field name="help"><![CDATA[<p><br></p>]]></field>
     <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Tahsilatların Listesi</field>
-    <field name="res_model">account.payment</field>
+    <field name="name">Rota Planları Listesi</field>
+    <field name="res_model">x_root_planned</field>
     <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
     <field name="target">current</field>
     <field name="type">ir.actions.act_window</field>
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree</field>
-    <field name="view_type">form</field>
+    <field name="view_mode">form</field>
   </record>
-  <record id="tamekran_studio_customization.tamamlanamad_nedenle_2554b3fa-2d88-41a8-a873-65466c7ef900" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
+  <record id="tamekran_studio_customization.rota_planlar_listesi_e38cd73d-dc32-44cc-a0c7-4276e525a926" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p>
+                        This is your new action ; by default, it contains a list view and a form view.
+                    </p>
+                    <p>
+                        You can start customizing these screens by clicking on the Studio icon on the
+                        top right corner (you can also customize this help message there).
+                    </p>
+                ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Rota Planları Listesi</field>
+    <field name="res_model">x_root_planned</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="tamekran_studio_customization.rota_turleri_c437bf91-3bb5-4d36-9fce-fb3b017f0bee" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p>
+                        This is your new action ; by default, it contains a list view and a form view.
+                    </p>
+                    <p>
+                        You can start customizing these screens by clicking on the Studio icon on the
+                        top right corner (you can also customize this help message there).
+                    </p>
+                ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Rota Türleri</field>
+    <field name="res_model">x_route_type</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="tamekran_studio_customization.ozellik_degerleri_7f68eb6d-7e31-4fa4-91a5-f754e6f93e91" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p>
+                        This is your new action ; by default, it contains a list view and a form view.
+                    </p>
+                    <p>
+                        You can start customizing these screens by clicking on the Studio icon on the
+                        top right corner (you can also customize this help message there).
+                    </p>
+                ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Özellik Değerleri</field>
+    <field name="res_model">x_product_attribute_value</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="tamekran_studio_customization.odeme_vadeleri_e8b45d78-971a-4300-afe3-5eca8ef1d31c" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p>
+                        This is your new action ; by default, it contains a list view and a form view.
+                    </p>
+                    <p>
+                        You can start customizing these screens by clicking on the Studio icon on the
+                        top right corner (you can also customize this help message there).
+                    </p>
+                ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Ödeme Vadeleri</field>
+    <field name="res_model">x_dcworks_payment_due</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="tamekran_studio_customization.odeme_turu_385fefad-7636-417c-9c94-33349cf2d767" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p>
+                        This is your new action ; by default, it contains a list view and a form view.
+                    </p>
+                    <p>
+                        You can start customizing these screens by clicking on the Studio icon on the
+                        top right corner (you can also customize this help message there).
+                    </p>
+                ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Ödeme Türü</field>
+    <field name="res_model">x_payment_class</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="tamekran_studio_customization.odeme_tipleri_a5a33776-c256-48eb-9a0f-db63f2a018dc" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p>
+                        This is your new action ; by default, it contains a list view and a form view.
+                    </p>
+                    <p>
+                        You can start customizing these screens by clicking on the Studio icon on the
+                        top right corner (you can also customize this help message there).
+                    </p>
+                ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Ödeme Tipleri</field>
+    <field name="res_model">x_dcworks_payment_types</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="tamekran_studio_customization.musteri_tipleri_1577825e-fbbf-427f-84cd-a7a06d1a3bd2" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p>
+                        This is your new action ; by default, it contains a list view and a form view.
+                    </p>
+                    <p>
+                        You can start customizing these screens by clicking on the Studio icon on the
+                        top right corner (you can also customize this help message there).
+                    </p>
+                ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Müşteri Tipleri</field>
+    <field name="res_model">x_customer_type</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="tamekran_studio_customization.musteri_is_durumlar_1702d0f8-e489-479b-9856-5a7a23e3e4e8" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p>
+                        This is your new action ; by default, it contains a list view and a form view.
+                    </p>
+                    <p>
+                        You can start customizing these screens by clicking on the Studio icon on the
+                        top right corner (you can also customize this help message there).
+                    </p>
+                ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Müşteri İş Durumları</field>
+    <field name="res_model">x_customer_business_case</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record>
+  <!-- <record id="tamekran_studio_customization.musteri_bilgileri_a06b2898-7097-422a-be73-5fb393bc0a9b" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p>
+                        This is your new action ; by default, it contains a list view and a form view.
+                    </p>
+                    <p>
+                        You can start customizing these screens by clicking on the Studio icon on the
+                        top right corner (you can also customize this help message there).
+                    </p>
+                ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Müşteri Bilgileri</field>
+    <field name="res_model">x_customer_info</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record> -->
+  <record id="tamekran_studio_customization.markalar_abb5e368-def9-42ec-a205-6d8e35abb25c" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p>
+                        This is your new action ; by default, it contains a list view and a form view.
+                    </p>
+                    <p>
+                        You can start customizing these screens by clicking on the Studio icon on the
+                        top right corner (you can also customize this help message there).
+                    </p>
+                ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Markalar</field>
+    <field name="res_model">x_dcworks_brands</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_planlar_db6409a3-f061-4e2e-a6b8-7379112258b0" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{'search_default_x_studio_field_8VSrL': active_id,'default_x_studio_field_8VSrL': active_id}</field>
+    <field name="domain">[('x_studio_field_8VSrL', '=', active_id)]</field>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="oe_view_nocontent_create">Yeni belge ekleme için burayı tıklayın</p>]]></field>
+    <field name="limit">80</field>
+    <field name="name">Günlük Planlar</field>
+    <field name="res_model">x_root_planned</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree</field>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_e38af064-465a-4891-b1a0-084e0093b21f" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="context">{'default_x_studio_field_Ytl4Z' : uid,'default_x_studio_field_hHZhh': datetime.datetime.today()}</field>
     <field name="domain" eval="False"/>
     <field name="filter" eval="False"/>
     <field name="groups_id" eval="[(6, 0, [])]"/>
@@ -1355,20 +616,17 @@
                     </p>
                 ]]></field>
     <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">İptal Nedenleri</field>
-    <field name="res_model">x_not_complete_type</field>
+    <field name="name">Günlük Plan</field>
+    <field name="res_model">x_date_planned</field>
     <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
     <field name="target">current</field>
     <field name="type">ir.actions.act_window</field>
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
+    <field name="view_mode">tree,form,pivot,graph</field>
+    <field name="view_mode">form</field>
   </record>
-  <record id="tamekran_studio_customization.tedarik_kural_bb570b5b-e9d2-4870-9db4-fbcc3a648784" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
+  <record id="tamekran_studio_customization.gorusme_turleri_0d17bdb2-4853-4177-a5f0-584e4015d049" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="context">{}</field>
@@ -1384,20 +642,17 @@
                     </p>
                 ]]></field>
     <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Tedarik kuralı</field>
-    <field name="res_model">procurement.rule</field>
+    <field name="name">Görüşme Türleri</field>
+    <field name="res_model">x_crm_meetings_type</field>
     <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
     <field name="target">current</field>
     <field name="type">ir.actions.act_window</field>
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
+    <field name="view_mode">form</field>
   </record>
-  <record id="tamekran_studio_customization.tedarik_kurallar_01563882-04ea-4cb6-88f3-5665701b9c97" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
+  <record id="tamekran_studio_customization.asamalar_c21d617d-1a4e-4549-87a1-9a12f8095fb8" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
     <field name="binding_type">action</field>
     <field name="context">{}</field>
@@ -1413,506 +668,15 @@
                     </p>
                 ]]></field>
     <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Tedarik Kuralları</field>
-    <field name="res_model">procurement.rule</field>
+    <field name="name">Aşamalar</field>
+    <field name="res_model">x_stage</field>
     <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
     <field name="target">current</field>
     <field name="type">ir.actions.act_window</field>
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
+    <field name="view_mode">form</field>
   </record>
-  <record id="tamekran_studio_customization.tedarik_kurallar_3fd0c75a-9bf8-4f97-afd6-de45b800a068" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Tedarik kuralları</field>
-    <field name="res_model">procurement.rule</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.tedarik_kurallar_5634fb1b-cede-430d-8d02-9b47f213f30d" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Tedarik Kuralları</field>
-    <field name="res_model">procurement.rule</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.tedarik_kurallar_89961eff-0b6f-4578-9fb7-7c3c10bc0cc7" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Tedarik Kuralları</field>
-    <field name="res_model">procurement.rule</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.tedarik_kurallar_a9dd8a74-2625-4779-bbce-c43642fee6c9" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Tedarik Kuralları</field>
-    <field name="res_model">procurement.rule</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.tedarik_kurallar_af3c481b-79a3-4238-b033-32d42dac700e" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Tedarik Kuralları</field>
-    <field name="res_model">procurement.rule</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.teklif_ve_siparisler_5f86e3cf-42b5-47d3-8675-4055c69724a3" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain">[('x_date_planned_id','!=',False)]</field>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p class="oe_view_nocontent_create"></p><p><br></p><p></p>]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Teklif ve Siparişler</field>
-    <field name="res_model">sale.order</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.teklif_ve_siparisler_e8e26677-8fd9-4560-88b0-061965091b12" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Teklif ve Siparişler</field>
-    <field name="res_model">sale.order</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.urun_ailesi_0edc8cf5-e2b6-4d6b-9c38-e959c47c7d29" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Ürün Ailesi</field>
-    <field name="res_model">x_product_family</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.urun_bagl_ozellikler_ddcf4e52-6fe7-4ef5-869c-3d515575564f" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Ürün Bağlı Özellikler</field>
-    <field name="res_model">x_product_attributes</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.urun_dokumanlar_82b7c31f-a4d8-40d2-9ac3-02ea5b682a53" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Ürün Dokümanları</field>
-    <field name="res_model">x_product.document</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.urun_resimleri_21b4e559-621e-4d21-9a47-c178461a73ed" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Ürün Resimleri</field>
-    <field name="res_model">product.image</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.urun_tedarikci_bilgi_3a352843-14b5-4c23-a207-fe47f2eea867" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Ürün Tedarikçi Bilgileri</field>
-    <field name="res_model">product.supplierinfo</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.urun_varyantlar_54d9bd12-468b-489e-8a5c-e2af9db1b761" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">ürün varyantları</field>
-    <field name="res_model">product.product</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.varyantlar_fd468ea1-47a8-4d54-ba6e-b82904465951" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{'search_default_product_tmpl_id': active_id,'default_product_tmpl_id': active_id}</field>
-    <field name="domain">[('product_tmpl_id', '=', active_id)]</field>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help" eval="False"/>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Varyantlar</field>
-    <field name="res_model">product.product</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.yaplan_gorusmeler_ed690444-662f-4cfc-833b-02feb234629a" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain">[["x_studio_field_D9f3o","=","done"]]</field>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p class="oe_view_nocontent_create">Yeni belge ekleme için burayı tıklayın</p><p>Yapılan görüşmelerinizin takibini buradan kolayca yapabilirsiniz.</p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Yapılan Görüşmeler</field>
-    <field name="res_model">x_crm_meetings</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.yevmiye_kalemleri_5a55c6fc-02f3-4052-95a7-78e38f87a862" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{'journal_type':'general'}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>&lt;p class="oe_view_nocontent_create"&gt;<br>Select the period and the journal you want to fill.<br>&lt;/p&gt;&lt;p&gt;<br>This view can be used by accountants in order to quickly record<br>entries in Odoo. If you want to record a supplier invoice,<br>start by recording the line of the expense account. Odoo<br>will propose to you automatically the Tax related to this<br>account and the counterpart "Account Payable".<br>&lt;/p&gt;<br></p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Yevmiye Kalemleri</field>
-    <field name="res_model">account.move.line</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" ref="account.view_move_line_tree"/>
-    <field name="view_mode">tree,pivot,graph,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.yevmiye_kaytlar_5d869f16-d5cf-4b5b-9750-d26bcf591df8" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{'search_default_misc_filter':1, 'view_no_maturity': True}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p class="oe_view_nocontent_create">Yeni bir yevmiye kaydı oluşturmak için tıklayın.</p><p>Bir yevmiye kaydı, her biri bir borç veya bir alacak işlemi olan birkaç yevmiye öğesinden oluşur.</p><p>Odoo şu muhasebe işlemlerin tamamı için bir tam entegre bir yevmiye girişini (muhasebe fişi) otomatik oluşturur; Fatura, İade, Tedarikçi Ödemeleri, Banka Hareketleri vb.. Dolayısıyla, yevmiye girişlerini elle yapıyorsanız bunlar sadece otomatik olmayan diğer işlemlerle ilgili olmalıdır.</p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Yevmiye Kayıtları</field>
-    <field name="res_model">account.move</field>
-    <field name="search_view_id" ref="account.view_account_move_filter"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" ref="account.view_move_tree"/>
-    <field name="view_mode">tree,kanban,form</field>
-    <field name="view_type">form</field>
-  </record>
-  <record id="tamekran_studio_customization.ziyaret_turleri_b9cbbc4f-4869-4208-9169-4b8163019655" model="ir.actions.act_window" context="{'studio': True}">
-    <field name="auto_search" eval="True"/>
-    <field name="binding_model_id" eval="False"/>
-    <field name="binding_type">action</field>
-    <field name="context">{}</field>
-    <field name="domain" eval="False"/>
-    <field name="filter" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="help"><![CDATA[<p>
-                        This is your new action ; by default, it contains a list view and a form view.
-                    </p>
-                    <p>
-                        You can start customizing these screens by clicking on the Studio icon on the
-                        top right corner (you can also customize this help message there).
-                    </p>
-                ]]></field>
-    <field name="limit">80</field>
-    <field name="multi" eval="False"/>
-    <field name="name">Ziyaret Türleri</field>
-    <field name="res_model">x_visit_types</field>
-    <field name="search_view_id" eval="False"/>
-    <field name="src_model" eval="False"/>
-    <field name="target">current</field>
-    <field name="type">ir.actions.act_window</field>
-    <field name="usage" eval="False"/>
-    <field name="view_id" eval="False"/>
-    <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
-  </record>
+
 </odoo>
