@@ -215,8 +215,8 @@
     <field name="sequence">4</field>
     <field name="web_icon" eval="False"/>
   </record>
-  <record id="tamekran_studio_customization.gunluk_plan_ziyaret__21122692-56c2-4057-a5a8-f00900dafa03" model="ir.ui.menu">
-    <field name="action" ref="tamekran_studio_customization.ziyaret_turleri_b9cbbc4f-4869-4208-9"/>
+  <record id="tamekran_studio_customization.gunluk_plan_ziyaret__21122692-56c2-4057-a5a8-f00900dafa03" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.ziyaret_turleri_b9cbbc4f-4869-4208-9169-4b8163019655"/>
     <field name="active" eval="True"/>
     <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_183_2131a14b')])]"/>
     <field name="name">Ziyaret Türleri</field>
