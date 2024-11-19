@@ -99,7 +99,7 @@
     <field name="sequence">3</field>
     <field name="web_icon" eval="False"/>
   </record> -->
-  <!-- <record id="tamekran_studio_customization.gunluk_plan_tahsilat_efe38293-6af1-4163-8900-037719e7f86f" model="ir.ui.menu">
+  <record id="tamekran_studio_customization.gunluk_plan_tahsilat_efe38293-6af1-4163-8900-037719e7f86f" model="ir.ui.menu">
     <field name="action" ref="tamekran_studio_customization.tahsilatlar_fdd0e5cd-1aa4-491a-a9db-7f90c433caf5"/>
     <field name="active" eval="False"/>
     <field name="groups_id" eval="[(6, 0, [])]"/>
@@ -107,7 +107,25 @@
     <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
     <field name="sequence">10</field>
     <field name="web_icon" eval="False"/>
-  </record> -->
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_raporlar_e8c4c191-8702-42e8-9d7d-14ae6feec1ad" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_183_2131a14b')])]"/>
+    <field name="name">Raporlar</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_183_2131a14b')])]"/>
+    <field name="name">Yapılandırma</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_263bcc92-1fe3-4444-8215-7a81f9aa8ab8"/>
+    <field name="sequence">4</field>
+    <field name="web_icon" eval="False"/>
+  </record>
   <!-- <record id="tamekran_studio_customization.gunluk_plan_tahsilat_7e1d91a3-f0e7-467f-af5e-9e828026a3ca" model="ir.ui.menu">
     <field name="action" ref="tamekran_studio_customization.tahsilatlar_4ceeaf43-31be-40cc-bded-979bf76c3d28"/>
     <field name="active" eval="True"/>
@@ -196,7 +214,6 @@
     <field name="name">Günlük Plan</field>
     <field name="parent_id" eval="False"/>
     <field name="sequence">10</field>
-    <field name="web_icon">fa fa-folder-open,#00dec9,#F5F5F5</field>
   </record>
   <record id="tamekran_studio_customization.gunluk_plan_gunluk_p_41c119f6-7a78-49c2-ae63-40e9b770e2e7" model="ir.ui.menu" context="{'studio': True}">
     <field name="action" ref="tamekran_studio_customization.gunluk_plan_e38af064-465a-4891-b1a0-084e0093b21f"/>
