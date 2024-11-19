@@ -6527,7 +6527,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.default_form_view_fo_7f26b366-a870-4c02-a370-385c96d3eadb" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>

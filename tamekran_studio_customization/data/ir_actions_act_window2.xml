@@ -43,7 +43,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.alacak_yaslandrma_6c4d401d-df8e-420d-868e-9696c98645c1" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -69,7 +68,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
 
   <record id="tamekran_studio_customization.category_b5bf58c4-bc25-475f-83bc-1295e51ee92f" model="ir.actions.act_window" context="{'studio': True}">
@@ -96,7 +94,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.dddddd_d55ec32b-f7f3-4056-8405-c595f0f988a1" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -115,7 +112,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.dfgdfgdfg_10cf6c2f-4cbc-4834-921b-6ddcfa7c5520" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -134,7 +130,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.donem_tipleri_c695d2c6-c9ea-4d57-9345-be195f517f91" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -160,7 +155,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.ek_maliyet_44b7993d-ff93-4387-9918-8be2f58af3b9" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -186,7 +180,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.e_ticaret_kategorile_176d64f1-4276-408b-be99-4e47ae266a19" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -212,7 +205,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.gelen_urunler_58920f1f-aec3-4fa3-b057-bfc1d50c837d" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -238,7 +230,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.is_ortag_bakiye_777b4184-8479-4578-9a7b-79781b917c94" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -264,7 +255,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" ref="account.account_report_partner_ledger_view"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.kampanyalar_efef5a7f-c565-4938-baa3-103ea5367825" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -290,7 +280,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.kaynak_d5c79d2b-d8b6-40f1-9e54-fac89bfb5cd8" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -316,7 +305,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.kullanc_loglar_b89d3860-d01e-409a-a1e7-63a23bc06e5e" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -342,7 +330,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.model_data_46bcb9ad-82a3-4076-99f8-907bf824efd2" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -368,7 +355,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.model_data_a605fd36-2959-47fa-852f-f25e7c5de2e7" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -394,7 +380,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.musteri_bilgileri_65ef9904-4ca8-4c3a-9501-850ee2e8c1b1" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -420,7 +405,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.musteri_bilgileri_af74cd1a-e8e9-4540-b0c1-62d8984adbcb" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -446,7 +430,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.musteri_odemeleri_b8984405-7c9d-4628-81ac-c9d1933e546c" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -492,7 +475,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.nitelikler_1c7fb017-2c59-42cb-a5c5-ad2df75e0f62" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -518,7 +500,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.satn_alma_kalemleri_64855118-f11c-4c38-b8d3-7a0929bcbcfb" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -544,7 +525,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.sektorler_4c776ffe-411e-4cf5-86b6-f09f985fe388" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -570,7 +550,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.siparis_kalemleri_be1bf1ea-64dc-4b5f-9f66-14bbaf0aa5a7" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -596,7 +575,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.stoklar_70ccb0a1-a7b2-4bf4-bf99-512ed67cb4eb" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -648,7 +626,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.tahsilatlarn_listesi_c26248f8-9390-46eb-a5a3-e841ae9e57c7" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -693,7 +670,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.tedarik_kurallar_01563882-04ea-4cb6-88f3-5665701b9c97" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -719,7 +695,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.tedarik_kurallar_3fd0c75a-9bf8-4f97-afd6-de45b800a068" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -745,7 +720,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.tedarik_kurallar_5634fb1b-cede-430d-8d02-9b47f213f30d" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -771,7 +745,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.tedarik_kurallar_89961eff-0b6f-4578-9fb7-7c3c10bc0cc7" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -797,7 +770,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.tedarik_kurallar_a9dd8a74-2625-4779-bbce-c43642fee6c9" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -823,7 +795,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.tedarik_kurallar_af3c481b-79a3-4238-b033-32d42dac700e" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -849,7 +820,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.teklif_ve_siparisler_5f86e3cf-42b5-47d3-8675-4055c69724a3" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -894,7 +864,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.urun_resimleri_21b4e559-621e-4d21-9a47-c178461a73ed" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -920,7 +889,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.urun_tedarikci_bilgi_3a352843-14b5-4c23-a207-fe47f2eea867" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -946,7 +914,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.urun_varyantlar_54d9bd12-468b-489e-8a5c-e2af9db1b761" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -972,7 +939,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.varyantlar_fd468ea1-47a8-4d54-ba6e-b82904465951" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -991,7 +957,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.yevmiye_kalemleri_5a55c6fc-02f3-4052-95a7-78e38f87a862" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>

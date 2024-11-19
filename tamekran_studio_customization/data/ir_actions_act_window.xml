@@ -26,7 +26,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.yaplan_gorusmeler_ed690444-662f-4cfc-833b-02feb234629a" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -46,7 +45,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.urun_bagl_ozellikler_ddcf4e52-6fe7-4ef5-869c-3d515575564f" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -72,7 +70,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.urun_dokumanlar_82b7c31f-a4d8-40d2-9ac3-02ea5b682a53" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -98,7 +95,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.urun_ailesi_0edc8cf5-e2b6-4d6b-9c38-e959c47c7d29" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -124,7 +120,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.tamamlanamad_nedenle_2554b3fa-2d88-41a8-a873-65466c7ef900" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -150,7 +145,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.tahsilatlar_4ceeaf43-31be-40cc-bded-979bf76c3d28" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -176,7 +170,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.tahsilatlar_fdd0e5cd-1aa4-491a-a9db-7f90c433caf5" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -202,7 +195,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.sektorler_d01ab6d6-e31b-4f3f-8850-c19fa86bc5a7" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -228,7 +220,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.ozellik_gruplar_f98c7d6d-c8f5-4341-a025-9219d0a30ce4" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -254,7 +245,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.planl_gorusmeler_334e6ff9-bfdf-4ac9-94c7-f02eaa5c7321" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -274,7 +264,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.rota_iptal_detaylar_4111d6df-6f3c-4109-bf5d-576ae4534321" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -300,7 +289,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.rota_planlar_listesi_7309917f-ef1f-4d72-ba9f-e8fd823d9512" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -345,7 +333,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.rota_turleri_c437bf91-3bb5-4d36-9fce-fb3b017f0bee" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -371,7 +358,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.ozellik_degerleri_7f68eb6d-7e31-4fa4-91a5-f754e6f93e91" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -397,7 +383,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.odeme_vadeleri_e8b45d78-971a-4300-afe3-5eca8ef1d31c" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -423,7 +408,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.odeme_turu_385fefad-7636-417c-9c94-33349cf2d767" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -449,7 +433,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.odeme_tipleri_a5a33776-c256-48eb-9a0f-db63f2a018dc" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -475,7 +458,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.musteri_tipleri_1577825e-fbbf-427f-84cd-a7a06d1a3bd2" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -501,7 +483,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.musteri_is_durumlar_1702d0f8-e489-479b-9856-5a7a23e3e4e8" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -527,7 +508,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <!-- <record id="tamekran_studio_customization.musteri_bilgileri_a06b2898-7097-422a-be73-5fb393bc0a9b" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -553,7 +533,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record> -->
   <record id="tamekran_studio_customization.markalar_abb5e368-def9-42ec-a205-6d8e35abb25c" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -579,7 +558,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.gunluk_planlar_db6409a3-f061-4e2e-a6b8-7379112258b0" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -648,7 +626,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
   <record id="tamekran_studio_customization.asamalar_c21d617d-1a4e-4549-87a1-9a12f8095fb8" model="ir.actions.act_window" context="{'studio': True}">
     <field name="binding_model_id" eval="False"/>
@@ -674,7 +651,6 @@
     <field name="usage" eval="False"/>
     <field name="view_id" eval="False"/>
     <field name="view_mode">tree,form</field>
-    <field name="view_mode">form</field>
   </record>
 
 </odoo>
