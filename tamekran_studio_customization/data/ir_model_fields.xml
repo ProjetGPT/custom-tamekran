@@ -1875,7 +1875,7 @@ Muhtelif işlem yevmiyeleri için 'Genel' seçeneğini seçin.]]></field>
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_date_planned_id</field>
     <field name="on_delete" eval="False"/>
     <field name="readonly" eval="False"/>
@@ -1983,7 +1983,7 @@ Muhtelif işlem yevmiyeleri için 'Genel' seçeneğini seçin.]]></field>
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_8VSrL</field>
     <field name="on_delete">set null</field>
     <field name="readonly" eval="False"/>
@@ -2039,7 +2039,7 @@ Muhtelif işlem yevmiyeleri için 'Genel' seçeneğini seçin.]]></field>
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_bFy5v</field>
     <field name="on_delete">set null</field>
     <field name="readonly" eval="False"/>
@@ -2095,7 +2095,7 @@ Muhtelif işlem yevmiyeleri için 'Genel' seçeneğini seçin.]]></field>
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_JaVvX</field>
     <field name="on_delete">set null</field>
     <field name="readonly" eval="False"/>
@@ -2123,7 +2123,7 @@ Muhtelif işlem yevmiyeleri için 'Genel' seçeneğini seçin.]]></field>
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_3TYcn</field>
     <field name="on_delete" eval="False"/>
     <field name="readonly" eval="False"/>
@@ -2151,7 +2151,7 @@ Muhtelif işlem yevmiyeleri için 'Genel' seçeneğini seçin.]]></field>
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_fJwte</field>
     <field name="on_delete" eval="False"/>
     <field name="readonly" eval="True"/>
@@ -2721,7 +2721,7 @@ for record in self: record['x_x_studio_field_8VSrL__x_root_planned_count'] = dic
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_PG3Ap</field>
     <field name="on_delete" eval="False"/>
     <field name="readonly" eval="False"/>
@@ -3113,7 +3113,7 @@ for record in self: record['x_x_studio_field_8VSrL__x_root_planned_count'] = dic
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_24VYx</field>
     <field name="on_delete">set null</field>
     <field name="readonly" eval="False"/>
@@ -4597,7 +4597,7 @@ for record in self: record['x_x_studio_field_8VSrL__x_root_planned_count'] = dic
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_WwF2G</field>
     <field name="on_delete">set null</field>
     <field name="readonly" eval="False"/>
@@ -4625,7 +4625,7 @@ for record in self: record['x_x_studio_field_8VSrL__x_root_planned_count'] = dic
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_2Yc6F</field>
     <field name="on_delete" eval="False"/>
     <field name="readonly" eval="False"/>
@@ -4653,7 +4653,7 @@ for record in self: record['x_x_studio_field_8VSrL__x_root_planned_count'] = dic
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_1ebaA</field>
     <field name="on_delete">set null</field>
     <field name="readonly" eval="True"/>
@@ -4681,7 +4681,7 @@ for record in self: record['x_x_studio_field_8VSrL__x_root_planned_count'] = dic
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_QKgZA</field>
     <field name="on_delete">set null</field>
     <field name="readonly" eval="False"/>
@@ -4709,7 +4709,7 @@ for record in self: record['x_x_studio_field_8VSrL__x_root_planned_count'] = dic
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_ak855</field>
     <field name="on_delete">set null</field>
     <field name="readonly" eval="True"/>
@@ -4737,7 +4737,7 @@ for record in self: record['x_x_studio_field_8VSrL__x_root_planned_count'] = dic
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_vDmQs</field>
     <field name="on_delete">set null</field>
     <field name="readonly" eval="True"/>
@@ -4821,7 +4821,7 @@ for record in self: record['x_x_studio_field_8VSrL__x_root_planned_count'] = dic
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_4b0YS</field>
     <field name="on_delete">set null</field>
     <field name="readonly" eval="False"/>
@@ -4849,7 +4849,7 @@ for record in self: record['x_x_studio_field_8VSrL__x_root_planned_count'] = dic
     <field name="help" eval="False"/>
     <field name="index" eval="False"/>
     <field name="model">x_root_planned</field>
-    <field name="model_id" ref="tamekran_studio_customization.gorusme_turleri_aeab3c6a-9bc0-40e7-bf18-fa1a4fd71dddeni"/>
+    <field name="model_id" ref="tamekran_studio_customization.root_planı_85df7b78-1d38-4882-8711-97087daaqaqq"/>
     <field name="name">x_studio_field_2Gsci</field>
     <field name="on_delete">set null</field>
     <field name="readonly" eval="False"/>
