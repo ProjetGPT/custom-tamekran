@@ -579,12 +579,12 @@
   </xpath>
   <xpath expr="//group[@name='studio_group_f6d7ba']" position="after">
     <group name="studio_group_Bco9s" string="Gün Sonu Değerlendirmesi">
-      <field name="x_studio_field_OmY1E" string="Gün Sonu Değerlendirmesi" nolabel="1"/>
+      <field name="x_studio_field_OmY1E" string="Gün Sonu Değerlendirmesi"/>
     </group>
     <notebook name="studio_notebook_TAkSb">
       <page name="studio_page_TAkSb" string="Rota Planı">
         <group name="studio_group_TAkSb">
-          <field name="x_studio_field_Yx0X5" string="Root Planı" nolabel="1">
+          <field name="x_studio_field_Yx0X5" string="Root Planı" nolabel="1" colspan="4">
             <tree string="Root Planı" editable="top">
               <field name="x_name" attrs="{}" invisible="1"/>
               <field name="x_studio_field_fJwte" string="Tarih" readonly="1" attrs="{}" force_save="True"/>
@@ -615,7 +615,7 @@
       </page>
       <page name="studio_page_JCRW8" string="Teklif ve Siparişler">
         <group name="studio_group_JCRW8">
-          <field name="x_studio_field_sSFci" nolabel="1">
+          <field name="x_studio_field_sSFci" nolabel="1" colspan="4">
             <tree>
               <field name="name"/>
               <field name="date_order"/>
@@ -629,7 +629,7 @@
       </page>
       <page name="studio_page_KBZrO" string="Tahsilatlar">
         <group name="studio_group_KBZrO">
-          <field name="x_studio_field_IwyHE" string="Tahsilatlar" nolabel="1">
+          <field name="x_studio_field_IwyHE" string="Tahsilatlar" nolabel="1"  colspan="4">
             <tree editable="buttom">
               <field name="x_studio_field_uYiFx" string="Makbuz Seri/No"/>
               <field name="x_studio_field_1goyK" string="Müşteri" attrs="{}" required="1"/>
@@ -648,7 +648,7 @@
       </page>
       <page name="studio_page_lzIvy" string="Faturalar">
         <group name="studio_group_lzIvy">
-          <field name="x_studio_field_r69Th" string="Faturalar" nolabel="1">
+          <field name="x_studio_field_r69Th" string="Faturalar" nolabel="1" colspan="4">
             <tree create="0" edit="0">
               <field name="move_type"/>
               <field name="partner_id"/>
