@@ -650,9 +650,9 @@
         <group name="studio_group_lzIvy">
           <field name="x_studio_field_r69Th" string="Faturalar" nolabel="1">
             <tree create="0" edit="0">
-              <field name="type"/>
+              <field name="move_type"/>
               <field name="partner_id"/>
-              <field name="date_invoice"/>
+              <field name="invoice_date"/>
               <field name="date_due"/>
               <field name="name"/>
               <field name="delivery_type"/>
