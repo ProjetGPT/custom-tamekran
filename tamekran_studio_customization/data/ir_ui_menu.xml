@@ -233,6 +233,15 @@
     <field name="sequence">4</field>
     <field name="web_icon" eval="False"/>
   </record>
+  <record id="tamekran_studio_customization.gunluk_plan_rota_tur_51431cac-340d-4221-9f93-d3ed4ba3e0ef" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.rota_turleri_c437bf91-3bb5-4d36-9fce-fb3b017f0bee"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('__export__.res_groups_183_2131a14b')])]"/>
+    <field name="name">Rota Türleri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
   <record id="tamekran_studio_customization.gunluk_plan_musteri__b1bfb504-f57f-4bfb-9e5b-9f5b513343f7" model="ir.ui.menu">
     <field name="action" ref="tamekran_studio_customization.musteri_tipleri_1577825e-fbbf-427f-84cd-a7a06d1a3bd2"/>
     <field name="active" eval="True"/>
@@ -269,4 +278,5 @@
     <field name="sequence">6</field>
     <field name="web_icon" eval="False"/>
   </record>
+  
 </odoo>
