@@ -653,9 +653,9 @@
               <field name="move_type"/>
               <field name="partner_id"/>
               <field name="invoice_date"/>
-              <field name="date_due"/>
+              <field name="invoice_date_due"/>
               <field name="name"/>
-              <field name="delivery_type"/>
+              <field name="invoice_delivery_type"/>
               <field name="user_id"/>
               <field name="amount_total"/>
               <field name="currency_id"/>
