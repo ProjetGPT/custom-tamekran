@@ -597,7 +597,7 @@
               <field name="x_studio_field_3TYcn"/>
               <field name="x_studio_field_JaVvX" options="{'no_create_edit': True}" string="Aşama" attrs="{}" readonly="1"/>
               <button name="%(tamekran_studio_customization.rota_iptal_detaylar_4111d6df-6f3c-4109-bf5d-576ae4534321)d" string="İptal" class="btn-danger" type="action" context="{'default_x_studio_field_dYHsL': id}" attrs="{'invisible': [('x_studio_field_JaVvX', '!=', 1)]}"/>
-              <button name="" string="Tamamlandı" class="btn-primary" type="action" attrs="{'invisible': [('x_studio_field_JaVvX', '!=', 1)]}"/>
+              <!-- <button name="" string="Tamamlandı" class="btn-primary" type="action" attrs="{'invisible': [('x_studio_field_JaVvX', '!=', 1)]}"/> -->
             </tree>
             <form>
               <sheet string="Root Planı" name="studio_sheet_e8d898">
