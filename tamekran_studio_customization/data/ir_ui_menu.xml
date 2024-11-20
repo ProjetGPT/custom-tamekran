@@ -242,6 +242,24 @@
     <field name="sequence" eval="False"/>
     <field name="web_icon" eval="False"/>
   </record>
+  <record id="tamekran_studio_customization.gunluk_plan_asamalar_c4878808-ca87-459e-bc58-c79b9b91e979" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.asamalar_c21d617d-1a4e-4549-87a1-9a12f8095fb8"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Aşamalar</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="tamekran_studio_customization.gunluk_plan_tamamlan_1c8daa76-70a8-4528-b3b0-18f99909b050" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="tamekran_studio_customization.tamamlanamad_nedenle_2554b3fa-2d88-41a8-a873-65466c7ef900"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">İptal Nedenleri</field>
+    <field name="parent_id" ref="tamekran_studio_customization.gunluk_plan_yaplandr_91c3ffb5-ecb6-453f-bb75-d453afe622cc"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
   <record id="tamekran_studio_customization.gunluk_plan_musteri__b1bfb504-f57f-4bfb-9e5b-9f5b513343f7" model="ir.ui.menu">
     <field name="action" ref="tamekran_studio_customization.musteri_tipleri_1577825e-fbbf-427f-84cd-a7a06d1a3bd2"/>
     <field name="active" eval="True"/>
