@@ -554,7 +554,145 @@
     <field name="priority">16</field>
     <field name="type">form</field>
   </record>
-
+<record id="tamekran_studio_customization.date_planned_form_inherit" model="ir.ui.view">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+        <xpath expr="//form[1]/sheet[1]" position="before">
+    <header>
+      <field name="x_studio_field_KQ3w2" widget="statusbar" clickable="True"/>
+    </header>
+  </xpath>
+  <xpath expr="//field[@name='x_name']" position="attributes">
+    <attribute name="attrs">{}</attribute>
+    <attribute name="invisible">1</attribute>
+    <attribute name="required"/>
+  </xpath>
+  <xpath expr="//group[@name='studio_group_f6d7ba_left']" position="inside">
+    <field name="x_studio_field_hHZhh" string="Tarih" attrs="{}" required="1"/>
+    <field name="x_studio_field_Ytl4Z" string="Satış Temsilcisi" context="{}" attrs="{}" readonly="1"/>
+    <field name="x_studio_field_BpW2F" string="Satış Ekibi"/>
+  </xpath>
+  <xpath expr="//group[@name='studio_group_f6d7ba_right']" position="inside">
+    <field name="x_studio_field_k5hiw" string="Başlangıç KM"/>
+    <field name="x_studio_field_ZOzw3"/>
+    <field name="x_studio_field_XfhLR" string="Şahsi KM"/>
+  </xpath>
+  <xpath expr="//group[@name='studio_group_f6d7ba']" position="after">
+    <group name="studio_group_Bco9s" string="Gün Sonu Değerlendirmesi">
+      <field name="x_studio_field_OmY1E" string="Gün Sonu Değerlendirmesi" nolabel="1"/>
+    </group>
+    <notebook name="studio_notebook_TAkSb">
+      <page name="studio_page_TAkSb" string="Rota Planı">
+        <group name="studio_group_TAkSb">
+          <field name="x_studio_field_Yx0X5" string="Root Planı" nolabel="1">
+            <tree string="Root Planı" editable="top">
+              <field name="x_name" attrs="{}" invisible="1"/>
+              <field name="x_studio_field_fJwte" string="Tarih" readonly="1" attrs="{}" force_save="True"/>
+              <field name="x_studio_field_24VYx" string="Müşteri Tipi" options="{'no_create_edit': True,'no_create': True,'no_edit': True}" attrs="{}" required="1"/>
+              <field name="x_studio_field_4b0YS" string="Ziyaret Türü" options="{'no_create_edit': True,'no_create': True,'no_edit': True}" attrs="{}" required="1"/>
+              <field name="x_studio_field_8VSrL" string="Müşteri" attrs="{}" domain="[[&quot;parent_id&quot;,&quot;=&quot;,False]]" required="1"/>
+              <field name="x_studio_field_bFy5v" string="Rota Türü" options="{'no_create_edit': True,'no_create': True,'no_edit': True}" attrs="{}" required="1"/>
+              <field name="x_studio_field_2Gsci" string="İş Durumu" options="{'no_create_edit': True,'no_create': True,'no_edit': True}" attrs="{}" required="1"/>
+              <field name="x_studio_field_PG3Ap" string="Bölge" force_save="True" attrs="{}" readonly="1"/>
+              <field name="x_studio_field_3TYcn"/>
+              <field name="x_studio_field_JaVvX" options="{'no_create_edit': True}" string="Aşama" attrs="{}" readonly="1"/>
+              <button name="1988" string="İptal" class="btn-danger" type="action" context="{'default_x_studio_field_dYHsL': id}" attrs="{'invisible': [('x_studio_field_JaVvX', '!=', 1)]}"/>
+              <button name="2011" string="Tamamlandı" class="btn-primary" type="action" attrs="{'invisible': [('x_studio_field_JaVvX', '!=', 1)]}"/>
+            </tree>
+            <form>
+              <sheet string="Root Planı" name="studio_sheet_e8d898">
+                <group name="studio_group_Phtmq">
+                  <field name="x_studio_field_fJwte"/>
+                  <field name="x_studio_field_8VSrL" domain="[[&quot;parent_id&quot;,&quot;=&quot;,False]]"/>
+                  <field name="x_studio_field_bFy5v"/>
+                  <field name="x_studio_field_JaVvX" string="Aşama"/>
+                  <field name="x_studio_field_3TYcn"/>
+                </group>
+              </sheet>
+            </form>
+          </field>
+        </group>
+      </page>
+      <page name="studio_page_JCRW8" string="Teklif ve Siparişler">
+        <group name="studio_group_JCRW8">
+          <field name="x_studio_field_sSFci" nolabel="1">
+            <tree>
+              <field name="name"/>
+              <field name="date_order"/>
+              <field name="partner_id"/>
+              <field name="user_id"/>
+              <field name="state"/>
+              <field name="amount_total"/>
+            </tree>
+          </field>
+        </group>
+      </page>
+      <page name="studio_page_KBZrO" string="Tahsilatlar">
+        <group name="studio_group_KBZrO">
+          <field name="x_studio_field_IwyHE" string="Tahsilatlar" nolabel="1">
+            <tree editable="buttom">
+              <field name="x_studio_field_uYiFx" string="Makbuz Seri/No"/>
+              <field name="x_studio_field_1goyK" string="Müşteri" attrs="{}" required="1"/>
+              <field name="x_name" string="Açıklama"/>
+              <field name="x_studio_field_WULf1" string="Ödeme Tipi" options="{'no_create_edit': True,'no_create': True,'no_edit': True}" required="1"/>
+              <field name="x_studio_field_DPyee" string="Banka" options="{'no_create_edit': True,'no_create': True,'no_edit': True}"/>
+              <field name="x_studio_field_yG1C9" string="Şubesi"/>
+              <field name="x_studio_field_ABc0t" string="Çek No"/>
+              <field name="x_studio_field_xAOwa" string="Hesap No"/>
+              <field name="x_studio_field_GLBCx" string="Ödeme Vadesi" attrs="{&quot;readonly&quot;: [[&quot;id&quot;,&quot;=&quot;,&quot;1111111111111111111111&quot;]]}"/>
+              <field name="x_studio_field_MR0G6" string="Ödeme Tutarı"/>
+              <field name="x_studio_field_t76HR" string="Döviz Cinsi"/>
+            </tree>
+          </field>
+        </group>
+      </page>
+      <page name="studio_page_lzIvy" string="Faturalar">
+        <group name="studio_group_lzIvy">
+          <field name="x_studio_field_r69Th" string="Faturalar" nolabel="1">
+            <tree create="0" edit="0">
+              <field name="type"/>
+              <field name="partner_id"/>
+              <field name="date_invoice"/>
+              <field name="date_due"/>
+              <field name="name"/>
+              <field name="delivery_type"/>
+              <field name="user_id"/>
+              <field name="amount_total"/>
+              <field name="currency_id"/>
+              <field name="state"/>
+            </tree>
+          </field>
+        </group>
+      </page>
+    </notebook>
+    <group name="studio_group_KRPmO">
+      <group name="studio_group_KRPmO_left" string="Toplamlar">
+        <field name="x_studio_field_u2hBh" force_save="True" attrs="{}" readonly="1"/>
+        <field name="x_studio_field_5kv6v" force_save="True" attrs="{}" readonly="1"/>
+        <field name="x_studio_field_zlYiP" force_save="True" attrs="{}" readonly="1"/>
+        <field name="x_studio_field_g6P6h" force_save="True" attrs="{}" readonly="1"/>
+        <field name="x_studio_field_GYgWG" string="Rutin Ziyaret Sayısı" force_save="True" attrs="{}" readonly="1"/>
+        <field name="x_studio_field_nALhZ" string="Dijital Ziyaret Sayısı" force_save="True" attrs="{}" readonly="1"/>
+      </group>
+      <group name="studio_group_KRPmO_right" string="Toplamlar (TRY) ₺">
+        <field name="x_studio_field_1Lrtl" string="Teklif Toplamı" force_save="True" attrs="{}" readonly="1"/>
+        <field name="x_studio_field_H4EPB" string="Sipariş Toplamı" force_save="True" attrs="{}" readonly="1"/>
+        <field name="x_studio_field_kCOZf" string="Fatura Toplamı" force_save="True" attrs="{}" readonly="1"/>
+        <field name="x_studio_field_DlxvT" string="İade Fatura Toplamı" force_save="True" attrs="{}" readonly="1"/>
+        <field name="x_studio_field_72Wcu" string="Tahsilat Toplamı" force_save="True" attrs="{}" readonly="1"/>
+      </group>
+    </group>
+  </xpath>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="tamekran_studio_customization.default_form_view_fo_2bc773c5-c760-4bc5-9bcd-5d80d865afb4"/>
+    <field name="mode">extension</field>
+    <field name="model">x_date_planned</field>
+    <field name="name">Inherited form view for x_date_planned</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+</record>
   <record id="tamekran_studio_customization.default_tree_view_fo_d34220fd-369e-4846-9094-748f7484bc7b" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
