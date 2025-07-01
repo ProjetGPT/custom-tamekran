@@ -1560,5 +1560,111 @@
     <field name="priority">16</field>
     <field name="type">form</field>
   </record>
+  <record id="tamekran_studio_customization.report_8b8a3d09-0bbe-44a5-a797-d78cef6eea34" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <t t-name="web_studio.report_business">
+        <t t-foreach="docs" t-as="o">
+          <t t-call="web.external_layout">
+            <div class="page">
+              <table>
+                <tr>
+                  <td style="height: 10mm" colspan="2"> </td>
+                </tr>
+                <tr>
+                  <td style="height: 10mm" colspan="2" align="center">
+                    <b>
+                      <h2>İHTARNAMEDİR</h2>
+                    </b>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="height: 10mm" colspan="2"> </td>
+                </tr>
+                <tr style="height: 10mm">
+                  <td style="font-size : 18px">
+                    <b>MUHATAP</b>
+                  </td>
+                  <td style="font-size : 18px">
+                    <b>:</b>
+                    <span t-field="o.name"/>
+                  </td>
+                </tr>
+                <tr style="height: 10mm">
+                  <td style="font-size : 18px">
+                    <b>ADRES</b>
+                  </td>
+                  <td style="font-size : 18px"><b>:</b><span t-field="o.street"/><span t-field="o.street2"/><span t-field="o.zip"/><span t-field="o.city"/> - <span t-field="o.state_id"/> / <span t-field="o.country_id"/></td>
+                </tr>
+                <tr style="height: 10mm">
+                  <td style="font-size : 18px">
+                    <b>KONU</b>
+                  </td>
+                  <td style="font-size : 18px">
+                    <b>:</b>
+                    <span t-field="o.company_id.x_warning_notice"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="height: 5mm" colspan="2"> </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <h3>AÇIKLAMALAR</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="font-size : 18px">
+                    <span t-field="o.company_id.x_warning_description"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="height: 8mm" colspan="2"> </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="font-size : 18px">
+                    <b>TARİH : <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d-%m-%Y')"/></b>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="font-size : 18px">
+                    <b>BORÇ BAKİYESİ : <span t-esc="'{0:,.2f}'.format(o.credit - o.debit)"/></b>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="height: 8mm" colspan="2"> </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="font-size : 18px">
+                    <b>İHTAR EDEN;</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="font-size : 18px">
+                    <b>
+                      <span t-field="o.company_id.report_header"/>
+                    </b>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="font-size : 18px">
+                    <b><span t-field="o.company_id.tax_office_id"/> : <span t-esc="o.company_id.vat[2:]"/></b>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </t>
+        </t>
+      </t>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model" eval="False"/>
+    <field name="name">tamekran_studio_customization.report_8b8a3d09-0bbe-44a5-a797-d78cef6eea34</field>
+    <field name="priority">16</field>
+    <field name="type">qweb</field>
+  </record>
 
 </odoo>

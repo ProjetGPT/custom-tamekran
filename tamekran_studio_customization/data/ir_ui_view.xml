@@ -408,7 +408,7 @@
           <button name="invoice_print" string="Faturayı Yazdır" type="object" attrs="{'invisible':['|',('sent','=',False), ('state', 'not in', ('open','paid'))]}" groups="base.group_user"/>
           <button name="1259" id="account_invoice_payment_btn" type="action" states="open" string="Ödeme Kaydet" groups="account.group_account_invoice" class="oe_highlight"/>
           <button name="action_invoice_open" type="object" states="draft" string="Doğrula" class="oe_highlight o_invoice_validate" groups="account.group_account_invoice"/>
-          <button name="285" type="action" string="İade/Fiyat Farkı Faturası Ekle" groups="account.group_account_invoice" attrs="{'invisible': ['|',('type', '=', 'out_refund'), ('state', 'not in', ('open','paid'))]}"/>
+          <button name="285" type="action" string="İade/Fiyat Farkı Faturası Ekle" groups="account.group_account_invoice" attrs="{'invisible': ['|',('move_type', '=', 'out_refund'), ('state', 'not in', ('open','paid'))]}"/>
           <button name="action_invoice_draft" states="cancel" string="Taslağa Ayarla" type="object" groups="account.group_account_invoice"/>
           <field name="state" widget="statusbar" nolabel="1" statusbar_visible="draft,open,paid"/>
         </header>
@@ -1831,7 +1831,7 @@
           <attribute name="attrs">{"readonly": [["x_studio_field_ZQbaU","in",[11,9]]]}</attribute>
           <attribute name="readonly"/>
         </xpath>
-        <xpath expr="//field[@name='default_einvoice_profile'][not(ancestor::field)]" position="attributes">
+        <xpath expr="//field[@name='default_einvoice_profile_id'][not(ancestor::field)]" position="attributes">
           <attribute name="attrs">{"readonly": [["x_studio_field_ZQbaU","in",[11,9]]]}</attribute>
           <attribute name="readonly"/>
         </xpath>
@@ -2706,7 +2706,7 @@
             </td>
                   <td style="width:20mm"/>
                   <td style="width:25mm"/>
-                  <td style="width:55mm" colspan="4"><img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.name, 600, 100)" style="width:300px;height:50px;"/><br/>
+                  <td style="width:55mm" colspan="4"><img t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.name, 600, 100)" style="width:300px;height:50px;"/><br/>
               &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span t-field="o.name"/><br/><br/>
               Sipariş Tarihi &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;:  <span t-field="o.sale_id.date_order" t-field-options="{&quot;format&quot;: &quot;dd.MM.yyyy&quot;}"/><br/>
               Sipariş Saati &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;:  <span t-field="o.sale_id.date_order" t-field-options="{&quot;format&quot;: &quot;H:m&quot;}"/><br/>
@@ -4451,7 +4451,7 @@
           </td>
                     <td style="width:20mm"/>
                     <td style="width:25mm"/>
-                    <td style="width:55mm" colspan="4"><img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', p.name, 600, 100)" style="width:300px;height:50px;"/><br/>
+                    <td style="width:55mm" colspan="4"><img t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', p.name, 600, 100)" style="width:300px;height:50px;"/><br/>
             &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span t-field="p .name"/><br/><br/>
             Sipariş Tarihi &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;:  <span t-field="o.date_order" t-field-options="{&quot;format&quot;: &quot;dd.MM.yyyy&quot;}"/><br/>
             Sipariş Saati &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;:  <span t-field="o.date_order" t-field-options="{&quot;format&quot;: &quot;H:m&quot;}"/><br/>
@@ -6273,7 +6273,7 @@
           </td>
                     <td style="width:20mm"/>
                     <td style="width:25mm"/>
-                    <td style="width:55mm" colspan="4"><img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', p.name, 600, 100)" style="width:300px;height:50px;"/><br/>
+                    <td style="width:55mm" colspan="4"><img t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', p.name, 600, 100)" style="width:300px;height:50px;"/><br/>
             &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span t-field="p .name"/><br/><br/>
             Sipariş Tarihi &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;:  <span t-field="o.date_order" t-field-options="{&quot;format&quot;: &quot;dd.MM.yyyy&quot;}"/><br/>
             Sipariş Saati &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;:  <span t-field="o.date_order" t-field-options="{&quot;format&quot;: &quot;H:m&quot;}"/><br/>
