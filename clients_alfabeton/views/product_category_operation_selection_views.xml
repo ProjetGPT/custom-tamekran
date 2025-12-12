@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- Tree View -->
+    <record id="product_category_operation_tree_view" model="ir.ui.view">
+        <field name="name">product.category.operation.tree</field>
+        <field name="model">product.category.operation</field>
+        <field name="arch" type="xml">
+            <tree string="Ürün Kategori Operasyon Seçimleri" editable="bottom">
+                <field name="category_id"/>
+                <field name="operation_type_id"/>
+                <field name="stock_valuation_account_id"/>
+                <field name="stock_input_account_id"/>
+                <field name="stock_output_account_id"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="product_category_operation_form_view" model="ir.ui.view">
+        <field name="name">product.category.operation.form</field>
+        <field name="model">product.category.operation</field>
+        <field name="arch" type="xml">
+            <form string="Ürün Kategori Operasyon Seçimi">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">
+                            <field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+                        </button>
+                    </div>
+                    <group>
+                        <group name="main_info" string="Ana Bilgiler">
+                            <field name="category_id" required="1"/>
+                            <field name="operation_type_id" required="1"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                        <group name="accounts" string="Muhasebe Hesapları">
+                            <field name="stock_valuation_account_id" required="1"/>
+                            <field name="stock_input_account_id" required="1"/>
+                            <field name="stock_output_account_id" required="1"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="product_category_operation_search_view" model="ir.ui.view">
+        <field name="name">product.category.operation.search</field>
+        <field name="model">product.category.operation</field>
+        <field name="arch" type="xml">
+            <search string="Ürün Kategori Operasyon Seçimleri">
+                <field name="category_id"/>
+                <field name="operation_type_id"/>
+                <field name="stock_valuation_account_id"/>
+                <field name="stock_input_account_id"/>
+                <field name="stock_output_account_id"/>
+                <separator/>
+                <filter string="Aktif" name="active" domain="[('active', '=', True)]"/>
+                <filter string="Pasif" name="inactive" domain="[('active', '=', False)]"/>
+                <separator/>
+                <group expand="0" string="Grupla">
+                    <filter string="Kategori" name="group_category" context="{'group_by': 'category_id'}"/>
+                    <filter string="Operasyon Türü" name="group_operation_type" context="{'group_by': 'operation_type_id'}"/>
+                    <filter string="Şirket" name="group_company" context="{'group_by': 'company_id'}" groups="base.group_multi_company"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="product_category_operation_action" model="ir.actions.act_window">
+        <field name="name">Ürün Kategori Operasyon Seçimleri</field>
+        <field name="res_model">product.category.operation</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="product_category_operation_search_view"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Yeni bir operasyon seçimi oluşturun!
+            </p>
+            <p>
+                Ürün kategorileri için operasyon türlerine göre özel muhasebe hesapları tanımlayın.
+                Bu sayede farklı operasyon türlerinde farklı hesaplar kullanılabilir.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Item -->
+    <menuitem
+        id="menu_product_category_operation"
+        name="Ürün Kategori Operasyon Seçimleri"
+        parent="stock.menu_stock_config_settings"
+        action="product_category_operation_action"
+        sequence="15"/>
+
+</odoo>

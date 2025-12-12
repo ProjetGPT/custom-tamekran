@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="product_category_form_inherit_operation_type" model="ir.ui.view">
+        <field name="name">product.category.form.inherit.operation.type</field>
+        <field name="model">product.category</field>
+        <field name="inherit_id" ref="stock_account.view_category_property_form_stock"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='logistics']" position="after">
+                <group name='operation_type_group' string="Operasyon Türü Ayarları">
+                    <group>
+                        <field name="operation_type_id"/>
+                    </group>
+                    <group>
+                    </group>
+                </group>
+                <group name='operation_accounts' string="Operasyon Hesapları"  attrs="{'invisible': [('operation_type_id', '=', False)]}">
+                        <field name="property_stock_valuation_account_operation_id"/>
+                        <field name="property_stock_account_input_operation_id" />
+                        <field name="property_stock_account_output_operation_id" />
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
