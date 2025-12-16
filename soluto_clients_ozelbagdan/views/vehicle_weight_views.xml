@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vehicle Weight Form View -->
+    <record id="view_vehicle_weight_form" model="ir.ui.view">
+        <field name="name">vehicle.weight.form</field>
+        <field name="model">vehicle.weight</field>
+        <field name="arch" type="xml">
+            <form string="Araç Tonaj Bilgisi">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_child_records" type="object" 
+                                class="oe_stat_button" icon="fa-sitemap"
+                                invisible="child_count == 0">
+                            <field name="child_count" widget="statinfo" string="Türetilen"/>
+                        </button>
+                        <button name="action_view_intercompany_flow" type="object" 
+                                class="oe_stat_button" icon="fa-exchange"
+                                invisible="not intercompany_flow_stage">
+                            <div class="o_field_widget o_stat_info">
+                                <span class="o_stat_text">Intercompany</span>
+                                <span class="o_stat_text">Akış</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="picking_id" invisible="1"/>
+                            <field name="production_id" invisible="1"/>
+                            <field name="vehicle_plate_id"/>
+                            <field name="driver_name"/>
+                            <field name="vehicle_tare_weight" force_save="1"/>
+                            <field name="exit_m3" invisible="context.get('picking_type_code') != 'outgoing' and not context.get('default_production_id')"/>
+                            <field name="entry_m3" invisible="context.get('picking_type_code') != 'incoming'"/>
+                        </group>
+                        <group>
+                            <field name="exit_weight"/>
+                            <field name="exit_date"/>
+                            <field name="entry_weight"/>
+                            <field name="entry_date"/>
+                            <field name="net_weight"/>
+                        </group>
+                    </group>
+                    <group string="Intercompany İzlenebilirlik" invisible="not intercompany_flow_stage">
+                        <group>
+                            <field name="intercompany_flow_stage"/>
+                            <field name="intercompany_flow_info"/>
+                            <field name="parent_vehicle_weight_id" invisible="not parent_vehicle_weight_id"/>
+                        </group>
+                        <group>
+                            <field name="source_sale_order_id" invisible="not source_sale_order_id"/>
+                            <field name="purchase_order_id" invisible="not purchase_order_id"/>
+                            <field name="target_sale_order_id" invisible="not target_sale_order_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Notlar">
+                            <field name="notes"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vehicle Weight Tree View -->
+    <record id="view_vehicle_weight_tree" model="ir.ui.view">
+        <field name="name">vehicle.weight.tree</field>
+        <field name="model">vehicle.weight</field>
+        <field name="arch" type="xml">
+            <tree string="Araç Tonaj Bilgileri">
+                <field name="name"/>
+                <field name="vehicle_plate_id"/>
+                <field name="driver_name"/>
+                <field name="intercompany_flow_stage" optional="show"/>
+                <field name="vehicle_tare_weight"/>
+                <field name="exit_m3" optional="hide"/>
+                <field name="entry_m3" optional="hide"/>
+                <field name="exit_weight"/>
+                <field name="exit_date"/>
+                <field name="entry_weight"/>
+                <field name="entry_date"/>
+                <field name="net_weight"/>
+                <field name="child_count" optional="hide"/>
+                <field name="intercompany_flow_info" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vehicle Weight Search View -->
+    <record id="view_vehicle_weight_search" model="ir.ui.view">
+        <field name="name">vehicle.weight.search</field>
+        <field name="model">vehicle.weight</field>
+        <field name="arch" type="xml">
+            <search string="Araç Tonaj Bilgileri">
+                <field name="name"/>
+                <field name="vehicle_plate_id"/>
+                <field name="driver_name"/>
+                <field name="source_sale_order_id"/>
+                <field name="purchase_order_id"/>
+                <field name="target_sale_order_id"/>
+                <separator/>
+                <filter string="Giriş Tonajı Girilmemiş" name="no_entry" domain="[('entry_weight', '=', False)]"/>
+                <filter string="Giriş Tonajı Girilmiş" name="has_entry" domain="[('entry_weight', '!=', False)]"/>
+                <separator/>
+                <filter string="Üretim" name="production_stage" domain="[('intercompany_flow_stage', '=', 'production')]"/>
+                <filter string="1. Şirket Teslimatı" name="source_delivery" domain="[('intercompany_flow_stage', '=', 'source_delivery')]"/>
+                <filter string="2. Şirket Satınalma" name="purchase_receipt" domain="[('intercompany_flow_stage', '=', 'purchase_receipt')]"/>
+                <filter string="2. Şirket Satış" name="target_delivery" domain="[('intercompany_flow_stage', '=', 'target_delivery')]"/>
+                <separator/>
+                <filter string="Ana Kayıtlar" name="parent_records" domain="[('parent_vehicle_weight_id', '=', False)]"/>
+                <filter string="Türetilen Kayıtlar" name="child_records" domain="[('parent_vehicle_weight_id', '!=', False)]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Intercompany Aşama" name="group_by_flow_stage" context="{'group_by': 'intercompany_flow_stage'}"/>
+                    <filter string="Teslimat" name="group_by_picking" context="{'group_by': 'picking_id'}"/>
+                    <filter string="Araç Plakası" name="group_by_plate" context="{'group_by': 'vehicle_plate_id'}"/>
+                    <filter string="Çıkış Tarihi" name="group_by_exit_date" context="{'group_by': 'exit_date:day'}"/>
+                    <filter string="Giriş Tarihi" name="group_by_entry_date" context="{'group_by': 'entry_date:day'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Vehicle Weight Action Window -->
+    <record id="action_vehicle_weight" model="ir.actions.act_window">
+        <field name="name">Araç Tonaj Bilgileri</field>
+        <field name="res_model">vehicle.weight</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_vehicle_weight_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Henüz araç tonaj kaydı bulunmamaktadır
+            </p>
+            <p>
+                Teslimat fişlerinde araç tonaj bilgilerini kaydetmek için ilgili teslimat fişine gidin ve "Araç Ekle" butonuna tıklayın.
+            </p>
+        </field>
+    </record>
+
+    <!-- Vehicle Plate Form View -->
+    <record id="view_vehicle_plate_form" model="ir.ui.view">
+        <field name="name">vehicle.plate.form</field>
+        <field name="model">vehicle.plate</field>
+        <field name="arch" type="xml">
+            <form string="Araç Plakası">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="toggle_active" type="object" 
+                                class="oe_stat_button" icon="fa-archive">
+                            <field name="active" />
+                        </button>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="name" placeholder="Örn: 34 ABC 123"/>
+                            <field name="driver_name" placeholder="Örn: Ahmet Yılmaz"/>
+                        </group>
+                        <group>
+                            <field name="vehicle_tare_weight" placeholder="Örn: 8500"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="note" placeholder="Araç hakkında notlar..."/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vehicle Plate Tree View -->
+    <record id="view_vehicle_plate_tree" model="ir.ui.view">
+        <field name="name">vehicle.plate.tree</field>
+        <field name="model">vehicle.plate</field>
+        <field name="arch" type="xml">
+            <tree string="Araç Plakaları">
+                <field name="name"/>
+                <field name="driver_name"/>
+                <field name="vehicle_tare_weight"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vehicle Plate Search View -->
+    <record id="view_vehicle_plate_search" model="ir.ui.view">
+        <field name="name">vehicle.plate.search</field>
+        <field name="model">vehicle.plate</field>
+        <field name="arch" type="xml">
+            <search string="Araç Plakaları">
+                <field name="name" string="Plaka"/>
+                <field name="driver_name" string="Sürücü"/>
+                <filter string="Aktif" name="active" domain="[('active','=',True)]"/>
+                <filter string="Arşivlenmiş" name="inactive" domain="[('active', '=', False)]"/>
+                <group expand="0" string="Grupla">
+                    <filter string="Sürücü" name="group_driver" context="{'group_by':'driver_name'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Vehicle Plate Action Window -->
+    <record id="action_vehicle_plate" model="ir.actions.act_window">
+        <field name="name">Araç Plaka Kayıtları</field>
+        <field name="res_model">vehicle.plate</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_vehicle_plate_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Yeni bir araç plakası oluşturun!
+            </p>
+            <p>
+                Araç plakalarını tanımlayarak sürücü bilgileri ve araç dara ağırlığını 
+                kayıt altına alabilirsiniz. Bu bilgiler teslimat ve üretim süreçlerinde 
+                otomatik olarak doldurulacaktır.
+            </p>
+        </field>
+    </record>
+
+    <!-- Add sequence for vehicle weight records -->
+    <record id="seq_vehicle_weight" model="ir.sequence">
+        <field name="name">Araç Tonaj Sırası</field>
+        <field name="code">vehicle.weight</field>
+        <field name="prefix">TON/</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+    <!-- Menu Items -->
+    <menuitem id="menu_vehicle_weight"
+              name="Araç Tonaj Bilgileri"
+              action="action_vehicle_weight"
+              parent="stock.menu_stock_warehouse_mgmt"
+              sequence="100"/>
+              
+    <menuitem id="menu_vehicle_plate"
+              name="Araç Plaka Kayıtları"
+              action="action_vehicle_plate"
+              parent="stock.menu_stock_warehouse_mgmt"
+              sequence="101"/>
+</odoo>

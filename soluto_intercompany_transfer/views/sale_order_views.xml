@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_order_form_intercompany" model="ir.ui.view">
+        <field name="name">sale.order.form.intercompany</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="is_intercompany_order" invisible="1"/>
+                <field name="final_customer_id" 
+                       invisible="not is_intercompany_order" 
+                       required="is_intercompany_order"
+                       readonly="state not in ('draft', 'sent')"
+                       />
+                <field name="final_customer_transfer_id"
+                       invisible="not is_intercompany_order"
+                       required="is_intercompany_order"
+                       readonly="state not in ('draft', 'sent')"
+                       />
+                <field name="intercompany_sale_order_id" invisible="1"/>
+                <field name="intercompany_purchase_order_id" invisible="1"/>
+                <field name="source_sale_order_id" invisible="1"/>
+            </xpath>
+            <div name="button_box" position="inside">
+                <button type="object" name="action_view_intercompany_sale_order"
+                    class="oe_stat_button" icon="fa-shopping-cart"
+                    invisible="not intercompany_sale_order_id">
+                    <div class="o_field_widget o_stat_info">
+                        <span class="o_stat_text">Intercompany SO</span>
+                    </div>
+                </button>
+                <button type="object" name="action_view_intercompany_purchase_order"
+                    class="oe_stat_button" icon="fa-truck"
+                    invisible="not intercompany_purchase_order_id">
+                     <div class="o_field_widget o_stat_info">
+                        <span class="o_stat_text">Intercompany PO</span>
+                    </div>
+                </button>
+                <button type="object" name="action_view_source_sale_order"
+                    class="oe_stat_button" icon="fa-arrow-left"
+                    invisible="not source_sale_order_id">
+                     <div class="o_field_widget o_stat_info">
+                        <span class="o_stat_text">Source SO</span>
+                    </div>
+                </button>
+            </div>
+        </field>
+    </record>
+
+    <record id="view_order_tree_intercompany" model="ir.ui.view">
+        <field name="name">sale.order.tree.intercompany</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree"/>
+        <field name="arch" type="xml">
+            <tree position="attributes">
+                <attribute name="decoration-danger">source_sale_order_id</attribute>
+            </tree>
+            <tree position="inside">
+                <field name="source_sale_order_id" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_order_tree_sale_intercompany" model="ir.ui.view">
+        <field name="name">sale.order.tree.sale.intercompany</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_tree"/>
+        <field name="arch" type="xml">
+            <tree position="attributes">
+                <attribute name="decoration-danger">source_sale_order_id</attribute>
+            </tree>
+            <tree position="inside">
+                <field name="source_sale_order_id" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

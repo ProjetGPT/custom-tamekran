@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_product_form_view_inherit_soluto_clients_ozelbagdan" model="ir.ui.view">
+        <field name="name">product.product.form.inherit.soluto.clients.ozelbagdan</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <!-- Add Güncel Maliyet field to product form view -->
+<!--            <xpath expr="//div[@name='standard_price_uom']" position="after">-->
+<!--                <label for="current_cost"/>-->
+<!--                <div name="current_cost_uom">-->
+<!--                    <field name="current_cost" readonly="1" widget="monetary" options="{'currency_field': 'cost_currency_id', 'field_digits': True}" class="oe_inline"/>-->
+<!--                    <span groups="uom.group_uom">per-->
+<!--                        <field name="uom_name" class="oe_inline"/>-->
+<!--                    </span>-->
+<!--                </div>-->
+<!--            </xpath>-->
+            <xpath expr="//button[contains(@name, 'action_update_quantity_on_hand') and not(contains(@class, 'oe_stat_button'))]" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//button[contains(@name, 'action_update_quantity_on_hand') and contains(@class, 'oe_stat_button')]" position="replace">
+                <button class="oe_stat_button"
+                                icon="fa-cubes"
+                                invisible="not show_on_hand_qty_status_button">
+                                <div class="o_field_widget o_stat_info">
+                                        <span class="o_stat_value d-flex gap-1">
+                                            <field name="qty_available" nolabel="1" class="oe_inline"/>
+                                            <field name="uom_name" class="oe_inline"/>
+                                        </span>
+                                        <span class="o_stat_text">On Hand</span>
+                                </div>
+                            </button>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_template_form_view_inherit_soluto_clients_ozelbagdan" model="ir.ui.view">
+        <field name="name">product.template.form.inherit.soluto.clients.ozelbagdan</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="priority" eval="99"/>
+        <field name="arch" type="xml">
+            <!-- Add Güncel Maliyet field to product template form view -->
+<!--            <xpath expr="//div[@name='standard_price_uom']" position="after">-->
+<!--                <label for="current_cost" invisible="id and product_variant_count != 1 and not is_product_variant"/>-->
+<!--                <div name="current_cost_uom" invisible="id and product_variant_count != 1 and not is_product_variant">-->
+<!--                    <field name="current_cost" readonly="1" widget="monetary" options="{'currency_field': 'cost_currency_id', 'field_digits': True}" class="oe_inline"/>-->
+<!--                    <span groups="uom.group_uom">per-->
+<!--                        <field name="uom_name" class="oe_inline"/>-->
+<!--                    </span>-->
+<!--                </div>-->
+<!--            </xpath>-->
+            <xpath expr="//button[contains(@name, 'action_update_quantity_on_hand') and not(contains(@class, 'oe_stat_button'))]" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//button[contains(@name, 'action_update_quantity_on_hand') and contains(@class, 'oe_stat_button')]" position="replace">
+                <button
+                    invisible="not show_on_hand_qty_status_button"
+                    class="oe_stat_button" icon="fa-cubes">
+                    <div class="o_field_widget o_stat_info">
+                        <span class="o_stat_value d-flex gap-1">
+                            <field name="qty_available" nolabel="1" class="oe_inline"/>
+                            <field name="uom_name" class="oe_inline"/>
+                        </span>
+                        <span class="o_stat_text">On Hand</span>
+                    </div>
+                </button>
+            </xpath>
+        </field>
+    </record>
+    
+    <!-- Add manual update action button for product.product -->
+    <record id="action_update_current_cost" model="ir.actions.server">
+        <field name="name">Güncel Maliyet Hesapla</field>
+        <field name="model_id" ref="product.model_product_product"/>
+        <field name="binding_model_id" ref="product.model_product_product"/>
+        <field name="binding_view_types">form,list</field>
+        <field name="state">code</field>
+        <field name="code">
+            if records:
+                records.update_current_cost()
+        </field>
+    </record>
+    
+    <!-- Add manual update action button for product.template -->
+    <record id="action_update_current_cost_template" model="ir.actions.server">
+        <field name="name">Güncel Maliyet Hesapla</field>
+        <field name="model_id" ref="product.model_product_template"/>
+        <field name="binding_model_id" ref="product.model_product_template"/>
+        <field name="binding_view_types">form,list</field>
+        <field name="state">code</field>
+        <field name="code">
+            if records:
+                records.mapped('product_variant_ids').update_current_cost()
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_vehicle_weight_user,vehicle.weight.user,model_vehicle_weight,stock.group_stock_user,1,1,1,0
+access_vehicle_weight_manager,vehicle.weight.manager,model_vehicle_weight,stock.group_stock_manager,1,1,1,1
+access_vehicle_plate_user,vehicle.plate.user,model_vehicle_plate,stock.group_stock_user,1,1,1,0
+access_vehicle_plate_manager,vehicle.plate.manager,model_vehicle_plate,stock.group_stock_manager,1,1,1,1
+access_select_production_vehicles_user,select.production.vehicles.user,model_select_production_vehicles,stock.group_stock_user,1,1,1,0
+access_select_production_vehicles_manager,select.production.vehicles.manager,model_select_production_vehicles,stock.group_stock_manager,1,1,1,1
+stock.access_stock_quant_user,stock.quant user,stock.model_stock_quant,stock.group_stock_user,1,0,0,0
+access_stock_quant_manager,stock.quant manager,stock.model_stock_quant,stock.group_stock_manager,1,0,0,0

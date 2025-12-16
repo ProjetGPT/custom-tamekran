@@ -1,0 +1,323 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* soluto_intercompany_transfer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20250508\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-21 13:44+0000\n"
+"PO-Revision-Date: 2025-08-21 13:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: soluto_intercompany_transfer
+#. odoo-python
+#: code:addons/soluto_intercompany_transfer/wizards/confirm_intercompany_picking.py:0
+#, python-format
+msgid ""
+"\n"
+"                <div class=\"alert alert-warning\" role=\"alert\">\n"
+"                    <p><strong>Dikkat!</strong></p>\n"
+"                    <p>Bu kayıt <strong>%s</strong> şirketindeki bir satış kaydına bağlı çalışmaktadır.</p>\n"
+"                    <p>Manuel işlem yapmak bağlantıyı kopartabilir, yapmak istediğinizden emin misiniz?</p>\n"
+"                </div>\n"
+"            "
+msgstr ""
+"\n"
+"                <div class=\"alert alert-warning\" role=\"alert\">\n"
+"                    <p><strong>Dikkat!</strong></p>\n"
+"                    <p>Bu kayıt <strong>%s</strong> şirketindeki bir satış kaydına bağlı çalışmaktadır.</p>\n"
+"                    <p>Manuel işlem yapmak bağlantıyı kopartabilir, yapmak istediğinizden emin misiniz?</p>\n"
+"                </div>\n"
+"            "
+
+#. module: soluto_intercompany_transfer
+#: model_terms:ir.ui.view,arch_db:soluto_intercompany_transfer.view_order_form_intercompany
+msgid "<span class=\"o_stat_text\">Intercompany PO</span>"
+msgstr "<span class=\"o_stat_text\">Şirketler Arası SA</span>"
+
+#. module: soluto_intercompany_transfer
+#: model_terms:ir.ui.view,arch_db:soluto_intercompany_transfer.view_order_form_intercompany
+msgid "<span class=\"o_stat_text\">Intercompany SO</span>"
+msgstr "<span class=\"o_stat_text\">Şirketler Arası SS</span>"
+
+#. module: soluto_intercompany_transfer
+#: model_terms:ir.ui.view,arch_db:soluto_intercompany_transfer.view_order_form_intercompany
+#: model_terms:ir.ui.view,arch_db:soluto_intercompany_transfer.view_purchase_order_form_intercompany
+msgid "<span class=\"o_stat_text\">Source SO</span>"
+msgstr "<span class=\"o_stat_text\">Kaynak SS</span>"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,help:soluto_intercompany_transfer.field_res_partner__is_intercompany_partner
+#: model:ir.model.fields,help:soluto_intercompany_transfer.field_res_users__is_intercompany_partner
+msgid ""
+"Check this box if this partner is used to trigger intercompany operations."
+msgstr ""
+"Bu iş ortağının şirketler arası işlemleri tetiklemek için kullanılması durumunda bu kutuyu işaretleyin."
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model,name:soluto_intercompany_transfer.model_res_partner
+msgid "Contact"
+msgstr "Kontak"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_confirm_intercompany_picking__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_confirm_intercompany_picking__create_date
+msgid "Created on"
+msgstr "Oluşturulma Tarihi"
+
+#. module: soluto_intercompany_transfer
+#. odoo-python
+#: code:addons/soluto_intercompany_transfer/models/mrp_production.py:0
+#, python-format
+msgid "Delivery automatically validated due to production completion: %s"
+msgstr "Üretim tamamlanması nedeniyle teslimat otomatik olarak onaylandı: %s"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_confirm_intercompany_picking__display_name
+msgid "Display Name"
+msgstr "Görünen Ad"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_sale_order__final_customer_id
+msgid "Final Customer"
+msgstr "Son Müşteri"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_sale_order__final_customer_transfer_id
+msgid "Final Customer Transfer"
+msgstr "Son Müşteri Transferi"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_confirm_intercompany_picking__id
+msgid "ID"
+msgstr "ID"
+
+#. module: soluto_intercompany_transfer
+#: model_terms:ir.ui.view,arch_db:soluto_intercompany_transfer.view_partner_form_intercompany
+msgid "Intercompany"
+msgstr "Şirketler Arası"
+
+#. module: soluto_intercompany_transfer
+#. odoo-python
+#: code:addons/soluto_intercompany_transfer/models/stock_picking.py:0
+#, python-format
+msgid "Intercompany Confirmation"
+msgstr "Şirketler Arası Onay"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model,name:soluto_intercompany_transfer.model_confirm_intercompany_picking
+msgid "Intercompany Picking Confirmation"
+msgstr "Şirketler Arası Teslimat Onayı"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_sale_order__intercompany_purchase_order_id
+msgid "Intercompany Purchase Order"
+msgstr "Şirketler Arası Satınalma Siparişi"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_sale_order__intercompany_sale_order_id
+msgid "Intercompany Sales Order"
+msgstr "Şirketler Arası Satış Siparişi"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_sale_order__is_intercompany_order
+msgid "Is Intercompany Order"
+msgstr "Şirketler Arası Sipariş mi"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_res_partner__is_intercompany_partner
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_res_users__is_intercompany_partner
+msgid "Is Intercompany Trigger Partner"
+msgstr "Şirketler Arası Tetikleyici İş Ortağı mı"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_confirm_intercompany_picking__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_confirm_intercompany_picking__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme Tarihi"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_confirm_intercompany_picking__message
+msgid "Mesaj"
+msgstr "Mesaj"
+
+#. module: soluto_intercompany_transfer
+#. odoo-python
+#: code:addons/soluto_intercompany_transfer/models/stock_picking.py:0
+#, python-format
+msgid "No quantities to receive for this delivery from %s"
+msgstr "%s şirketinden bu teslimat için alınacak miktar yok"
+
+#. module: soluto_intercompany_transfer
+#: model_terms:ir.ui.view,arch_db:soluto_intercompany_transfer.view_confirm_intercompany_picking_form
+msgid "Onayla"
+msgstr "Onayla"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model,name:soluto_intercompany_transfer.model_mrp_production
+msgid "Production Order"
+msgstr "Üretim Emri"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model,name:soluto_intercompany_transfer.model_purchase_order
+msgid "Purchase Order"
+msgstr "Satınalma Siparişi"
+
+#. module: soluto_intercompany_transfer
+#. odoo-python
+#: code:addons/soluto_intercompany_transfer/models/stock_picking.py:0
+#, python-format
+msgid ""
+"Purchase order automatically confirmed due to delivery confirmation from %s"
+msgstr "%s şirketinden teslimat onayı nedeniyle satınalma siparişi otomatik olarak onaylandı"
+
+#. module: soluto_intercompany_transfer
+#. odoo-python
+#: code:addons/soluto_intercompany_transfer/models/sale_order.py:0
+#: code:addons/soluto_intercompany_transfer/models/sale_order.py:0
+#: code:addons/soluto_intercompany_transfer/models/stock_picking.py:0
+#: code:addons/soluto_intercompany_transfer/models/stock_picking.py:0
+#, python-format
+msgid "Purchase order cancelled due to cancellation from %s by %s"
+msgstr "%s şirketinden %s tarafından iptal edilmesi nedeniyle satınalma siparişi iptal edildi"
+
+#. module: soluto_intercompany_transfer
+#. odoo-python
+#: code:addons/soluto_intercompany_transfer/models/stock_picking.py:0
+#, python-format
+msgid ""
+"Receipt automatically validated with partial quantities due to delivery "
+"confirmation from %s"
+msgstr "%s şirketinden teslimat onayı nedeniyle giriş kısmi miktarlarla otomatik olarak onaylandı"
+
+#. module: soluto_intercompany_transfer
+#. odoo-python
+#: code:addons/soluto_intercompany_transfer/models/stock_picking.py:0
+#: code:addons/soluto_intercompany_transfer/models/stock_picking.py:0
+#, python-format
+msgid "Return automatically created and validated due to cancellation from %s"
+msgstr "%s şirketinden iptal nedeniyle iade otomatik olarak oluşturuldu ve onaylandı"
+
+#. module: soluto_intercompany_transfer
+#. odoo-python
+#: code:addons/soluto_intercompany_transfer/models/sale_order.py:0
+#, python-format
+msgid "Return automatically created and validated due to sale cancellation"
+msgstr "Satış iptali nedeniyle iade otomatik olarak oluşturuldu ve onaylandı"
+
+#. module: soluto_intercompany_transfer
+#. odoo-python
+#: code:addons/soluto_intercompany_transfer/models/sale_order.py:0
+#, python-format
+msgid ""
+"Return automatically created and validated due to sale cancellation from %s"
+msgstr "%s şirketinden satış iptali nedeniyle iade otomatik olarak oluşturuldu ve onaylandı"
+
+#. module: soluto_intercompany_transfer
+#. odoo-python
+#: code:addons/soluto_intercompany_transfer/models/sale_order.py:0
+#: code:addons/soluto_intercompany_transfer/models/stock_picking.py:0
+#, python-format
+msgid "Return of %s"
+msgstr "%s İadesi"
+
+#. module: soluto_intercompany_transfer
+#. odoo-python
+#: code:addons/soluto_intercompany_transfer/models/stock_picking.py:0
+#, python-format
+msgid ""
+"Sale order automatically confirmed due to delivery confirmation from %s"
+msgstr "%s şirketinden teslimat onayı nedeniyle satış siparişi otomatik olarak onaylandı"
+
+#. module: soluto_intercompany_transfer
+#. odoo-python
+#: code:addons/soluto_intercompany_transfer/models/sale_order.py:0
+#: code:addons/soluto_intercompany_transfer/models/sale_order.py:0
+#: code:addons/soluto_intercompany_transfer/models/stock_picking.py:0
+#: code:addons/soluto_intercompany_transfer/models/stock_picking.py:0
+#, python-format
+msgid "Sale order cancelled due to cancellation from %s by %s"
+msgstr "%s şirketinden %s tarafından iptal edilmesi nedeniyle satış siparişi iptal edildi"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model,name:soluto_intercompany_transfer.model_sale_order
+msgid "Sales Order"
+msgstr "Satış Siparişi"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_purchase_order__source_sale_order_id
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_sale_order__source_sale_order_id
+msgid "Source Sale Order"
+msgstr "Kaynak Satış Siparişi"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_res_partner__target_company_id
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_res_users__target_company_id
+msgid "Target Company"
+msgstr "Hedef Şirket"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,field_description:soluto_intercompany_transfer.field_confirm_intercompany_picking__picking_id
+msgid "Teslimat"
+msgstr "Teslimat"
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,help:soluto_intercompany_transfer.field_res_partner__target_company_id
+#: model:ir.model.fields,help:soluto_intercompany_transfer.field_res_users__target_company_id
+msgid "The company where the new orders will be created."
+msgstr "Yeni siparişlerin oluşturulacağı şirket."
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,help:soluto_intercompany_transfer.field_sale_order__final_customer_id
+#: model:ir.model.fields,help:soluto_intercompany_transfer.field_sale_order__final_customer_transfer_id
+msgid ""
+"The customer for the sales order that will be created in the target company."
+msgstr "Hedef şirkette oluşturulacak satış siparişi için müşteri."
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,help:soluto_intercompany_transfer.field_sale_order__source_sale_order_id
+msgid "The original sale order that triggered this intercompany order."
+msgstr "Bu şirketler arası siparişi tetikleyen orijinal satış siparişi."
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model.fields,help:soluto_intercompany_transfer.field_purchase_order__source_sale_order_id
+msgid ""
+"The original sale order that triggered this intercompany purchase order."
+msgstr "Bu şirketler arası satınalma siparişini tetikleyen orijinal satış siparişi."
+
+#. module: soluto_intercompany_transfer
+#: model:ir.model,name:soluto_intercompany_transfer.model_stock_picking
+msgid "Transfer"
+msgstr "Aktarım"
+
+#. module: soluto_intercompany_transfer
+#. odoo-python
+#: code:addons/soluto_intercompany_transfer/models/stock_picking.py:0
+#, python-format
+msgid "Vehicle weight information copied from %s delivery"
+msgstr "Araç ağırlık bilgisi %s teslimatından kopyalandı"
+
+#. module: soluto_intercompany_transfer
+#: model_terms:ir.ui.view,arch_db:soluto_intercompany_transfer.view_confirm_intercompany_picking_form
+msgid "İptal"
+msgstr "İptal"
+
+#. module: soluto_intercompany_transfer
+#: model_terms:ir.ui.view,arch_db:soluto_intercompany_transfer.view_confirm_intercompany_picking_form
+msgid "Şirketler Arası Teslimat Onayı"
+msgstr "Şirketler Arası Teslimat Onayı"

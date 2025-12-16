@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_select_production_vehicles_form" model="ir.ui.view">
+        <field name="name">select.production.vehicles.form</field>
+        <field name="model">select.production.vehicles</field>
+        <field name="arch" type="xml">
+            <form string="Üretimden Araç Seç">
+                <field name="picking_id" invisible="1"/>
+                <field name="available_vehicle_weight_ids" invisible="1"/>
+                <p>
+                    Bu teslimatla ilişkili üretim emirlerinde yüklenmiş ve henüz başka bir teslimata atanmamış araçlar aşağıda listelenmiştir.
+                    Teslimata eklemek istediğiniz araçları seçiniz.
+                </p>
+                <field name="selected_vehicle_weight_ids" domain="[('id', 'in', available_vehicle_weight_ids)]" nolabel="1">
+                    <tree create="false">
+                        <field name="vehicle_plate_id"/>
+                        <field name="driver_name"/>
+                        <field name="exit_m3"/>
+                        <field name="exit_weight"/>
+                        <field name="entry_weight"/>
+                        <field name="net_weight"/>
+                        <field name="production_id" string="Kaynak Üretim Emri"/>
+                    </tree>
+                </field>
+                <footer>
+                    <button name="action_select_vehicles" string="Seçilenleri Ekle" type="object" class="btn-primary" data-hotkey="q"/>
+                    <button string="İptal" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

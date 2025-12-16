@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Extend the stock.picking form view -->
+    <record id="view_picking_form_inherit_ozelbagdan" model="ir.ui.view">
+        <field name="name">stock.picking.form.inherit.ozelbagdan</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <!-- Add a new notebook page for vehicle weights -->
+            <xpath expr="//notebook" position="inside">
+                                    <page string="Araç Tonaj Bilgileri" name="vehicle_weights">
+                        <header>
+                            <button name="action_open_vehicle_selection" string="Üretimden Araç Seç" type="object" class="btn-primary" invisible="picking_type_code != 'outgoing'"/>
+                        </header>
+                    <field name="vehicle_count" invisible="1"/>
+                    <button name="action_add_vehicle" string="Araç Ekle" type="object" 
+                            class="oe_highlight" invisible="1"/>
+                    <field name="vehicle_weight_ids" nolabel="1" context="{'picking_type_code': picking_type_code}">
+                        <tree create="parent.picking_type_code != 'outgoing'">
+                            <field name="name"/>
+                            <field name="vehicle_plate_id"/>
+                            <field name="driver_name"/>
+                            <field name="exit_m3" column_invisible="parent.picking_type_code != 'outgoing'"/>
+                            <field name="exit_weight"/>
+                            <field name="exit_date"/>
+                            <field name="entry_weight"/>
+                            <field name="entry_date"/>
+                            <field name="net_weight"/>
+                        </tree>
+                    </field>
+                    <group class="oe_subtotal_footer oe_right" colspan="2" name="vehicle_weight_totals">
+                        <field name="total_exit_weight" widget="monetary"/>
+                        <field name="total_entry_weight" widget="monetary"/>
+                        <div class="oe_subtotal_footer_separator oe_inline o_td_label">
+                            <label for="total_net_weight"/>
+                        </div>
+                        <field name="total_net_weight" nolabel="1" class="oe_subtotal_footer_separator" widget="monetary"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

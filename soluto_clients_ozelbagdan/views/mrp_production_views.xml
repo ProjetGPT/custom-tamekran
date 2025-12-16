@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="mrp_production_view_form_inherit_vehicle_weight" model="ir.ui.view">
+            <field name="name">mrp.production.form.inherit.vehicle.weight</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Araç Yükleme Bilgileri" name="vehicle_weights">
+                        <field name="vehicle_weight_ids" nolabel="1" context="{'default_production_id': id}">
+                            <tree>
+                                <field name="vehicle_plate_id"/>
+                                <field name="driver_name"/>
+                                <field name="exit_m3"/>
+                                <field name="exit_weight"/>
+                                <field name="exit_date"/>
+                                <field name="entry_weight"/>
+                                <field name="entry_date"/>
+                                <field name="net_weight" sum="Toplam Net Tonaj"/>
+                                <field name="notes"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="mrp_production_view_tree_inherit_create_date" model="ir.ui.view">
+            <field name="name">mrp.production.tree.inherit.create.date</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.mrp_production_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="before">
+                    <field name="create_date" string="Oluşturma Tarihi"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

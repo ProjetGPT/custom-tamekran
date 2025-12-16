@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+    <t t-name="mrp.ForecastedButtons" t-inherit="stock.ForecastedButtons" t-inherit-mode="extension">
+        <xpath expr="//button[hasclass('o_forecasted_update_qty_btn')]" position="replace"/>
+    </t>
+</templates>

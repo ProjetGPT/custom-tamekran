@@ -1,0 +1,1019 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* soluto_clients_ozelbagdan
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-01 12:15+0000\n"
+"PO-Revision-Date: 2025-09-01 12:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.actions.report,print_report_name:soluto_clients_ozelbagdan.action_mail_report_iskonto_xlsx
+msgid "'İskontolu Teklif Çıktısı'"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.actions.report,print_report_name:soluto_clients_ozelbagdan.action_mail_report_iskontosuz_xlsx
+msgid "'İskontosuz Teklif Çıktısı'"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.actions.report,print_report_name:soluto_clients_ozelbagdan.action_report_sale_order_ozelbagdan_2
+#: model:ir.actions.report,print_report_name:soluto_clients_ozelbagdan.action_report_sale_order_ozelbagdan_3
+#: model:ir.actions.report,print_report_name:soluto_clients_ozelbagdan.action_report_sale_order_ozelbagdan_4
+msgid ""
+"(object.state in ('draft', 'sent') and 'Quotation - %s' % (\n"
+"                object.name)) or 'Order - %s' % (object.name)"
+msgstr ""
+"(object.state in ('draft', 'sent') and 'Teklif - %s' % (\n"
+"                object.name)) or 'Sipariş - %s' % (object.name)"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields.selection,name:soluto_clients_ozelbagdan.selection__vehicle_weight__intercompany_flow_stage__source_delivery
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+msgid "1. Şirket Teslimatı"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+msgid "2. Şirket Satınalma"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields.selection,name:soluto_clients_ozelbagdan.selection__vehicle_weight__intercompany_flow_stage__purchase_receipt
+msgid "2. Şirket Satınalma Girişi"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+msgid "2. Şirket Satış"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields.selection,name:soluto_clients_ozelbagdan.selection__vehicle_weight__intercompany_flow_stage__target_delivery
+msgid "2. Şirket Satış Çıkışı"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,help:soluto_clients_ozelbagdan.field_vehicle_weight__purchase_order_id
+msgid "2. şirketteki ilgili satınalma siparişi"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,help:soluto_clients_ozelbagdan.field_vehicle_weight__target_sale_order_id
+msgid "2. şirketteki nihai müşteriye yapılan satış siparişi"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.external_layout_ozelbagdan_standard
+msgid ""
+"<br/>\n"
+"                        Tax Office:"
+msgstr ""
+"<br/>\n"
+"                    Vergi Dairesi:"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.external_layout_ozelbagdan_standard
+msgid ""
+"<br/>\n"
+"                        VKN:"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.external_layout_ozelbagdan_standard
+msgid ""
+"<br/>\n"
+"                    Tax Office:"
+msgstr ""
+"<br/>\n"
+"                    Vergi Dairesi:"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.external_layout_ozelbagdan_standard
+msgid ""
+"<br/>\n"
+"                    VKN:"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_form
+msgid ""
+"<span class=\"o_stat_text\">Intercompany</span>\n"
+"                                <span class=\"o_stat_text\">Akış</span>"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_1_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_4_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_5_document
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=“mr16”>Ara Toplam</strong>"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.actions.report,name:soluto_clients_ozelbagdan.action_report_sale_order_ozelbagdan_3
+msgid "Adetli İskontolu Teklif Çıktısı"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.actions.report,name:soluto_clients_ozelbagdan.action_report_sale_order_ozelbagdan_4
+msgid "Adetli İskontosuz Teklif Çıktısı"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_plate__active
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_plate_search
+msgid "Aktif"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_4_document
+msgid "Amount"
+msgstr "Net Tutar"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#, python-format
+msgid "Amount Total"
+msgstr "Toplam Tutar"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__parent_vehicle_weight_id
+msgid "Ana Araç Tonaj Kaydı"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+msgid "Ana Kayıtlar"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_plate__vehicle_tare_weight
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__vehicle_tare_weight
+msgid "Araç Dara (KG)"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_picking_form_inherit_ozelbagdan
+msgid "Araç Ekle"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.actions.act_window,name:soluto_clients_ozelbagdan.action_vehicle_plate
+#: model:ir.model,name:soluto_clients_ozelbagdan.model_vehicle_plate
+#: model:ir.ui.menu,name:soluto_clients_ozelbagdan.menu_vehicle_plate
+msgid "Araç Plaka Kayıtları"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_plate_search
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_plate_tree
+msgid "Araç Plakaları"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__vehicle_plate_id
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_plate_form
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+msgid "Araç Plakası"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_stock_picking__vehicle_count
+msgid "Araç Sayısı"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/models/stock_picking.py:0
+#: model:ir.actions.act_window,name:soluto_clients_ozelbagdan.action_vehicle_weight
+#: model:ir.model,name:soluto_clients_ozelbagdan.model_vehicle_weight
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_stock_picking__vehicle_weight_ids
+#: model:ir.ui.menu,name:soluto_clients_ozelbagdan.menu_vehicle_weight
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_picking_form_inherit_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_tree
+#, python-format
+msgid "Araç Tonaj Bilgileri"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_form
+msgid "Araç Tonaj Bilgisi"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/models/stock_picking.py:0
+#, python-format
+msgid "Araç Tonaj Bilgisi Ekle"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_mrp_production__vehicle_weight_ids
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.mrp_production_view_form_inherit_vehicle_weight
+msgid "Araç Yükleme Bilgileri"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_plate_form
+msgid "Araç hakkında notlar..."
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.actions.act_window,help:soluto_clients_ozelbagdan.action_vehicle_plate
+msgid ""
+"Araç plakalarını tanımlayarak sürücü bilgileri ve araç dara ağırlığını \n"
+"                kayıt altına alabilirsiniz. Bu bilgiler teslimat ve üretim süreçlerinde \n"
+"                otomatik olarak doldurulacaktır."
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_plate_search
+msgid "Arşivlenmiş"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,help:soluto_clients_ozelbagdan.field_product_pricelist_item__base
+msgid ""
+"Base price for computation.\n"
+"Sales Price: The base price will be the Sales Price.\n"
+"Cost Price: The base price will be the cost price.\n"
+"Other Pricelist: Computation of the base price based on another Pricelist."
+msgstr ""
+"Hesaplama için taban fiyat.\n"
+"Satış Fiyatı: Taban fiyat Satış Fiyatı olacaktır.\n"
+"Maliyet Fiyatı: Taban fiyat, maliyet fiyatı olacaktır.\n"
+"Diğer Fiyat Listesi: Baz fiyatın başka bir Fiyat Listesine göre hesaplanması."
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_product_pricelist_item__base
+msgid "Based on"
+msgstr "Buna göre"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,help:soluto_clients_ozelbagdan.field_vehicle_weight__source_sale_order_id
+msgid "Bu araç tonaj bilgisinin kaynaklandığı 1. şirket satış siparişi"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,help:soluto_clients_ozelbagdan.field_vehicle_weight__parent_vehicle_weight_id
+msgid "Bu kaydın türetildiği ana araç tonaj kaydı"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.constraint,message:soluto_clients_ozelbagdan.constraint_vehicle_plate_name_uniq
+msgid "Bu plaka zaten sistemde kayıtlı!"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,help:soluto_clients_ozelbagdan.field_vehicle_plate__driver_name
+msgid "Bu plakaya atanmış varsayılan sürücü"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_select_production_vehicles_form
+msgid ""
+"Bu teslimatla ilişkili üretim emirlerinde yüklenmiş ve henüz başka bir teslimata atanmamış araçlar aşağıda listelenmiştir.\n"
+"                    Teslimata eklemek istediğiniz araçları seçiniz."
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_1_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_4_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_5_document
+msgid "Code"
+msgstr "Kodu"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_select_production_vehicles__create_uid
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_plate__create_uid
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_select_production_vehicles__create_date
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_plate__create_date
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__create_date
+msgid "Created on"
+msgstr "Oluşturulma"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#, python-format
+msgid "Currency"
+msgstr "Para Birimi"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#, python-format
+msgid "Currency Type"
+msgstr "Döviz Türü"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+#, python-format
+msgid "DSC(%)"
+msgstr "İSK(%)"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.external_layout_ozelbagdan_standard
+msgid "Date"
+msgstr "Tarihi"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.external_layout_ozelbagdan_standard
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_1_document
+msgid "Description"
+msgstr "Açıklama"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+#, python-format
+msgid "Discount Amount"
+msgstr "İndirim tutarı"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_5_document
+#, python-format
+msgid "Discount(%)"
+msgstr "İndirim(%)"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_select_production_vehicles__display_name
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_plate__display_name
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__display_name
+msgid "Display Name"
+msgstr "Görünüm Adı"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__entry_date
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+msgid "Giriş Tarihi"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__entry_weight
+msgid "Giriş Tonajı (kg)"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+msgid "Giriş Tonajı Girilmemiş"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+msgid "Giriş Tonajı Girilmiş"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__entry_m3
+msgid "Giriş m³"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/models/vehicle_weight.py:0
+#, python-format
+msgid "Giriş tonajı negatif olamaz."
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/models/vehicle_weight.py:0
+#, python-format
+msgid "Giriş tonajı çıkış tonajından büyük olamaz."
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/models/vehicle_weight.py:0
+#, python-format
+msgid "Giriş tonajı çıkış tonajından küçük olamaz."
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+msgid "Group By"
+msgstr "Grupla"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_plate_search
+msgid "Grupla"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_product_product__current_cost
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_product_template__current_cost
+#: model:ir.model.fields.selection,name:soluto_clients_ozelbagdan.selection__product_pricelist_item__base__current_cost
+msgid "Güncel Maliyet"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.actions.server,name:soluto_clients_ozelbagdan.action_update_current_cost
+#: model:ir.actions.server,name:soluto_clients_ozelbagdan.action_update_current_cost_template
+msgid "Güncel Maliyet Hesapla"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__target_sale_order_id
+msgid "Hedef Satış Siparişi"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.actions.act_window,help:soluto_clients_ozelbagdan.action_vehicle_weight
+msgid "Henüz araç tonaj kaydı bulunmamaktadır"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_select_production_vehicles__id
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_plate__id
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__id
+msgid "ID"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__intercompany_flow_stage
+msgid "Intercompany Akış Aşaması"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__intercompany_flow_info
+msgid "Intercompany Akış Bilgisi"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/models/vehicle_weight.py:0
+#, python-format
+msgid "Intercompany Araç Tonaj Akışı"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+msgid "Intercompany Aşama"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_form
+msgid "Intercompany İzlenebilirlik"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#, python-format
+msgid "KDV"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,help:soluto_clients_ozelbagdan.field_vehicle_plate__vehicle_tare_weight
+#: model:ir.model.fields,help:soluto_clients_ozelbagdan.field_vehicle_weight__vehicle_tare_weight
+msgid "Kamyonun boş ağırlığı (dara)"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__source_sale_order_id
+msgid "Kaynak Satış Siparişi"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_select_production_vehicles_form
+msgid "Kaynak Üretim Emri"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_select_production_vehicles__write_uid
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_plate__write_uid
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_select_production_vehicles__write_date
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_plate__write_date
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+#, python-format
+msgid "List Price"
+msgstr "Liste Fiyatı"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.external_layout_ozelbagdan_standard
+msgid "Logo"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.actions.report,name:soluto_clients_ozelbagdan.action_report_sale_order_ozelbagdan_2
+msgid "Net Fiyatlı Teklif Çıktısı"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_1_document
+msgid "Net Price"
+msgstr "Net Fiyat"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_sale_order_line__net_sale_price
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_4_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_5_document
+msgid "Net Sale Price"
+msgstr "Net Satış Fiyatı"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__net_weight
+msgid "Net Tonaj (kg)"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_4_document
+#, python-format
+msgid "Net Total"
+msgstr "Net Toplam"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#, python-format
+msgid "Net Unit Price"
+msgstr "Net Birim Fiyat"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/models/vehicle_weight.py:0
+#: code:addons/soluto_clients_ozelbagdan/models/vehicle_weight.py:0
+#: code:addons/soluto_clients_ozelbagdan/models/vehicle_weight.py:0
+#: code:addons/soluto_clients_ozelbagdan/models/vehicle_weight.py:0
+#, python-format
+msgid "New"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_1_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_4_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_5_document
+msgid "No"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_plate__note
+msgid "Not"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__notes
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_form
+msgid "Notlar"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.external_layout_ozelbagdan_standard
+msgid "Official"
+msgstr "Yetkilisi"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.mrp_production_view_tree_inherit_create_date
+msgid "Oluşturma Tarihi"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.external_layout_ozelbagdan_standard
+msgid "Order"
+msgstr "Sipariş"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.external_layout_ozelbagdan_standard
+msgid "Order #"
+msgstr "Sipariş #"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_select_production_vehicles__picking_id
+msgid "Picking"
+msgstr "Teslimat"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_plate__name
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_plate_search
+msgid "Plaka"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_5_document
+msgid ""
+"Price\n"
+"                            Unit"
+msgstr ""
+"Birim\n"
+"                            Fiyat"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model,name:soluto_clients_ozelbagdan.model_product_pricelist_item
+msgid "Pricelist Rule"
+msgstr "Fiyat Listesi Kuralı"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model,name:soluto_clients_ozelbagdan.model_product_template
+msgid "Product"
+msgstr "Ürün"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#, python-format
+msgid "Product Code"
+msgstr "Ürün Kodu"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_1_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_4_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_5_document
+#, python-format
+msgid "Product Name"
+msgstr "Ürün Adı"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model,name:soluto_clients_ozelbagdan.model_product_product
+msgid "Product Variant"
+msgstr "Ürün Varyantı"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model,name:soluto_clients_ozelbagdan.model_mrp_production
+msgid "Production Order"
+msgstr "Üretim Emri"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_4_document
+#, python-format
+msgid "Quantity"
+msgstr "Miktar"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.external_layout_ozelbagdan_standard
+msgid "Quaotion"
+msgstr "Teklif"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.external_layout_ozelbagdan_standard
+msgid "Quaotion #"
+msgstr "Teklif #"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__name
+msgid "Referans"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model,name:soluto_clients_ozelbagdan.model_report_soluto_clients_ozelbagdan_rslozb_iskonto1_xlsx
+#: model:ir.model,name:soluto_clients_ozelbagdan.model_report_soluto_clients_ozelbagdan_rslozb_iskontosuz_xlsx
+#: model:ir.model,name:soluto_clients_ozelbagdan.model_report_soluto_clients_ozelbagdan_rsozb_iskonto1_xlsx
+#: model:ir.model,name:soluto_clients_ozelbagdan.model_report_soluto_clients_ozelbagdan_rsozb_iskontosuz_xlsx
+msgid "Report Xlsx"
+msgstr "Rapor Xlsx"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model,name:soluto_clients_ozelbagdan.model_sale_order
+msgid "Sales Order"
+msgstr "Satış Siparişi"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model,name:soluto_clients_ozelbagdan.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Satış Sipariş Satırı"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__purchase_order_id
+msgid "Satınalma Siparişi"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#, python-format
+msgid "Sequence"
+msgstr "Sıra"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_select_production_vehicles__available_vehicle_weight_ids
+msgid "Seçilebilir Araçlar"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_select_production_vehicles__selected_vehicle_weight_ids
+msgid "Seçilen Araçlar"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_select_production_vehicles_form
+msgid "Seçilenleri Ekle"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+msgid "Subtotal"
+msgstr "Ara Toplam"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_plate_search
+msgid "Sürücü"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__driver_name
+msgid "Sürücü Adı"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_plate__driver_name
+msgid "Sürücü Adı Soyadı"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.external_layout_ozelbagdan_standard
+msgid "Term"
+msgstr "Vade"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__picking_id
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+msgid "Teslimat"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.actions.act_window,help:soluto_clients_ozelbagdan.action_vehicle_weight
+msgid ""
+"Teslimat fişlerinde araç tonaj bilgilerini kaydetmek için ilgili teslimat "
+"fişine gidin ve \"Araç Ekle\" butonuna tıklayın."
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,help:soluto_clients_ozelbagdan.field_product_product__current_cost
+#: model:ir.model.fields,help:soluto_clients_ozelbagdan.field_product_template__current_cost
+msgid ""
+"Teslimat onaylandığında hesaplanan güncel maliyet değeri. Bu değer tüm "
+"şirketlerde ortaktır."
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_stock_picking__total_entry_weight
+msgid "Toplam Giriş Tonajı (kg)"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.mrp_production_view_form_inherit_vehicle_weight
+msgid "Toplam Net Tonaj"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_stock_picking__total_net_weight
+msgid "Toplam Net Tonaj (kg)"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_stock_picking__total_exit_weight
+msgid "Toplam Çıkış Tonajı (kg)"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_4_document
+msgid "Total"
+msgstr "Toplam"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#, python-format
+msgid "Total Amount"
+msgstr "Toplam Tutar"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_4_document
+msgid "Total KDV"
+msgstr "Toplam KDV"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_4_document
+msgid "Total Price"
+msgstr "Net Tutar"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_3_document
+msgid "Total Tax"
+msgstr "Vergi Toplamı"
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model,name:soluto_clients_ozelbagdan.model_stock_picking
+msgid "Transfer"
+msgstr "Aktarım"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_form
+msgid "Türetilen"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/models/vehicle_weight.py:0
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__child_vehicle_weight_ids
+#, python-format
+msgid "Türetilen Araç Tonaj Kayıtları"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__child_count
+msgid "Türetilen Kayıt Sayısı"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+msgid "Türetilen Kayıtlar"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.rsozb_1_document
+#, python-format
+msgid "Unit"
+msgstr "Birim"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#, python-format
+msgid "Unit Name"
+msgstr "Birim Adı"
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#: code:addons/soluto_clients_ozelbagdan/report/mail_data_reports_xlsx.py:0
+#, python-format
+msgid "Unit Price"
+msgstr "Birim Fiyat"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.external_layout_ozelbagdan_standard
+msgid "Validity Date"
+msgstr "Geçerlilik Tarihi"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.actions.act_window,help:soluto_clients_ozelbagdan.action_vehicle_plate
+msgid "Yeni bir araç plakası oluşturun!"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.product_product_form_view_inherit_soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.product_template_form_view_inherit_soluto_clients_ozelbagdan
+msgid "per"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__exit_date
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+msgid "Çıkış Tarihi"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__exit_weight
+msgid "Çıkış Tonajı (kg)"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__exit_m3
+msgid "Çıkış m³"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_plate_form
+msgid "Örn: 34 ABC 123"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_plate_form
+msgid "Örn: 8500"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_plate_form
+msgid "Örn: Ahmet Yılmaz"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields.selection,name:soluto_clients_ozelbagdan.selection__vehicle_weight__intercompany_flow_stage__production
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_vehicle_weight_search
+msgid "Üretim"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model.fields,field_description:soluto_clients_ozelbagdan.field_vehicle_weight__production_id
+msgid "Üretim Emri"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#. odoo-python
+#: code:addons/soluto_clients_ozelbagdan/models/stock_picking.py:0
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_picking_form_inherit_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_select_production_vehicles_form
+#, python-format
+msgid "Üretimden Araç Seç"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.model,name:soluto_clients_ozelbagdan.model_select_production_vehicles
+msgid "Üretimden Araç Seçme Sihirbazı"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_select_production_vehicles_form
+msgid "İptal"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.actions.report,name:soluto_clients_ozelbagdan.action_mail_report_iskonto_xlsx
+#: model:ir.actions.report,name:soluto_clients_ozelbagdan.action_report_iskonto_line_xlsx
+msgid "İskontolu Teklif Çıktısı XLSX"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model:ir.actions.report,name:soluto_clients_ozelbagdan.action_mail_report_iskontosuz_xlsx
+#: model:ir.actions.report,name:soluto_clients_ozelbagdan.action_report_iskontosuz_line_xlsx
+msgid "İskontosuz Teklif Çıktısı XLSX"
+msgstr ""
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.product_product_form_view_inherit_soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.product_template_form_view_inherit_soluto_clients_ozelbagdan
+msgid "<span class=\"o_stat_text\">On Hand</span>"
+msgstr "<span class=\"o_stat_text\">Stokta</span>"
+
+#. module: soluto_clients_ozelbagdan
+#: model_terms:ir.ui.view,arch_db:soluto_clients_ozelbagdan.view_change_product_quantity_ozelbagdan
+msgid "Manual Stock Update Cannot Be Made!!"
+msgstr "Manuel Stok Değişimi Yapılamaz!!"

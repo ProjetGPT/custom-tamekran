@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="paperformat_teklif_ozelbagdan" model="report.paperformat">
+            <field name="name">ozelbagdan Teklif Kağıt Boyutu</field>
+            <field name="default" eval="False"/>
+            <field name="format">A4</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">70</field>
+            <field name="margin_bottom">30</field>
+            <field name="margin_left">5</field>
+            <field name="margin_right">5</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">65</field>
+            <field name="dpi">100</field>
+        </record>
+
+
+        <record id="action_mail_report_iskonto_xlsx" model="ir.actions.report">
+            <field name="name">İskontolu Teklif Çıktısı XLSX</field>
+            <field name="type">ir.actions.report</field>
+            <field name="model">sale.order</field>
+            <field name="report_type">xlsx</field>
+            <field name="report_name">soluto_clients_ozelbagdan.rsozb_iskonto1_xlsx</field>
+            <field name="report_file">soluto_clients_ozelbagdan.rsozb_iskonto1_xlsx</field>
+            <field name="print_report_name">'İskontolu Teklif Çıktısı'</field>
+            <field name="binding_model_id" ref="sale.model_sale_order"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="action_report_iskonto_line_xlsx" model="ir.actions.report">
+            <field name="name">İskontolu Teklif Çıktısı XLSX</field>
+            <field name="type">ir.actions.report</field>
+            <field name="model">sale.order.line</field>
+            <field name="report_type">xlsx</field>
+            <field name="report_name">soluto_clients_ozelbagdan.rslozb_iskonto1_xlsx</field>
+            <field name="report_file">soluto_clients_ozelbagdan.rslozb_iskonto1_xlsx</field>
+            <field name="binding_model_id" ref="sale.model_sale_order_line"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="action_mail_report_iskontosuz_xlsx" model="ir.actions.report">
+            <field name="name">İskontosuz Teklif Çıktısı XLSX</field>
+            <field name="model">sale.order</field>
+            <field name="type">ir.actions.report</field>
+            <field name="report_type">xlsx</field>
+            <field name="report_name">soluto_clients_ozelbagdan.rsozb_iskontosuz_xlsx</field>
+            <field name="report_file">soluto_clients_ozelbagdan.rsozb_iskontosuz_xlsx</field>
+            <field name="print_report_name">'İskontosuz Teklif Çıktısı'</field>
+            <field name="binding_model_id" ref="sale.model_sale_order"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="action_report_iskontosuz_line_xlsx" model="ir.actions.report">
+            <field name="name">İskontosuz Teklif Çıktısı XLSX</field>
+            <field name="model">sale.order.line</field>
+            <field name="type">ir.actions.report</field>
+            <field name="report_type">xlsx</field>
+            <field name="report_name">soluto_clients_ozelbagdan.rslozb_iskontosuz_xlsx</field>
+            <field name="report_file">soluto_clients_ozelbagdan.rslozb_iskontosuz_xlsx</field>
+            <field name="binding_model_id" ref="sale.model_sale_order_line"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="action_report_sale_order_ozelbagdan_2" model="ir.actions.report">
+            <field name="name">Net Fiyatlı Teklif Çıktısı</field>
+            <field name="model">sale.order</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">soluto_clients_ozelbagdan.rsozb_1</field>
+            <field name="report_file">soluto_clients_ozelbagdan.rsozb_1</field>
+            <field name="print_report_name">(object.state in ('draft', 'sent') and 'Quotation - %s' % (
+                object.name)) or 'Order - %s' % (object.name)</field>
+            <field name="paperformat_id" ref="paperformat_teklif_ozelbagdan"/>
+            <field name="binding_model_id" ref="sale.model_sale_order"/>
+            <field name="binding_type">report</field>
+        </record>
+
+
+        <record id="action_report_sale_order_ozelbagdan_3" model="ir.actions.report">
+            <field name="name">Adetli İskontolu Teklif Çıktısı</field>
+            <field name="model">sale.order</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">soluto_clients_ozelbagdan.rsozb_3</field>
+            <field name="report_file">soluto_clients_ozelbagdan.rsozb_3</field>
+            <field name="print_report_name">(object.state in ('draft', 'sent') and 'Quotation - %s' % (
+                object.name)) or 'Order - %s' % (object.name)</field>
+            <field name="paperformat_id" ref="paperformat_teklif_ozelbagdan"/>
+            <field name="binding_model_id" ref="sale.model_sale_order"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="action_report_sale_order_ozelbagdan_4" model="ir.actions.report">
+            <field name="name">Adetli İskontosuz Teklif Çıktısı</field>
+            <field name="model">sale.order</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">soluto_clients_ozelbagdan.rsozb_4</field>
+            <field name="report_file">soluto_clients_ozelbagdan.rsozb_4</field>
+            <field name="print_report_name">(object.state in ('draft', 'sent') and 'Quotation - %s' % (
+                object.name)) or 'Order - %s' % (object.name)</field>
+            <field name="paperformat_id" ref="paperformat_teklif_ozelbagdan"/>
+            <field name="binding_model_id" ref="sale.model_sale_order"/>
+            <field name="binding_type">report</field>
+        </record>
+
+         <record id="sale.action_report_saleorder" model="ir.actions.report">
+            <field name="binding_model_id" eval="False"/>
+        </record>
+    </data>
+</odoo>

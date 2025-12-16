@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_intercompany" model="ir.ui.view">
+        <field name="name">res.partner.form.intercompany</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='sales_purchases']//group" position="inside">
+                <group string="Intercompany" name="intercompany">
+                    <field name="is_intercompany_partner"/>
+                    <field name="target_company_id" 
+                           invisible="not is_intercompany_partner" 
+                           required="is_intercompany_partner"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

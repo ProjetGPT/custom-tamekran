@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_change_product_quantity_ozelbagdan" model="ir.ui.view">
+        <field name="name">Change Product Quantity Ozelbagdan</field>
+        <field name="model">stock.change.product.qty</field>
+        <field name="inherit_id" ref="stock.view_change_product_quantity"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form" position="replace">
+                <form>
+                    <div class="container">
+                        <h2>Manual Stock Update Cannot Be Made!!</h2>
+                    </div>
+                    <footer>
+                        <button string="Discard" class="btn-secondary" special="cancel" data-hotkey="x"/>
+                    </footer>
+                </form>
+            </xpath>
+        </field>
+    </record>
+</odoo>

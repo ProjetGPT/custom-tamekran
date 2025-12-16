@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="view_order_form_field_management_attribute_groups" model="ir.ui.view">
+        <field name="name">sale.order.form.field.management.attribute.groups</field>
+        <field name="model">sale.order</field>
+        <field name="priority">999</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='order_lines']/field[@name='order_line']/tree//field[@name='price_subtotal']"
+                   position="before">
+                <field name="net_sale_price" widget="monetary" force_save="1" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
