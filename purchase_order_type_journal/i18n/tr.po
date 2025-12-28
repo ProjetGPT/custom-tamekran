@@ -1,0 +1,104 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_order_type_journal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20250117\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-17 23:08+0000\n"
+"PO-Revision-Date: 2025-12-18 02:08+0300\n"
+"Last-Translator: Ertugrul Gures <ertugrulg@projetgrup.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: tr\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: purchase_order_type_journal
+#: model:ir.model.fields,field_description:purchase_order_type_journal.field_purchase_order_type__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: purchase_order_type_journal
+#: model:ir.model.fields,field_description:purchase_order_type_journal.field_purchase_order_type__create_date
+msgid "Created on"
+msgstr "Oluşturulma"
+
+#. module: purchase_order_type_journal
+#: model:ir.model.fields,field_description:purchase_order_type_journal.field_purchase_order_type__display_name
+msgid "Display Name"
+msgstr "Görünüm Adı"
+
+#. module: purchase_order_type_journal
+#: model:ir.model.fields,field_description:purchase_order_type_journal.field_purchase_order_type__id
+msgid "ID"
+msgstr "ID"
+
+#. module: purchase_order_type_journal
+#: model:ir.model.fields,field_description:purchase_order_type_journal.field_purchase_order_type__is_default
+msgid "Is Default"
+msgstr "Varsayılan"
+
+#. module: purchase_order_type_journal
+#: model:ir.model.fields,field_description:purchase_order_type_journal.field_purchase_order_type__journal_id
+msgid "Journal"
+msgstr "Yevmiye"
+
+#. module: purchase_order_type_journal
+#: model:ir.model.fields,field_description:purchase_order_type_journal.field_purchase_order_type____last_update
+msgid "Last Modified on"
+msgstr "Son Düzenleme"
+
+#. module: purchase_order_type_journal
+#: model:ir.model.fields,field_description:purchase_order_type_journal.field_purchase_order_type__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: purchase_order_type_journal
+#: model:ir.model.fields,field_description:purchase_order_type_journal.field_purchase_order_type__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme"
+
+#. module: purchase_order_type_journal
+#: model:ir.model.fields,field_description:purchase_order_type_journal.field_purchase_order_type__name
+msgid "Name"
+msgstr "Adı"
+
+#. module: purchase_order_type_journal
+#: model:ir.model,name:purchase_order_type_journal.model_purchase_order
+msgid "Purchase Order"
+msgstr "Satınalma Siparişi"
+
+#. module: purchase_order_type_journal
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_journal.view_purchaseorder_type_form
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_journal.view_purchaseorder_type_tree
+msgid "Purchase Order Type"
+msgstr "Satın Alma Siparişi Türü"
+
+#. module: purchase_order_type_journal
+#: model:ir.actions.act_window,name:purchase_order_type_journal.action_purchaseorder_type
+#: model:ir.ui.menu,name:purchase_order_type_journal.menu_purchaseorder_type
+msgid "Purchase Order Types"
+msgstr "Satın Alma Siparişi Türleri"
+
+#. module: purchase_order_type_journal
+#: model:ir.model.fields,field_description:purchase_order_type_journal.field_purchase_order__po_type_id
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_journal.purchase_order_view_search
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_journal.view_purchase_order_filter
+msgid "Type"
+msgstr "Tip"
+
+#. module: purchase_order_type_journal
+#. odoo-python
+#: code:addons/purchase_order_type_journal/models/purchase_order_type.py:0
+#, python-format
+msgid "You cannot have more than one default type."
+msgstr "Birden fazla varsayılan tipiniz olamaz."
+
+#. module: purchase_order_type_journal
+#: model:ir.model,name:purchase_order_type_journal.model_purchase_order_type
+msgid "purchase.order.type"
+msgstr "purchase.order.type"

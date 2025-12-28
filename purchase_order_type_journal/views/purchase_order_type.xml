@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="view_purchaseorder_type_form">
+        <field name="name">purchaseorder.type.form</field>
+        <field name="model">purchase.order.type</field>
+        <field eval="50" name="priority"/>
+        <field name="arch" type="xml">
+            <form string="Purchase Order Type">
+                <group>
+                    <field name="name"/>
+                    <field name="journal_id" options="{'no_create':True}"/>
+                    <field name="is_default"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_purchaseorder_type_tree">
+        <field name="name">purchaseorder.type.tree</field>
+        <field name="model">purchase.order.type</field>
+        <field eval="50" name="priority"/>
+        <field name="arch" type="xml">
+            <tree string="Purchase Order Type">
+                <field name="name"/>
+                <field name="journal_id"/>
+                <field name="is_default"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_purchaseorder_type">
+        <field name="name">Purchase Order Types</field>
+        <field name="res_model">purchase.order.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+            id="menu_purchaseorder_type"
+            name="Purchase Order Types"
+            parent="purchase.menu_purchase_config"
+            sequence="200"
+            action="action_purchaseorder_type"
+    />
+
+</odoo>
